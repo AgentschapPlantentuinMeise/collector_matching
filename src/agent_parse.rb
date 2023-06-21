@@ -1,8 +1,8 @@
 require 'dwc_agent'
 
 # Define the input and output file paths
-input_file_path = '../data/names.txt'
-output_file_path = '../data/output/names_parsed.txt'
+input_file_path = 'data/names.txt'
+output_file_path = 'data/output/names_parsed.txt'
 
 # Open the input and output files
 File.open(input_file_path, 'r') do |input_file|

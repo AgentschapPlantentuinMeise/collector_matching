@@ -1,12 +1,12 @@
 -	
-"Ex Herbario Bitter"	Ario Bitter
-"Ex herbario Principis Maximiliani de Wied"	Ario Principis Maximiliani de Wied
-"hb. Swartz"	HB. Swartz
-"Hb. Thwaites"	Hb Thwaites
+"Ex Herbario Bitter"	
+"Ex herbario Principis Maximiliani de Wied"	
+"hb. Swartz"	
+"Hb. Thwaites"	
 "Herbarium Fischer"	
-"J. Heinrichs" (leg. H. Anton et al.)	J. Heinrichs
+"J. Heinrichs" (leg. H. Anton et al.)	
 "Lindberg mt."	
-"Seem."	Seem
+"Seem."	
 (C. Wright) H. Wendl.	C. Wright H. Wendl
 (irreadable)	Irreadable
 (no. 14)	No
@@ -79,7 +79,7 @@ A. Beurton	A. Beurton
 A. Beyer, G. Dersch, C. Renker	A. Beyer	G. Dersch	C. Renker
 A. Beyer, J. Heinrichs, J. Müller, C. Renker	A. Beyer	J. Heinrichs	J. Müller	C. Renker
 A. Blaufuß	A. Blaufuß
-A. Böker in Herb. Leuckert	A.Böker in Herb. Leuckert
+A. Böker in Herb. Leuckert	A. Böker
 A. Borgstette	A. Borgstette
 A. Borhidi	A. Borhidi
 A. Borhidi & M. Hedrén	A. Borhidi	M. Hedrén
@@ -91,7 +91,7 @@ A. Bornmuller	A. Bornmuller
 A. Braun	A. Braun
 A. Breure	A. Breure
 A. Brockes	A. Brockes
-A. Burghause in Hb. A. Buschardt	A. Burghause in Hb. A. Buschardt
+A. Burghause in Hb. A. Buschardt	A. Burghause
 A. Busch	A. Busch
 A. Buschardt	A. Buschardt
 A. Buschardt & J. Poelt	A. Buschardt	J. Poelt
@@ -187,7 +187,7 @@ A. Goetzke & N. Blüthgen	A. Goetzke	N. Blüthgen
 A. Grisebach	A. Grisebach
 A. H. Liogier	A.H. Liogier
 A. H. Magnusson	A.H. Magnusson
-A. H. Magnusson in Hb. Zschacke	A. H. Magnusson in Hb. Zschacke
+A. H. Magnusson in Hb. Zschacke	A.H. Magnusson
 A. Hafellner & J. Hafellner	A. Hafellner	J. Hafellner
 A. Haupt	A. Haupt
 A. Henry	A. Henry
@@ -223,7 +223,7 @@ A. Kappler & W. R. Hostmann	A. Kappler	W.R. Hostmann
 A. Kawagle	A. Kawagle
 A. Kerner	A. Kerner
 A. Koskinen	A. Koskinen
-A. Koskinen in herb. V. J. Grummann	A. Koskinen V. J. Grummann
+A. Koskinen in herb. V. J. Grummann	A. Koskinen
 A. Krabbe & E. S. Hansen	A. Krabbe	E.S. Hansen
 A. Krapovickas	A. Krapovickas
 A. L. Ilkiu-Borges	A.L. Ilkiu-Borges
@@ -345,7 +345,7 @@ A. Morales Mendez	A. Morales Mendez
 A. Müller	A. Müller
 A. N. Schmidt-Lebuhn	A.N. Schmidt-Lebuhn
 A. Nanjappan, Agricultural College,	A. Nanjappan	
-A. Neumann in herb. V. J. Grummann	A. Neumann V. J. Grummann
+A. Neumann in herb. V. J. Grummann	A. Neumann
 A. Noguchi	A. Noguchi
 A. Noguchi K. Oti	A. Noguchi K. Oti
 A. Noguchi M. Sannomiya	A. Noguchi M. Sannomiya
@@ -386,7 +386,7 @@ A. Sakai	A. Sakai
 A. Salle	A. Salle
 A. Sauter	A. Sauter
 A. Schade	A. Schade
-A. Schade in herb. V. J. Grummann	A. Schade V. J. Grummann
+A. Schade in herb. V. J. Grummann	A. Schade
 A. Schäfer- Verwimp	A. Schäfer- Verwimp
 A. Schäfer-Verwimp	A. Schäfer-Verwimp
 A. Schäfer-Verwimp  I. Verwimp	A. Schäfer-Verwimp I. Verwimp
@@ -429,8 +429,8 @@ A. Stepanyan	A. Stepanyan
 A. Stewart	A. Stewart
 A. Stier, comm. L. Scriba	A. Stier	L. Scriba
 A. Straus	A. Straus
-A. Straus in herb. V. J. Grummann	A. Straus V. J. Grummann
-A. Straus in Herb. V. J. Grummann	A. Straus in Herb. V. J. Grummann
+A. Straus in herb. V. J. Grummann	A. Straus
+A. Straus in Herb. V. J. Grummann	A. Straus
 A. Stubel	A. Stubel
 A. Sugden	A. Sugden
 A. Tanaka	A. Tanaka
@@ -443,7 +443,7 @@ A. Tonduz & H. F. Pittier	A. Tonduz	H.F. Pittier
 A. Touw	A. Touw
 A. Tröger	A. Tröger
 A. V. Auer	A.V. Auer
-A. v. Hübschmann	A. Hübschmann
+A. v. Hübschmann	A. v. Hübschmann
 A. V. Larsen	A.V. Larsen
 A. Ventura	A. Ventura
 A. Ventura A.	A. A. Ventura
@@ -489,7 +489,7 @@ A.M.Cleef A.Fernandez-P.
 A.M.Cleef R.Jaramillo-M.	
 A.M.Cleef T.v.d.Hammen	
 A.N. Schmidt-Lebuhn	A.N. Schmidt-Lebuhn
-A.R.A. Görts-van Rijn, L.J.W. v.d. Wollenberg & D. Gopaul	A.R.A.Görts-van Rijn	L.J.W. Wollenberg	D. Gopaul
+A.R.A. Görts-van Rijn, L.J.W. v.d. Wollenberg & D. Gopaul	A.R.A.Görts-van Rijn	L.J.W. v.d. Wollenberg	D. Gopaul
 A.S.H. Breure	A.S.H. Breure
 A.Schäfer-Verwimp	A. Schäfer-Verwimp
 A.Schäfer-Verwimp M.Preussing	A. Schäfer-Verwimp M. Preussing
@@ -649,7 +649,7 @@ Adamson,J.	J. Adamson
 Adamson,T.	T. Adamson
 Adderley, L.S.	L.S. Adderley
 Ade	Ade
-Ade und Blum	Ade und Blum
+Ade und Blum	Ade	Blum
 Ade, A.	A. Ade
 Ade,A.	A. Ade
 Adebowale,A. & Balkwill,K. & D.A.McCallum	A. Adebowale	K. Balkwill	D.A. McCallum
@@ -741,7 +741,7 @@ Aguirre  Gradstein Santana	Aguirre Gradstein Santana
 Aguirre C.	C. Aguirre
 Aguirre C. Gradstein	Aguirre C. Gradstein
 Aguirre C. Gradstein Santana	Aguirre C. Gradstein Santana
-Aguirre C. Gradstein v. Zanten et al.	Aguirre C. Gradstein Zanten
+Aguirre C. Gradstein v. Zanten et al.	Aguirre C. Gradstein v. Zanten
 Aguirre C. Gradstein vam Zanten et al.	Aguirre C. Gradstein vam Zanten
 Aguirre C. Gradstein van Zanten	Aguirre C. Gradstein van Zanten
 Aguirre C. Gradstein van Zanten et al.	Aguirre C. Gradstein van Zanten
@@ -1510,9 +1510,9 @@ Anonymous collector & Schulz,R.	R. Schulz
 Anonymous collector, Till,S. & Lindner,C.	
 Anonymous collectors	
 Anonymous et al.	
-Anonymous in Herb. Zuccarinii	In Herb. Zuccarinii
-Anonymous in Herb. Zuxccarinii	In Herb. Zuxccarinii
-Anonymous in Herb. Zwackh	In Herb. Zwackh
+Anonymous in Herb. Zuccarinii	
+Anonymous in Herb. Zuxccarinii	
+Anonymous in Herb. Zwackh	
 anonymus	
 Anonymus	
 Anonymus use Anonymous collector --> ID 42	
@@ -1531,7 +1531,7 @@ Antoine M. Cleef Otto Huber	Antoine M. Cleef Otto Huber
 Antoine M. Cleef P. A. Florschütz	
 Antoine M. Cleef R. Jaramillo-M.	Antoine M. Cleef R. Jaramillo-M
 Antoine M. Cleef R. Jaramillo - M.	Antoine M. Cleef R. Jaramillo	M.
-Antoine M. Cleef Tomas v. d. Hammen	Antoine M. Cleef Tomas Hammen
+Antoine M. Cleef Tomas v. d. Hammen	Antoine M. Cleef Tomas v. d. Hammen
 Antoine M. Cleef Tomas van der Hammen	Antoine M. Cleef Tomas van der Hammen
 Antoine M.Cleef	Antoine M. Cleef
 Antoine M.Cleef R. Jaramillo-M.	Antoine M. Cleef R. Jaramillo-M
@@ -1542,7 +1542,7 @@ Anton Heinrichs Meneses et al.	Anton Heinrichs Meneses
 Anton Heinrichs Mueller	Anton Heinrichs Mueller
 Anton Heinrichs Müller	Anton Heinrichs Müller
 Anton Mayer	Anton Mayer
-Anton Mayer und Franz Petzi	Anton Mayer und Franz Petzi
+Anton Mayer und Franz Petzi	Anton Mayer	Franz Petzi
 Antonio	Antonio
 Antonio, T.M. (no. 3853 )	T.M. Antonio
 Antonow, A.	A. Antonow
@@ -1710,7 +1710,7 @@ Arnim de	Arnim
 Arnold	Arnold
 Arnold & illegible	Arnold
 Arnold & Rieber	Arnold	Rieber
-Arnold in Hb. Zschacke	Arnold in Hb. Zschacke
+Arnold in Hb. Zschacke	Arnold
 Arnold, F.C.G.	F.C.G. Arnold
 Arnold, F.C.G. (no. 901)	F.C.G. Arnold
 Arnold, G.	G. Arnold
@@ -1913,7 +1913,7 @@ August Friedrich Schwarz	August Friedrich Schwarz
 August Fürnrohr	August Fürnrohr
 August Ried	August Ried
 August Schwarz	August Schwarz
-August und Otto Fürnrohr	August und Otto Fürnrohr
+August und Otto Fürnrohr	August	Otto Fürnrohr
 August Vill	August Vill
 Augustinowicz, T.M.	T.M. Augustinowicz
 Augustinowicz,T.M.	T.M. Augustinowicz
@@ -1956,7 +1956,7 @@ Avetisjan,V., Gabrieljan,E., Tamanian,K. & al.	V. Avetisjan	E. Gabrieljan	K. Tam
 Avetisjan,V., Gabrieljan,N. & al.	V. Avetisjan	N. Gabrieljan	Al
 Avetta,Q.	Q. Avetta
 Avjetijezs,V.	V. Avjetijezs
-Awasthi in herb. V. J. Grummann	Awasthi V. J. Grummann
+Awasthi in herb. V. J. Grummann	Awasthi
 Awasthi,D.D.	D.D. Awasthi
 Axbepgob	Axbepgob
 Axelrod,F.	F. Axelrod
@@ -2074,10 +2074,10 @@ B. Mies	B. Mies
 B. Nelson	B. Nelson
 B. O .van Zanten	
 B. O. Daramola	B.O. Daramola
-B. O. v. Zanten	B.O. Zanten
-B. O. v. Zanten J. Aguirre C. S. R. Gradstein	B.O. Zanten J. Aguirre C. S. R. Gradstein
-B. O. v. Zanten J. Aguirre C. S. R. Gradstein & E. Linares	B.O. Zanten J. Aguirre C. S. R. Gradstein	E. Linares
-B. O. v. Zanten S. R. Gradstein	B.O. Zanten S. R. Gradstein
+B. O. v. Zanten	B.O. v. Zanten
+B. O. v. Zanten J. Aguirre C. S. R. Gradstein	B.O. v. Zanten J. Aguirre C. S. R. Gradstein
+B. O. v. Zanten J. Aguirre C. S. R. Gradstein & E. Linares	B.O. v. Zanten J. Aguirre C. S. R. Gradstein	E. Linares
+B. O. v. Zanten S. R. Gradstein	B.O. v. Zanten S. R. Gradstein
 B. O. van Zanten	B.O. van Zanten
 B. O. van Zanten Groen Ringe	B.O. van Zanten Groen Ringe
 B. O. van Zanten Groen Ringenaldus	B.O. van Zanten Groen Ringenaldus
@@ -2110,7 +2110,7 @@ B. R. Ramírez P., M. S. González & M. E. Solarte	P. B. R. Ramírez	M.S. Gonzá
 B. R. Ramírez P., M. S. González, L. E. Arcos & F. Montenegro	P. B. R. Ramírez	M.S. González	L.E. Arcos	F
 B. Ruthsatz	B. Ruthsatz
 B. Schiemann	B. Schiemann
-B. Schiemann in herb. V. J. Grummann	B. Schiemann V. J. Grummann
+B. Schiemann in herb. V. J. Grummann	B. Schiemann
 B. Sparre	B. Sparre
 B. Stein	B. Stein
 B. W. Fox	B.W. Fox
@@ -2416,7 +2416,7 @@ Balslev,H.	H. Balslev
 Balslev,H. & Boom,B.	H. Balslev	B. Boom
 Balslev,H. & J.L.Luteyn & B.Boom	H. Balslev	J.L. Luteyn	B. Boom
 Bamage	Bamage
-Bamberg in herb. V. J. Grummann	Bamberg V. J. Grummann
+Bamberg in herb. V. J. Grummann	Bamberg
 Bamberger	Bamberger
 Bamberger,A. & Schultze-Motel,P.	A. Bamberger	P. Schultze-Motel
 Bamberger,A. & Schulze-Motel,P.	A. Bamberger	P. Schulze-Motel
@@ -3093,7 +3093,7 @@ Basile	Basile
 Basset,L.	L. Basset
 Bassett Maguire	Bassett Maguire
 Bäßler, A.	A. Bäßler
-Bäßler, G. und M.	G. und M. Bäßler
+Bäßler, G. und M.	G. Bäßler	M.
 Bäßler, M.	M. Bäßler
 Bäßler, M. & K. Scharfenberg	M. Bäßler	K. Scharfenberg
 Bäßler,A.	A. Bäßler
@@ -3417,7 +3417,7 @@ Baumhae?	Baumhae
 Bäumler, J.A.	J.A. Bäumler
 Bäumler,J.A.	J.A. Bäumler
 Baur	Baur
-Baur in Hb. Zschacke	Baur in Hb. Zschacke
+Baur in Hb. Zschacke	Baur
 Baur, C.	C. Baur
 Baur, Carl	Carl Baur
 Baur, Erw.	Erw Baur
@@ -3883,7 +3883,7 @@ Beckett,J.J.	J.J. Beckett
 Beckett,J.J. & White,R.	J.J. Beckett	R. White
 Beckett,T.W.N.	T.W.N. Beckett
 Beckhaus	Beckhaus
-Beckhaus in Hb. Zschacke	Beckhaus in Hb. Zschacke
+Beckhaus in Hb. Zschacke	Beckhaus
 Beckhaus,K.F.L.	K.F.L. Beckhaus
 Beckler, H.	H. Beckler
 Beckler, H. (no. 48)	H. Beckler
@@ -4044,7 +4044,7 @@ Benkert, E.	E. Benkert
 Benkert, Huth & Richter	Benkert	Huth	Richter
 Benkert, Huth & Schm.-Seifert	Huth Benkert	Schm-Seifert
 Benkert, Klaus	Klaus Benkert
-Benkert, Th. und D.	Th und D. Benkert
+Benkert, Th. und D.	Th Benkert	D.
 Benkert, W.	W. Benkert
 Benkert, W. & D.	W. Benkert	D.
 Benkert, Waltraud	Waltraud Benkert
@@ -4221,7 +4221,7 @@ Bergendal,D.	D. Bergendal
 Berger	Berger
 Berger-Landefeldt,U.	U. Berger-Landefeldt
 Berger & Stolle	Berger	Stolle
-Berger Landefeldt in herb. V. J. Grummann	Berger Landefeldt V. J. Grummann
+Berger Landefeldt in herb. V. J. Grummann	Berger Landefeldt
 Berger, E.F.	E.F. Berger
 Berger, F.	F. Berger
 Berger, F.X.	F.X. Berger
@@ -4248,7 +4248,7 @@ Bergner, A.	A. Bergner
 Bergner,K.	K. Bergner
 Bergstrand, H. & Magnusson, H	H. Bergstrand	H. Magnusson
 Bergstrand,H. & Magnusson,H.	H. Bergstrand	H. Magnusson
-Bergström in herb. V. J. Grummann	Bergström V. J. Grummann
+Bergström in herb. V. J. Grummann	Bergström
 Berhaut, J.R. (no. 5935)	J.R. Berhaut
 Berhaut, J.R. (no. 6479)	J.R. Berhaut
 Berhaut, J.R. (no. 6820)	J.R. Berhaut
@@ -4339,7 +4339,7 @@ Berry,P.E., Romero,G.A. & Brako,L.	P.E. Berry	G.A. Romero	L. Brako
 Bertau, Michael	Michael Bertau
 Bertero	Bertero
 Bertero ?	Bertero
-Bertero in herb. G. Follmann	Bertero G. Follmann
+Bertero in herb. G. Follmann	Bertero
 Bertero, C.G. (no. s.n.)	C.G. Bertero
 Bertero, C.L.G	C.L.G. Bertero
 Bertero, C.L.G (no. 1189)	C.L.G. Bertero
@@ -4579,7 +4579,7 @@ Bertsch,K.	K. Bertsch
 Bertschinger,A.	A. Bertschinger
 Bertuch,F.J.	F.J. Bertuch
 Bery,H. von	H. von Bery
-Beschel in herb. V. J. Grummann	Beschel V. J. Grummann
+Beschel in herb. V. J. Grummann	Beschel
 Beske	Beske
 Besse,M.	M. Besse
 Besser	Besser
@@ -4630,7 +4630,7 @@ Beutler,D.	D. Beutler
 Bevan,T.	T. Bevan
 Bews,J.W.	J.W. Bews
 Beyer	Beyer
-Beyer in herb. V. J. Grummann	Beyer V. J. Grummann
+Beyer in herb. V. J. Grummann	Beyer
 Beyer Renker	Beyer Renker
 Beyer, Th.	Th Beyer
 Beyer,J.W.F.	J.W.F. Beyer
@@ -5520,7 +5520,7 @@ Bornemann	Bornemann
 Bornemann,J.G.	J.G. Bornemann
 Bornemann,V.	V. Bornemann
 Bornkamm	Bornkamm
-Bornkamm in herb. V. J. Grummann	Bornkamm V. J. Grummann
+Bornkamm in herb. V. J. Grummann	Bornkamm
 Bornkamm,R.	R. Bornkamm
 Bornmüller	Bornmüller
 BORNMÜLLER	Bornmüller
@@ -7064,7 +7064,7 @@ C. Ehrenberg	C. Ehrenberg
 C. F. Appun	C.F. Appun
 C. F. Baker	C.F. Baker
 C. F. E. Erichsen	C.F.E. Erichsen
-C. F. E. Erichsen in herb. V. J. Grummann	C. F. E. Erichsen V. J. Grummann
+C. F. E. Erichsen in herb. V. J. Grummann	C.F.E. Erichsen
 C. F. L. Regel	C.F.L. Regel
 C. F. Lessing	C.F. Lessing
 C. F. P. Martius	C.F.P. Martius
@@ -7702,7 +7702,7 @@ Cerén,G. & Rodríguez,D.	G. Cerén	D. Rodríguez
 Cerneva,Z. & Ivanova,P.	Z. Cerneva	P. Ivanova
 Černoch,F.	F. Černoch
 Černoch,F. & Montserrat,P.	F. Černoch	P. Montserrat
-Černohorský in herb. V. J. Grummann	Černohorský V. J. Grummann
+Černohorský in herb. V. J. Grummann	Černohorský
 Cerón,C.E.	C.E. Cerón
 Cerón,C.E., Neill,D. & Palacios,W.	C.E. Cerón	D. Neill	W. Palacios
 Certa G., Schimmenti,E. & Scafidi,G.	G. Certa	E. Schimmenti	G. Scafidi
@@ -7726,7 +7726,7 @@ Cetina,I.	I. Cetina
 cf. Hoppe	CF. Hoppe
 cf. Necker	CF. Necker
 Ch. d´ Alleighette	Ch d' Alleighette
-Ch. d’Alleizette in herb. V. J. Grummann	Ch V. J. Grummann
+Ch. d’Alleizette in herb. V. J. Grummann	Ch d’Alleizette
 Ch. Daute	Ch Daute
 Ch. Printzen	Ch Printzen
 Ch. Scheidegger & J.-L. Pfund	Ch Scheidegger	J.-L. Pfund
@@ -8240,7 +8240,7 @@ Clark, L.G.	L.G. Clark
 Clark, W.W. (no. FB 1073)	W.W. Clark
 Clark,J.L. & Kapan,D.	J.L. Clark	D. Kapan
 Clark,O.M.	O.M. Clark
-Clarke in herb. V. J. Grummann	Clarke V. J. Grummann
+Clarke in herb. V. J. Grummann	Clarke
 Clarke, C.B. (no. 10702 B)	C.B. Clarke
 Clarke, C.B. (no. 10832 B)	C.B. Clarke
 Clarke, C.B. (no. 10875 C)	C.B. Clarke
@@ -8356,7 +8356,7 @@ Cleef Kapelle	Cleef Kapelle
 Cleef Kappelle	Cleef Kappelle
 Cleef Uribe-U.	Cleef Uribe-U
 Cleef Uribe U.	U. Cleef Uribe
-Cleef v. d. Hammen	Cleef Hammen
+Cleef v. d. Hammen	Cleef v. d. Hammen
 Cleef van der Hammen	Cleef van der Hammen
 CLEEF, A.	A. Cleef
 Cleef, A. Delgadillo M., C.	A. Delgadillo M. Cleef	C.
@@ -9081,7 +9081,7 @@ Crespo,M.B.	M.B. Crespo
 Creswell	Creswell
 Creswell,C.F.	C.F. Creswell
 Cretz	Cretz
-Cretzoiu in herb. V. J. Grummann	Cretzoiu V. J. Grummann
+Cretzoiu in herb. V. J. Grummann	Cretzoiu
 Cretzoiu,P.	P. Cretzoiu
 Cretzoiu,P. & Papp,C.	P. Cretzoiu	C. Papp
 Creutzburg,O.	O. Creutzburg
@@ -9272,7 +9272,7 @@ Cuervo	Cuervo
 Cuezzo,A.R. & Barkley,F.	A.R. Cuezzo	F. Barkley
 Cufodonti,G.	G. Cufodonti
 Cufodontis,G.	G. Cufodontis
-Culberson in herb. V. J. Grummann	Culberson V. J. Grummann
+Culberson in herb. V. J. Grummann	Culberson
 Culberton,J.D.	J.D. Culberton
 Culbertson,J.D.	J.D. Culbertson
 Culmann,P.	P. Culmann
@@ -9790,7 +9790,7 @@ D. Spellman Dwyer Vaughan, Wunderlin	D. Spellman Dwyer Vaughan	Wunderlin
 D. Spellman Dwyer Vaughn, Wunderlin	D. Spellman Dwyer Vaughn	Wunderlin
 D. Sucre	D. Sucre
 D. Thiele	D. Thiele
-D. Thiele in herb. V. J. Grummann	D. Thiele V. J. Grummann
+D. Thiele in herb. V. J. Grummann	D. Thiele
 D. Toren M. Bourell	D. Toren M. Bourell
 D. Triebel	D. Triebel
 D. Verdon	D. Verdon
@@ -9903,7 +9903,7 @@ DAMBOLDT
 Damboldt,J.	J. Damboldt
 Damboldt,J. & Meyer	J. Damboldt	Meyer
 Damboldt,J., Markgraf,F. & Pieper	J. Damboldt	F. Markgraf	Pieper
-Dämel in herb. V. J. Grummann	Dämel V. J. Grummann
+Dämel in herb. V. J. Grummann	Dämel
 Dämel,E.	E. Dämel
 Damman	Damman
 Dammann	Dammann
@@ -11611,7 +11611,7 @@ Donner,N.N.	N.N. Donner
 Donth, K.-H.	K.-H. Donth
 Doostmohammadi, M.	M. Doostmohammadi
 Dopennequet	Dopennequet
-Dopp in herb. V. J. Grummann	Dopp V. J. Grummann
+Dopp in herb. V. J. Grummann	Dopp
 Doppelbaur	Doppelbaur
 Doppelbaur, H. (no. 13895)	H. Doppelbaur
 Doppelbaur, H.W.	H.W. Doppelbaur
@@ -11696,7 +11696,7 @@ Dr. Behrendsen	Behrendsen
 Dr. C. Hegetschweiler	C. Hegetschweiler
 Dr. C. O. Harz	C.O. Harz
 Dr. Doellinger jun.	Doellinger Jun
-Dr. Domke in herb. V. J. Grummann	Domke V. J. Grummann
+Dr. Domke in herb. V. J. Grummann	Domke
 Dr. Dörnig	Dörnig
 Dr. Draeger	Draeger
 Dr. Forster	Forster
@@ -11704,7 +11704,7 @@ Dr. Förster	Förster
 Dr. Fr. Junghuhn	Fr Junghuhn
 Dr. Fr. Wilms	Fr Wilms
 Dr. G. Lettau	G. Lettau
-Dr. G. Moesz in herb. V. J. Grummann	G. Moesz V. J. Grummann
+Dr. G. Moesz in herb. V. J. Grummann	G. Moesz
 Dr. G. Winter	G. Winter
 Dr. Gerhard Neuwirth	Gerhard Neuwirth
 Dr. Griewa...	Griewa
@@ -11731,10 +11731,10 @@ Dr. Rehm	Rehm
 Dr. Röpli?	Röpli
 Dr. Sauter	Sauter
 Dr. Schade	Schade
-Dr. Schade und Stolle	Schade und Stolle
+Dr. Schade und Stolle	Schade	Stolle
 Dr. Schwaab	Schwaab
 Dr. Stoliczka	Stoliczka
-Dr. Stoll. Greifswald in herb. V. J. Grummann	Stoll Greifswald V. J. Grummann
+Dr. Stoll. Greifswald in herb. V. J. Grummann	Stoll Greifswald
 Dr. U. Dzae Duk	U. Dzae Duk
 Dr. Utsch	Utsch
 Dr. W. Ahles	W. Ahles
@@ -11933,7 +11933,7 @@ Drége,J.F.	J.F. Drége
 Drège,J.F.	J.F. Drège
 Drège,J.F. & Zeyher,C.L.P.	J.F. Drège	C.L.P. Zeyher
 Drège,J.F. ?	J.F. Drège
-Dreger in herb. V. J. Grummann	Dreger V. J. Grummann
+Dreger in herb. V. J. Grummann	Dreger
 Drehwald	Drehwald
 Drehwald Mues	Drehwald Mues
 Drehwald, M. E. Drehwald, U.	M.E. Drehwald	U. Drehwald
@@ -12382,10 +12382,10 @@ E. E. Carr 13718	E.E. Carr
 E. E. Maire	E.E. Maire
 E. Eichhorn	E. Eichhorn
 E. Eitner	E. Eitner
-E. Eitner in Hb. Ed. Frey	E. Eitner in Hb. Ed. Frey
-E. Eitner in Hb. Zschacke	E. Eitner in Hb. Zschacke
+E. Eitner in Hb. Ed. Frey	E. Eitner
+E. Eitner in Hb. Zschacke	E. Eitner
 E. Erdner	E. Erdner
-E. Erdner und W. Gugler	E. Erdner und W. Gugler
+E. Erdner und W. Gugler	E. Erdner	W. Gugler
 E. Esterhuysen	E. Esterhuysen
 E. F. Constable	E.F. Constable
 E. F. Poeppig	E.F. Poeppig
@@ -12396,7 +12396,7 @@ E. Farkas et T. Pócs	E. Farkas	T. Pócs
 E. Fischer	E. Fischer
 E. Frey	E. Frey
 E. Frey & J. Poelt	E. Frey	J. Poelt
-E. Frey in herb. V. J. Grummann	E. Frey V. J. Grummann
+E. Frey in herb. V. J. Grummann	E. Frey
 E. G. B. Kieft L. Holm-Nielsen B. Lojtnant & u. Molau		U. Molau
 E. G. B. Kieft L. Holm-Nielsen B. Lojtnant, U. Molau		U. Molau
 E. G. B. Kieft L. Holm - Nielsen B. Lojtnant		Nielsen B. Lojtnant
@@ -12414,7 +12414,7 @@ E. Garcia, I. Jimenez, K. Bach	E. Garcia	I. Jimenez	K. Bach
 E. Gathorne-Hardy	E. Gathorne-Hardy
 E. Gilg	E. Gilg
 E. Gruber	E. Gruber
-E. Grummann und Trunk in herb. V. J. Grummann	E. Grummann V. J. Grummann
+E. Grummann und Trunk in herb. V. J. Grummann	E. Grummann	Trunk
 E. H. G. Ule	E.H.G. Ule
 E. H. G. Ule & G. H. E. W. Hieronymus	E.H.G. Ule	G.H.E.W. Hieronymus
 E. H. Snethlage	E.H. Snethlage
@@ -12435,7 +12435,7 @@ E. J. N. & H. M. Hensen	E.J.N. Hensen	H.M. Hensen
 E. Jacobsen	E. Jacobsen
 E. Jacobson	E. Jacobson
 E. Jäger	E. Jäger
-E. Janke in Herb. Leuckert	E. Janke in Herb. Leuckert
+E. Janke in Herb. Leuckert	E. Janke
 E. Jensen	E. Jensen
 E. Judziewicz R. Liesner	E. Judziewicz R. Liesner
 E. K. Naoni	E.K. Naoni
@@ -12456,7 +12456,7 @@ E. Leunos-Michel	E. Leunos-Michel
 E. Lewis-Michel	E. Lewis-Michel
 E. Linares C.  S. P. Churchill	
 E. Linares J. Aguirre C. S. R. Gradstein	
-E. Linares J. Aguirre C. S. R. Gradstein & B. O. v. Zanten		B.O. Zanten
+E. Linares J. Aguirre C. S. R. Gradstein & B. O. v. Zanten		B.O. v. Zanten
 E. Linares J. Aguirre Gradstein	E. Linares J. Aguirre Gradstein
 E. Linares J. Aguirre S. R. Gradstein	
 E. Linares J. Aguirre S. R. Gradstein & B. O. van Zanten		B.O. van Zanten
@@ -12481,7 +12481,7 @@ E. M. Zardini R. Oren
 E. Martínez S. A. Márquez G Urquijo & M. Ramírez	E. Martínez S. A. Márquez G. Urquijo	M. Ramírez
 E. Mayor	E. Mayor
 E. Monguillon	E. Monguillon
-E. Monguillon in Hb. Zschacke?	E. Monguillon in Hb. Zschacke
+E. Monguillon in Hb. Zschacke?	E. Monguillon
 E. Mullins	E. Mullins
 E. Nitschke	E. Nitschke
 E. Nyman	E. Nyman
@@ -12494,7 +12494,7 @@ E. P. Vrang	E.P. Vrang
 E. Petit	E. Petit
 E. Peveling	E. Peveling
 E. Potzdal	E. Potzdal
-E. Prager in herb. V. J. Grummann	E. Prager V. J. Grummann
+E. Prager in herb. V. J. Grummann	E. Prager
 E. Prinke	E. Prinke
 E. Pritzel	E. Pritzel
 E. Pritzler	E. Pritzler
@@ -12526,15 +12526,15 @@ E. Sérusiaux et D. Wessels	E. Sérusiaux	D. Wessels
 E. Sérusiaux et F. Rose	E. Sérusiaux	F. Rose
 E. Simonis & I. Cordeiro	E. Simonis	I. Cordeiro
 E. Stolle	E. Stolle
-E. Stolle in herb. V. J. Grummann	E. Stolle V. J. Grummann
+E. Stolle in herb. V. J. Grummann	E. Stolle
 E. T. Heyde & E. Lux	E.T. Heyde	E. Lux
-E. Th. Fröde in herb. V. J. Grummann	E. Th Fröde V. J. Grummann
+E. Th. Fröde in herb. V. J. Grummann	E. Th Fröde
 E. Timdal	E. Timdal
-E. Twachtmann in herb. V. J. Grummann	E. Twachtmann V. J. Grummann
+E. Twachtmann in herb. V. J. Grummann	E. Twachtmann
 E. Ule	E. Ule
 E. ULE	E. Ule
-E. v. Raab-Straube	E. Raab-Straube
-E. v. Raab-Straube, M. Smalla & H. Sun	E. Raab-Straube	M. Smalla	H. Sun
+E. v. Raab-Straube	E. v. Raab-Straube
+E. v. Raab-Straube, M. Smalla & H. Sun	E. v. Raab-Straube	M. Smalla	H. Sun
 E. Vaihinger	E. Vaihinger
 E. Vainio	E. Vainio
 E. Vallentin	E. Vallentin
@@ -13552,11 +13552,11 @@ Eder,M.	M. Eder
 Edit Farkas	Edit Farkas
 Edit Farkas et A. Vězda	Edit Farkas	A. Vězda
 Edit Farkas, Zuzana Kyselová et A. Vězda	Edit Farkas	Zuzana Kyselová	A. Vězda
-Edith in herb. V. J. Grummann	Edith V. J. Grummann
+Edith in herb. V. J. Grummann	Edith
 Edlich,F.	F. Edlich
 Edmondson,J.R. & McClintock,M.A.S.	J.R. Edmondson	M.A.S. McClintock
 Eduard u. Jos. Kraenzle	Eduard Jos. Kraenzle
-Eduard und Josef Kraenzle	Eduard und Josef Kraenzle
+Eduard und Josef Kraenzle	Eduard	Josef Kraenzle
 Edwall,G.	G. Edwall
 Edwards	Edwards
 Edwards, D. (no. 2458)	D. Edwards
@@ -13899,7 +13899,7 @@ Eichenfeld de	Eichenfeld
 Eichenfeld,Michael Ritter von	von Michael Eichenfeld	Ritter
 Eichhorn	Eichhorn
 Eichhorn u. Sack	Eichhorn Sack
-Eichhorn und Sack	Eichhorn und Sack
+Eichhorn und Sack	Eichhorn	Sack
 Eichhorn, Eugen	Eugen Eichhorn
 Eichinger	Eichinger
 Eichler	Eichler
@@ -13981,7 +13981,7 @@ Elbert	Elbert
 Elbert,J.	J. Elbert
 Elborne, S.	S. Elborne
 Elborne,S.	S. Elborne
-Elenkin in herb. V. J. Grummann	Elenkin V. J. Grummann
+Elenkin in herb. V. J. Grummann	Elenkin
 Elfman	Elfman
 Elfstrand,Marten	Marten Elfstrand
 Elfving	Elfving
@@ -14015,7 +14015,7 @@ Ellenberg	Ellenberg
 ELLENBERG	
 Ellenberg,H.	H. Ellenberg
 Ellery	Ellery
-Elli Grummann in herb. V. J. Grummann	Elli Grummann V. J. Grummann
+Elli Grummann in herb. V. J. Grummann	Elli Grummann
 Elliot, H.H.	H.H. Elliot
 Elliot,G.F.S.	G.F.S. Elliot
 Elliott	Elliott
@@ -14596,7 +14596,7 @@ Eric Steen Hansen	Eric Steen Hansen
 Eric Steen Hansen & Emilie Hansen	Eric Steen Hansen	Emilie Hansen
 Eric Steen Hansen & Lui Hansen	Eric Steen Hansen	Lui Hansen
 Erica Heinrichs	Erica Heinrichs
-Erich Schmid in Herb. O. Behr	Erich Schmid in Herb. O. Behr
+Erich Schmid in Herb. O. Behr	Erich Schmid
 Erichsen	Erichsen
 Erichsen,C.F.E.	C.F.E. Erichsen
 Erichsen,F.	F. Erichsen
@@ -14632,13 +14632,13 @@ Ern,H., Leuenberger,B.E., Scholz,H. & Schwarz,W.	H. Ern	B.E. Leuenberger	H. Scho
 Ern,H., Leuenberger,B.E., Scholz,H., Scholz,U. & Schwarz,W.	H. Ern	B.E. Leuenberger	H. Scholz	U. Scholz	W. Schwarz
 Ern,H., Raddatz,M., Royl,E. & Wiechert	H. Ern	M. Raddatz	E. Royl	Wiechert
 Ern,H., Royl,E. & Wiechert	H. Ern	E. Royl	Wiechert
-Erna Recoleng in herb. V. J. Grummann	Erna Recoleng V. J. Grummann
+Erna Recoleng in herb. V. J. Grummann	Erna Recoleng
 Ernest Stuebner	Ernest Stuebner
 Ernst	Ernst
-Ernst Dröge in herb. V. J. Grummann	Ernst Dröge V. J. Grummann
+Ernst Dröge in herb. V. J. Grummann	Ernst Dröge
 Ernst Hartmann	Ernst Hartmann
 Ernst Kaufmann	Ernst Kaufmann
-Ernst Kaufmann und Carl Semler	Ernst Kaufmann und Carl Semler
+Ernst Kaufmann und Carl Semler	Ernst Kaufmann	Carl Semler
 Ernst Leher	Ernst Leher
 Ernst, A.	A. Ernst
 Ernst,A.	A. Ernst
@@ -14864,7 +14864,7 @@ Eula Whitehouse	Eula Whitehouse
 Eurell, J.	J. Eurell
 Euren,D.	D. Euren
 Eva Barreno et A. Vězda	Eva Barreno	A. Vězda
-Evans in herb. V. J. Grummann	Evans V. J. Grummann
+Evans in herb. V. J. Grummann	Evans
 Evans, A. (no. 55)	A. Evans
 Evans,A.W.	A.W. Evans
 Evans,K. & Cruse,J.	K. Evans	J. Cruse
@@ -14930,13 +14930,13 @@ F. A. Stafleu	F.A. Stafleu
 F. A. Villanueva	F.A. Villanueva
 F. A. Werner & S. Vega	F.A. Werner	S. Vega
 F. Arnold	F. Arnold
-F. Arnold in herb. V. J. Grummann	F. Arnold V. J. Grummann
+F. Arnold in herb. V. J. Grummann	F. Arnold
 F. Berger	F. Berger
 F. Berger, G. Neuwirth, F. Priemetzhofer & R. Türk	F. Berger	G. Neuwirth	F. Priemetzhofer	R. Türk
 F. Blechschmidt et J. Schuler	F. Blechschmidt	J. Schuler
 F. Bohlmann	F. Bohlmann
 F. Bredemeyer	F. Bredemeyer
-F. Brosch in herb. V. J. Grummann	F. Brosch V. J. Grummann
+F. Brosch in herb. V. J. Grummann	F. Brosch
 F. Brusse	F. Brusse
 F. C. Hoehne	F.C. Hoehne
 F. C. Lehmann	F.C. Lehmann
@@ -14952,7 +14952,7 @@ F. Demaret	F. Demaret
 F. Deppe	F. Deppe
 F. Deppe & C. J. W. Schiede	F. Deppe	C.J.W. Schiede
 F. Erichsen	F. Erichsen
-F. Erichsen in Herb. Zschacke	F. Erichsen in Herb. Zschacke
+F. Erichsen in Herb. Zschacke	F. Erichsen
 F. F. Schickendantz	F.F. Schickendantz
 F. Felippone	F. Felippone
 F. Foriss	F. Foriss
@@ -14962,7 +14962,7 @@ F. G. Herrenkohl	F.G. Herrenkohl
 F. H. Endert	F.H. Endert
 F. Habib	F. Habib
 F. Hall	F. Hall
-F. Hardt in herb. V. J. Grummann	F. Hardt V. J. Grummann
+F. Hardt in herb. V. J. Grummann	F. Hardt
 F. Hermann	F. Hermann
 F. Herrera	F. Herrera
 F. Hosseini	F. Hosseini
@@ -14987,8 +14987,8 @@ F. M. Pagán	F.M. Pagán
 F. M. R. Leprieur	F.M.R. Leprieur
 F. Markgraf	F. Markgraf
 F. Mattick	F. Mattick
-F. Mattick in herb. V. J. Grummann	F. Mattick V. J. Grummann
-F. Mayr und K. Rubner	F. Mayr und K. Rubner
+F. Mattick in herb. V. J. Grummann	F. Mattick
+F. Mayr und K. Rubner	F. Mayr	K. Rubner
 F. Miranda	F. Miranda
 F. Müller	F. Müller
 F. Nunez	F. Nunez
@@ -15018,7 +15018,7 @@ F. Sellow & A. F. M. Glaziou	F. Sellow	A.F.M. Glaziou
 F. Silverspan	F. Silverspan
 F. Specht	F. Specht
 F. SPECHT	F. Specht
-F. v. Mueller	F. Mueller
+F. v. Mueller	F. v. Mueller
 F. Ventura	F. Ventura
 F. Ventura A.	A. F. Ventura
 F. Verdoorn	F. Verdoorn
@@ -15041,7 +15041,7 @@ F.E. Davies; P. Ollerenshaw	F.E. Davies	P. Ollerenshaw
 F.E. Davies; P. Ollerenshaw; R. Burns	F.E. Davies	P. Ollerenshaw	R. Burns
 F.L. Sautermeister	F.L. Sautermeister
 F.Mueller	F. Mueller
-F.O. Westerberg in herb. V. J. Grummann	F. O. Westerberg V. J. Grummann
+F.O. Westerberg in herb. V. J. Grummann	F.O. Westerberg
 F.R.Fosberg	F.R. Fosberg
 F.R.R. Schlechter	F.R.R. Schlechter
 F.S.	F.S.
@@ -15053,7 +15053,7 @@ Faber, F.C. von	F.C. von Faber
 Faber,E.	E. Faber
 Faber,K.	K. Faber
 Fabri,R.	R. Fabri
-Fabrizio Scarabino & Christian Clavijo in hb. Osorio	Fabrizio Scarabino	Christian Clavijo Osorio
+Fabrizio Scarabino & Christian Clavijo in hb. Osorio	Fabrizio Scarabino	Christian Clavijo
 Fabrizio Scarabino & Christian Clavijo jn hb. Osorio	Fabrizio Scarabino	Christian Clavijo Osorio
 Fabry,J.	J. Fabry
 Fábry,J.	J. Fábry
@@ -15375,7 +15375,7 @@ Fernández Casas,J. et al.	J. Fernández Casas
 Fernández Casas,J. Nava,H. & Susanna,A.	J. Nava Fernández Casas	H.	A. Susanna
 Fernández Casas,J., Munoz Garmendia,F., Susanna,A. & Telleria,M.T.	J. Fernández Casas	F. Munoz Garmendia	A. Susanna	M.T. Telleria
 Fernandez Diez,F.J.	F.J. Fernandez Diez
-Fernandez in Hb. Follmann	Fernandez in Hb. Follmann
+Fernandez in Hb. Follmann	Fernandez
 Fernández, A.	A. Fernández
 Fernández, A. (no. 7535)	A. Fernández
 Fernandez,C.	C. Fernandez
@@ -15855,7 +15855,7 @@ Flores,J., Montalvo,E.A., Reyna de Aguilar,M.L. & Calderón,M.	J. Flores	E.A. Mo
 Flores,K. & Carranza,N.	K. Flores	N. Carranza
 Floret, J.J.	J.J. Floret
 Flörke	Flörke
-Flörke in Hb. Zschacke	Flörke in Hb. Zschacke
+Flörke in Hb. Zschacke	Flörke
 Flörke, Heinrich G	Heinrich G. Flörke
 Flörke,H.G.	H.G. Flörke
 Florschuetz	Florschuetz
@@ -15875,7 +15875,7 @@ Florschütz, P. A. Florschütz, J.	P.A. Florschütz	J. Florschütz
 Florschütz, P. A. Maas, P. J. M.	P.A. Florschütz	P.J.M. Maas
 Florschütz,J.	J. Florschütz
 Flößner	Flößner
-Flössner in herb. V. J. Grummann	Flössner V. J. Grummann
+Flössner in herb. V. J. Grummann	Flössner
 Flößner,W.	W. Flößner
 Flöter,D.	D. Flöter
 Floto, F.	F. Floto
@@ -15972,7 +15972,7 @@ Forero,E., Jaramillio M.,R. & Forero R.,Alba L.	E. Forero	M. Jaramillio	R.	R. Fo
 Forero,E., Jaramillo, M., Alba; L. & Forero, R.	E. Forero	M. Jaramillo	Alba	L.	R. Forero
 Forestier, de	Forestier
 Foret	Foret
-Fóriss in herb. V. J. Grummann	Fóriss V. J. Grummann
+Fóriss in herb. V. J. Grummann	Fóriss
 Forkert	Forkert
 Förmer	Förmer
 FOROUGHI	
@@ -16223,7 +16223,7 @@ Fr Sennen	Sennen
 Fr. Arnoldo	Arnoldo
 Fr. Hazslinszky	Hazslinszky
 Fr. K. Rubner	K. Rubner
-Fr. Kerner v. Marilaun	Kerner Marilaun
+Fr. Kerner v. Marilaun	Kerner v. Marilaun
 Fr. Kudorfer	Kudorfer
 fr. M. Arnoldo	M. Arnoldo
 Fr. MARC	Marc
@@ -16332,7 +16332,7 @@ Fraser,D.M.	D.M. Fraser
 Fraser,J.	J. Fraser
 Fraser,Johannes	Johannes Fraser
 Frau Lindae, Rothenburg/Fulda	
-Frau Zumpe in Herb. V. J. Grummann	Zumpe in Herb. V. J. Grummann
+Frau Zumpe in Herb. V. J. Grummann	Zumpe
 Fre. Hioram	Fre Hioram
 Frederich,A.	A. Frederich
 Fredriksson,E.	E. Fredriksson
@@ -16806,7 +16806,7 @@ G. Davidse G Herrera Ch. R. H. Warner	G. Davidse G. Herrera Ch R. H. Warner
 G. Davidse G. Herrera	G. Davidse G. Herrera
 G. Davidse G. Herrera Ch. & R. H. Warner		R.H. Warner
 G. Davidse G. Herrera Ch. M. H. Grayum	
-G. Davidse G. Herrera Ch. und M.H. Grayum	
+G. Davidse G. Herrera Ch. und M.H. Grayum		M.H. Grayum
 G. Davidse G. Herrera M. H. Gayum	
 G. Davidse G. Herrera M. H. Grayum	
 G. Davidse G. Herrera R. H. Warner	
@@ -16835,8 +16835,8 @@ G. F. de Witte	G.F. de Witte
 G. Fenzel	G. Fenzel
 G. Feurich	G. Feurich
 G. Fischer	G. Fischer
-G. Fischer und K. E. Harz	G. Fischer und K. E. Harz
-G. Fischer und K. Harz	G. Fischer und K. Harz
+G. Fischer und K. E. Harz	G. Fischer	K.E. Harz
+G. Fischer und K. Harz	G. Fischer	K. Harz
 G. Fischer, Sa Dat fraglich	G. Fischer	Sa Dat Fraglich
 G. Follmann	G. Follmann
 G. FOLLMANN	G. Follmann
@@ -16870,7 +16870,7 @@ G. Follmann et G. Witte	G. Follmann	G. Witte
 G. Follmann et L. Sánchez-Pinto	G. Follmann	L. Sánchez-Pinto
 G. Follmann et W. Hartberg	G. Follmann	W. Hartberg
 G. Follmann et Weisser	G. Follmann	Weisser
-G. Follmann und B. A. Follmann	G. Follmann und B. A. Follmann
+G. Follmann und B. A. Follmann	G. Follmann	B.A. Follmann
 G. Follmann, C. Hernandez-Padrón & P. Pérez de Paz	G. Follmann	C. Hernandez-Padrón	P.Pérez de Paz
 G. Follmann?	G. Follmann
 G. Foreau	G. Foreau
@@ -16904,7 +16904,7 @@ G. H. Eastman	G.H. Eastman
 G. H. H. Tate	G.H.H. Tate
 G. H. Schwabe	G.H. Schwabe
 G. H. von Langsdorff	G.H. von Langsdorff
-G. Haglund in herb. V. J. Grummann	G. Haglund V. J. Grummann
+G. Haglund in herb. V. J. Grummann	G. Haglund
 G. Hamel	G. Hamel
 G. Harling	G. Harling
 G. Harling G. Storm B. Storm	
@@ -16971,9 +16971,9 @@ G. le Testu	G. le Testu
 G. Le Testu	G. Le Testu
 G. Legoretta P.	P. G. Legoretta
 G. Lettau	G. Lettau
-G. Lettau in Hb. Zschacke	G. Lettau in Hb. Zschacke
-G. Lettau in herb. V. J. Grummann	G. Lettau V. J. Grummann
-G. Lettau in Herb. Zschacke	G. Lettau in Herb. Zschacke
+G. Lettau in Hb. Zschacke	G. Lettau
+G. Lettau in herb. V. J. Grummann	G. Lettau
+G. Lettau in Herb. Zschacke	G. Lettau
 G. Lettau?	G. Lettau
 G. Lindberg	G. Lindberg
 G. Lindblom	G. Lindblom
@@ -16990,7 +16990,7 @@ G. O. A. Malme	G.O.A. Malme
 G. O. K. Sainbury	G.O.K. Sainbury
 G. O. K. Sainsbury	G.O.K. Sainsbury
 G. O. Malme	G.O. Malme
-G. Öhrstedt in herb. V. J. Grummann	G.Öhrstedt V. J. Grummann
+G. Öhrstedt in herb. V. J. Grummann	G. Öhrstedt
 G. Pabst	G. Pabst
 G. Parolly	G. Parolly
 G. Peckolt	G. Peckolt
@@ -17000,7 +17000,7 @@ G. Prance et al.	G. Prance
 G. R. Hunter	G.R. Hunter
 G. Rambold	G. Rambold
 G. Riedner	G. Riedner
-G. Riedner und C. Semler	G. Riedner und C. Semler
+G. Riedner und C. Semler	G. Riedner	C. Semler
 G. Rost	G. Rost
 G. S. Bryan	G.S. Bryan
 G. S. Jenman	G.S. Jenman
@@ -17027,26 +17027,26 @@ G. Topal	G. Topal
 G. Treffer	G. Treffer
 G. Trotet	G. Trotet
 G. Troupin	G. Troupin
-G. Trunk in herb. V. J. Grummann	G. Trunk V. J. Grummann
-G. v. Reenen	G. Reenen
-G. v. Reenen A. M. Cleef	G. Reenen A. M. Cleef
-G. v. Reenen C. Schulte F.	G. Reenen C. Schulte F.
-G. v. Reenen D. Griffin	G. Reenen D. Griffin
-G. v. Reenen D. Griffin R. Gradstein	G. Reenen D. Griffin R. Gradstein
-G. v. Reenen J. Aguirre	G. Reenen J. Aguirre
-G. v. Reenen J. Aguirre C.	G. Reenen J. Aguirre C.
-G. v. Reenen J. Aguirre C. C. Schulte F.	G. Reenen J. Aguirre C. C. Schulte F.
-G. v. Reenen J. Aguirre C. E. Hoekstra	G. Reenen J. Aguirre C. E. Hoekstra
-G. v. Reenen J. Aguirre C. R. Gradstein	G. Reenen J. Aguirre C. R. Gradstein
-G. v. Reenen J. Aguirre C. Schulte F.	G. Reenen J. Aguirre C. Schulte F.
-G. v. Reenen J. Aguirre E. Hoekstra	G. Reenen J. Aguirre E. Hoekstra
-G. v. Reenen O. Rangel	G. Reenen O. Rangel
-G. v. Reenen O. Rangel A. M. Cleef	G. Reenen O. Rangel A. M. Cleef
-G. v. Reenen O. Rangel D. Griffin	G. Reenen O. Rangel D. Griffin
-G. v. Reenen R. Gradstein	G. Reenen R. Gradstein
-G. v. Reenen R. Gradstein J. Aguirre	G. Reenen R. Gradstein J. Aguirre
-G. v. Reenen R. Gradstein J. Aguirre C.	G. Reenen R. Gradstein J. Aguirre C.
-G. v. Reenen S. R. Gradstein J. Aguirre	G. Reenen S. R. Gradstein J. Aguirre
+G. Trunk in herb. V. J. Grummann	G. Trunk
+G. v. Reenen	G. v. Reenen
+G. v. Reenen A. M. Cleef	G. v. Reenen A. M. Cleef
+G. v. Reenen C. Schulte F.	G. v. Reenen C. Schulte F.
+G. v. Reenen D. Griffin	G. v. Reenen D. Griffin
+G. v. Reenen D. Griffin R. Gradstein	G. v. Reenen D. Griffin R. Gradstein
+G. v. Reenen J. Aguirre	G. v. Reenen J. Aguirre
+G. v. Reenen J. Aguirre C.	G. v. Reenen J. Aguirre C.
+G. v. Reenen J. Aguirre C. C. Schulte F.	G. v. Reenen J. Aguirre C. C. Schulte F.
+G. v. Reenen J. Aguirre C. E. Hoekstra	G. v. Reenen J. Aguirre C. E. Hoekstra
+G. v. Reenen J. Aguirre C. R. Gradstein	G. v. Reenen J. Aguirre C. R. Gradstein
+G. v. Reenen J. Aguirre C. Schulte F.	G. v. Reenen J. Aguirre C. Schulte F.
+G. v. Reenen J. Aguirre E. Hoekstra	G. v. Reenen J. Aguirre E. Hoekstra
+G. v. Reenen O. Rangel	G. v. Reenen O. Rangel
+G. v. Reenen O. Rangel A. M. Cleef	G. v. Reenen O. Rangel A. M. Cleef
+G. v. Reenen O. Rangel D. Griffin	G. v. Reenen O. Rangel D. Griffin
+G. v. Reenen R. Gradstein	G. v. Reenen R. Gradstein
+G. v. Reenen R. Gradstein J. Aguirre	G. v. Reenen R. Gradstein J. Aguirre
+G. v. Reenen R. Gradstein J. Aguirre C.	G. v. Reenen R. Gradstein J. Aguirre C.
+G. v. Reenen S. R. Gradstein J. Aguirre	G. v. Reenen S. R. Gradstein J. Aguirre
 G. Valcarvel J. Aguirre C.	C. G. Valcarvel J. Aguirre
 G. Valcavel J. Aguirre C.	C. G. Valcavel J. Aguirre
 G. van Reenen	G. van Reenen
@@ -17086,13 +17086,13 @@ G. Wagenitz, H.-J. Beug	G. Wagenitz	H.-J. Beug
 G. Waldmann	G. Waldmann
 G. Weindorfer	G. Weindorfer
 G. Weis	G. Weis
-G. Weisshuhn in herb. V. J. Grummann	G. Weisshuhn V. J. Grummann
+G. Weisshuhn in herb. V. J. Grummann	G. Weisshuhn
 G. White	G. White
 G. Wiemans	G. Wiemans
 G. Winter	G. Winter
 G. Woitschach	G. Woitschach
 G. Zenker	G. Zenker
-G. Zumfe in herb. V. J. Grummann	G. Zumfe V. J. Grummann
+G. Zumfe in herb. V. J. Grummann	G. Zumfe
 G.B. & I. Feige	G.B. Feige	I. Feige
 G.B. Feige	G.B. Feige
 G.B. Feige & S. Huneck	G.B. Feige	S. Huneck
@@ -17133,7 +17133,7 @@ Gadeceau,E.	E. Gadeceau
 Gadou,E.	E. Gadou
 Gadruschow, S.	S. Gadruschow
 Gadruschowa	Gadruschowa
-Gaecks, Berlin, in herb. V. J. Grummann	Berlin Gaecks	In herB. V. J. Grummann
+Gaecks, Berlin, in herb. V. J. Grummann	
 Gaertner	Gaertner
 Gaertner, C.F. von	C.F. von Gaertner
 Gaertner, J.	J. Gaertner
@@ -17683,7 +17683,7 @@ Gehrt, A. (no. 1031)	A. Gehrt
 Gehrt,A.	A. Gehrt
 Gehrt,A. & Hoehne,F.C.	A. Gehrt	F.C. Hoehne
 Gehrt,G.	G. Gehrt
-Geier in herb. V. J. Grummann	Geier V. J. Grummann
+Geier in herb. V. J. Grummann	Geier
 Geiger	Geiger
 Geijskes	Geijskes
 Geiling,O.	O. Geiling
@@ -18542,7 +18542,7 @@ Gossweiler, J. (no. 11423)	J. Gossweiler
 Gossweiler, J. (no. 11781)	J. Gossweiler
 Gossweiler, J. (no. 11858)	J. Gossweiler
 Gossweiler,J.	J. Gossweiler
-Gösta Kjellmert in herb. V. J. Grummann	Gösta Kjellmert V. J. Grummann
+Gösta Kjellmert in herb. V. J. Grummann	Gösta Kjellmert
 Gösta Svensson	Gösta Svensson
 Göthlin,G.	G. Göthlin
 Gotthofred	Gotthofred
@@ -19569,7 +19569,7 @@ Guèze,M., Cari,M., Cari,D., Cari,J. & Huasnay,N.	M. Guèze	M. Cari	D. Cari	J. C
 Guèze,M., Maito,A., Lero.M. & Huasnay,E.	M. Guèze	A. Maito	LeroM	E. Huasnay
 Guggisberg,A. & Mansion,G.	A. Guggisberg	G. Mansion
 Gugler	Gugler
-Gugler und Hoock	Gugler und Hoock
+Gugler und Hoock	Gugler	Hoock
 Gugler, Hoock	Hoock Gugler
 Gugler, W.	W. Gugler
 Gugler, W. u. Hoock, G.	W.u Gugler	G. Hoock
@@ -19610,7 +19610,7 @@ Guillaumin,A. & Baumann-Bodenheim,M.G.	A. Guillaumin	M.G. Baumann-Bodenheim
 Guillemé	Guillemé
 Guillemi,M.	M. Guillemi
 Guillemin	Guillemin
-Guillemin in herb. G. Follmann	Guillemin G. Follmann
+Guillemin in herb. G. Follmann	Guillemin
 Guillenn	Guillenn
 Guillermo Ibarra L. Gonzales S. Sinaca	Guillermo Ibarra L. Gonzales S. Sinaca
 Guillon, A.	A. Guillon
@@ -19763,7 +19763,7 @@ Guzmán,G.	G. Guzmán
 Guzmán,L., Amez,A., Fernandes,A. & Mercado,N.	L. Guzmán	A. Amez	A. Fernandes	N. Mercado
 Guzman,R.	R. Guzman
 Gvritishvili,M.	M. Gvritishvili
-Gyelnik in herb. V. J. Grummann	Gyelnik V. J. Grummann
+Gyelnik in herb. V. J. Grummann	Gyelnik
 Gyldenstolpe,N.	N. Gyldenstolpe
 Gyldenstolpe,N. & Gyldenstolpe,G.	N. Gyldenstolpe	G. Gyldenstolpe
 Gyllenschild	Gyllenschild
@@ -19869,7 +19869,7 @@ H. Fleming M. Fleming	H. Fleming M. Fleming
 H. Fox	H. Fox
 H. Freitag	H. Freitag
 H. Fürnrohr	H. Fürnrohr
-H. Fürnrohr und H. Poeverlein	H.Fürnrohr und H. Poeverlein
+H. Fürnrohr und H. Poeverlein	H. Fürnrohr	H. Poeverlein
 H. G. Floerke	H.G. Floerke
 H. G. Galeotti	H.G. Galeotti
 H. Gams	H. Gams
@@ -19886,7 +19886,7 @@ H. H. Allan	H.H. Allan
 H. H. Bartlett	H.H. Bartlett
 H. H. Iltis	H.H. Iltis
 H. H. Rusby	H.H. Rusby
-H. H. v. d. Werff	H.H. Werff
+H. H. v. d. Werff	H.H. v. d. Werff
 H. H. van der Werff	H.H. van der Werff
 H. H. van Werff	H.H. van Werff
 H. Haeupler	H. Haeupler
@@ -19912,7 +19912,7 @@ H. Hertel & R. Moberg	H. Hertel	R. Moberg
 H. Hertel & W. Repetzky	H. Hertel	W. Repetzky
 H. Hertel &. H. Mayrhofer	
 H. Hertel F. Oberwinkler	H. Hertel F. Oberwinkler
-H. Hertel in Hb. Buschardt	H. Hertel in Hb. Buschardt
+H. Hertel in Hb. Buschardt	H. Hertel
 H. Hertel u. B. & F. Oberwinkler	B. H. Hertel	F. Oberwinkler
 H. Hertel with H. Mayrhofer & G.J. Samuels	H. Hertel	H. Mayrhofer	G.J. Samuels
 H. Hertel& H. Ullrich	H. Hertel	H. Ullrich
@@ -19932,7 +19932,7 @@ H. Hertel, J.E. Braggins & H. Mayrhofer	H. Hertel	J.E. Braggins	H. Mayrhofer
 H. Hertel, T. Feuerer, G. Rambold, A. Schwab, D. Triebel	H. Hertel	T. Feuerer	G. Rambold	A. Schwab	D. Triebel
 H. Hirano T. Suzuki	H. Hirano T. Suzuki
 H. Hooghiemstra	H. Hooghiemstra
-H. Hooghiemstra J. v. Huis	H. Hooghiemstra J. Huis
+H. Hooghiemstra J. v. Huis	H. Hooghiemstra J. v. Huis
 H. Hooghiemstra J. van Huis	H. Hooghiemstra J. van Huis
 H. Hopman	H. Hopman
 H. Hupke	H. Hupke
@@ -19966,7 +19966,7 @@ H. Kennedy J. Pulles	H. Kennedy J. Pulles
 H. Kiguchi	H. Kiguchi
 H. Kilias	H. Kilias
 H. Kleinig	H. Kleinig
-H. Kleinig in Hb. H. Reznik	H. Kleinig in Hb. H. Reznik
+H. Kleinig in Hb. H. Reznik	H. Kleinig
 H. Koch	H. Koch
 H. Köckinger	H. Köckinger
 H. Kohn	H. Kohn
@@ -19995,7 +19995,7 @@ H. Lippold & L. Gonzales	H. Lippold	L. Gonzales
 H. Lips	H. Lips
 H. Loika	H. Loika
 H. Lojka	H. Lojka
-H. Lojka in Hb. Lettau	H. Lojka in Hb. Lettau
+H. Lojka in Hb. Lettau	H. Lojka
 H. Lorenz	H. Lorenz
 H. Magnusson	H. Magnusson
 H. Marx	H. Marx
@@ -20069,7 +20069,7 @@ H. Schindler et J. Redon	H. Schindler	J. Redon
 H. Schindler, comm. K. Kalb	H. Schindler	K. Kalb
 H. Schmidt	H. Schmidt
 H. Schuch	H. Schuch
-H. Schüller in herb. V. J. Grummann	H. Schüller V. J. Grummann
+H. Schüller in herb. V. J. Grummann	H. Schüller
 H. Shibuichi	H. Shibuichi
 H. Shibuichi & K. Yoshida	H. Shibuichi	K. Yoshida
 H. Shibuichi & M. Kiyota	H. Shibuichi	M. Kiyota
@@ -20101,9 +20101,9 @@ H. Sipman & M. López-Figueiras	H. Sipman	M. López-Figueiras
 H. Sipman & N. Mandl	H. Sipman	N. Mandl
 H. Sipman & O. Reyes	H. Sipman	O. Reyes
 H. Sipman & P.-M. Jørgensen	H. Sipman	P.-M. Jørgensen
-H. Sipman & P. & B. v.d. Boom	H. Sipman	P.	B. Boom
+H. Sipman & P. & B. v.d. Boom	H. Sipman	P.	B. v.d. Boom
 H. Sipman & P. Döbbeler	H. Sipman	P. Döbbeler
-H. Sipman & P. v.d. Boom	H. Sipman	P. Boom
+H. Sipman & P. v.d. Boom	H. Sipman	P. v.d. Boom
 H. Sipman & P. van den Boom	H. Sipman	P. van den Boom
 H. Sipman & R. Pos	H. Sipman	R. Pos
 H. Sipman & R. Welz	H. Sipman	R. Welz
@@ -20151,7 +20151,7 @@ H. Sipman, M. Mata & L. Umaña	H. Sipman	M. Mata	L. Umaña
 H. Sipman, M. Sohrabi, U. Søchting & M. R. Asef	H. Sipman	M. Sohrabi	U. Søchting	M.R. Asef
 H. Sipman, M. Sohrabi, U. Søchting & R. Zare	H. Sipman	M. Sohrabi	U. Søchting	R. Zare
 H. Sipman, Mr. & Mrs. Hollaender & J.H. Franco	
-H. Sipman, P. & B. v.d. Boom	H. Sipman	P.	B. Boom
+H. Sipman, P. & B. v.d. Boom	H. Sipman	P.	B. v.d. Boom
 H. Sipman, P. & B. van den Boom	H. Sipman	P.	B. van den Boom
 H. Sipman, P. Döbbeler & B. Hein	H. Sipman	P. Döbbeler	B. Hein
 H. Sipman, P. Döbbeler, J. Gómez-Laurito & B. Hein	H. Sipman	P. Döbbeler	J. Gómez-Laurito	B. Hein
@@ -20164,7 +20164,7 @@ H. Sipman, W. Berendsohn & D. Vásquez	H. Sipman	W. Berendsohn	D. Vásquez
 H. Sipman, W. Berendsohn & E. Sandoval	H. Sipman	W. Berendsohn	E. Sandoval
 H. Sipmann	H. Sipmann
 H. Sleumer	H. Sleumer
-H. Smith in herb. V. J. Grummann	H. Smith V. J. Grummann
+H. Smith in herb. V. J. Grummann	H. Smith
 H. Stadler	H. Stadler
 H. Streimann	H. Streimann
 H. Streimann & A. Bellamy	H. Streimann	A. Bellamy
@@ -20212,7 +20212,7 @@ H. Tsubota	H. Tsubota
 H. Tsubota Y. Yamada	H. Tsubota Y. Yamada
 H. Ullrich	H. Ullrich
 H. Ullrich & Vieth	H. Ullrich	Vieth
-H. v. d. Werff	H. Werff
+H. v. d. Werff	H. v. d. Werff
 H. Vageler	H. Vageler
 H. Valencia & T. Boekhout	H. Valencia	T. Boekhout
 H. van Bohemen	H. van Bohemen
@@ -20236,7 +20236,7 @@ H. Weiß	H. Weiß
 H. Wendland	H. Wendland
 H. Weymar	H. Weymar
 H. Willer	H. Willer
-H. Willer in Herb. H. Reznik	H. Willer in Herb. H. Reznik
+H. Willer in Herb. H. Reznik	H. Willer
 H. Willey	H. Willey
 H. Wittmann	H. Wittmann
 H. Wunder	H. Wunder
@@ -20295,7 +20295,7 @@ Haber,W. & Rojas Vásquez,R.	W. Haber	R. Rojas Vásquez
 Haber,W. & Zuchowski,W.	W. Haber	W. Zuchowski
 Haber,W., Zuchowski,W. & Luteyn,J.L.	W. Haber	W. Zuchowski	J.L. Luteyn
 Haber,W., Zuchowski,W. & Penneys,D.	W. Haber	W. Zuchowski	D. Penneys
-Habermehl in herb. V. J. Grummann	Habermehl V. J. Grummann
+Habermehl in herb. V. J. Grummann	Habermehl
 Habicht,L.	L. Habicht
 Habisch, K.	K. Habisch
 Habisch,K.	K. Habisch
@@ -20384,7 +20384,7 @@ Hagerstrom,R.C. & Boosma,C.D.	R.C. Hagerstrom	C.D. Boosma
 Hagerup,O.	O. Hagerup
 Hagger, E. (no. FB 1411)	E. Hagger
 Haglund & Killström	Haglund	Killström
-Haglund in herb. V. J. Grummann	Haglund V. J. Grummann
+Haglund in herb. V. J. Grummann	Haglund
 Haglund,E.	E. Haglund
 Haglund,E. & Haglund,A.	E. Haglund	A. Haglund
 Haglund,E. & Källström,J.	E. Haglund	J. Källström
@@ -20441,7 +20441,7 @@ Halbinger, E. (no. 329)	E. Halbinger
 Halbinger,E.	E. Halbinger
 Halbritter, V.	V. Halbritter
 Halbritter,V.	V. Halbritter
-Hale in herb. V. J. Grummann	Hale V. J. Grummann
+Hale in herb. V. J. Grummann	Hale
 Hale,M.E.	M.E. Hale
 Halenois	Halenois
 Halford,D.A.	D.A. Halford
@@ -21282,7 +21282,7 @@ Hedin, J.P.	J.P. Hedin
 Hédin,J.P.	J.P. Hédin
 Hedrén,M., Borhidi,A., Iversen,S.T. & Sebsebe,D.	M. Hedrén	A. Borhidi	S.T. Iversen	D. Sebsebe
 Hedrén,M., Kibuwa,S.P. & Pettersson,P.	M. Hedrén	S.P. Kibuwa	P. Pettersson
-Hedvall in herb. V. J. Grummann	Hedvall V. J. Grummann
+Hedvall in herb. V. J. Grummann	Hedvall
 Hedvall,J.B.	J.B. Hedvall
 Hedwig	Hedwig
 Hedwig Kitzler	Hedwig Kitzler
@@ -21299,7 +21299,7 @@ Hegelmeier & Schweinfurth,G.	Hegelmeier	G. Schweinfurth
 Hegemeister,W.	W. Hegemeister
 Hegetschw.	Hegetschw
 Hegetschweiler	Hegetschweiler
-Hegetschweiler in herb. V. J. Grummann	Hegetschweiler V. J. Grummann
+Hegetschweiler in herb. V. J. Grummann	Hegetschweiler
 Hegetschweiler,C.	C. Hegetschweiler
 Hegewald	Hegewald
 Hegewald E. Hegewald, P.	Hegewald E. Hegewald	P.
@@ -21899,7 +21899,7 @@ Herten,W.	W. Herten
 Herter	Herter
 Herter & Schulz & Strahl	Herter	Schulz	Strahl
 Herter & Strahl	Herter	Strahl
-Herter in Herb. Lettau	Herter in Herb. Lettau
+Herter in Herb. Lettau	Herter
 Herter Strahl	Herter Strahl
 Herter, Schulz & Strahl	Herter	Schulz	Strahl
 Herter, W.G.F.	W.G.F. Herter
@@ -22016,8 +22016,8 @@ Heuffel, J.A.	J.A. Heuffel
 Heuffel, J.A. (no. 191)	J.A. Heuffel
 Heuffel,J.	J. Heuffel
 Heufler	Heufler
-Heufler zu Rasen und Perdonegg,L.S.J. von	von Heufler	L.S.J. zu Rasen und Perdonegg
-Heufler zu Rasen und Perdonegg,Ludwig Samuel Joseph von	von Heufler	Zu Rasen und Perdonegg	Ludwig Samuel Joseph
+Heufler zu Rasen und Perdonegg,L.S.J. von	von Heufler	Zu Rasen	L.S.J. Perdonegg
+Heufler zu Rasen und Perdonegg,Ludwig Samuel Joseph von	von Heufler	Zu Rasen	Ludwig Samuel Joseph Perdonegg
 Heuoeff.	Heuoeff
 Heuser	Heuser
 Heuser,P.	P. Heuser
@@ -22798,7 +22798,7 @@ Hodgson,E.A.	E.A. Hodgson
 Hoe,W.J.	W.J. Hoe
 Hoefer	Hoefer
 Höeg et B. Lynge	Höeg	B. Lynge
-Hoëg in herb. V. J. Grummann	Hoëg V. J. Grummann
+Hoëg in herb. V. J. Grummann	Hoëg
 Hoehne	Hoehne
 Hoehne Gehrt	Hoehne Gehrt
 Hoehne, F.C.	F.C. Hoehne
@@ -22895,7 +22895,7 @@ HOHENACKER
 HOHENACKER (EDIT.)	Hohenacker
 HOHENACKER ?	Hohenacker
 Hohenacker ? (no. 1274)	Hohenacker
-Hohenacker, Arznei- und Handeplspflanzen (no. 24b)	Arznei- und Handeplspflanzen Hohenacker
+Hohenacker, Arznei- und Handeplspflanzen (no. 24b)	Arznei- Hohenacker	Handeplspflanzen
 Hohenacker, R.F.	R.F. Hohenacker
 Hohenacker, R.F. (no. [Pl. Ind. Or. Terr. Canara. 82])	R.F. Hohenacker
 Hohenacker, R.F. (no. 1274)	R.F. Hohenacker
@@ -23150,7 +23150,7 @@ Holmgren,N.H. & Reveal,J.L.	N.H. Holmgren	J.L. Reveal
 Holmgren,P.	P. Holmgren
 Holmgren,R.C.	R.C. Holmgren
 Holst	Holst
-Holst in herb. V. J. Grummann	Holst V. J. Grummann
+Holst in herb. V. J. Grummann	Holst
 Holst, C.	C. Holst
 Holst, C. (no. 2021)	C. Holst
 Holst, C. (no. 2026)	C. Holst
@@ -23516,7 +23516,7 @@ Hoppe,U. & Benkert,D.	U. Hoppe	D. Benkert
 Höppner	Höppner
 Höppner,H.	H. Höppner
 Hora	Hora
-Hora Vrang in herb. V. J. Grummann	Hora Vrang V. J. Grummann
+Hora Vrang in herb. V. J. Grummann	Hora Vrang
 Hora,E.	E. Hora
 Horalek	Horalek
 Hörandl,E. Hadacek,F. & Costea,G.	E. Hadacek Hörandl	F.	G. Costea
@@ -24715,7 +24715,7 @@ Ibrahim	Ibrahim
 IBRAHIM	
 Ibrahim Ammeribt	Ibrahim Ammeribt
 Ibrahim El Garf	Ibrahim El Garf
-IBRAHIM in herb. COSSON	Ibrahim Cosson
+IBRAHIM in herb. COSSON	Ibrahim
 Ickert-Bond,S.	S. Ickert-Bond
 Ickert-Bond,S., Bond,R. & Yang,K.C.	S. Ickert-Bond	R. Bond	K.C. Yang
 Ida Leiner	Ida Leiner
@@ -24787,7 +24787,7 @@ Imr.	Imr
 Imray	Imray
 IMRAY	
 Imray,J.	J. Imray
-Imshaug in herb. V. J. Grummann	Imshaug V. J. Grummann
+Imshaug in herb. V. J. Grummann	Imshaug
 Imshaug, Henry A.	Henry A. Imshaug
 Imshaug,H.A. & Harris,R.C.	H.A. Imshaug	R.C. Harris
 Imshaug,H.A. & Imshaug,F.H.	H.A. Imshaug	F.H. Imshaug
@@ -24806,7 +24806,7 @@ Inés Sastre de Jesús, S.P. Churchill & L. Atehortúa	S. P. Churchill Inés Sas
 Infantes	Infantes
 Infantes Vera,J.G.	J.G. Infantes Vera
 Infantes,J.	J. Infantes
-Ing. Hillmann in herb. V. J. Grummann	Ing Hillmann V. J. Grummann
+Ing. Hillmann in herb. V. J. Grummann	Ing Hillmann
 Inge & H. Hertel	Inge	H. Hertel
 Inglis,R.A.	R.A. Inglis
 Ingram Ferrell-Ingram	Ingram Ferrell-Ingram
@@ -24837,7 +24837,7 @@ Ireland
 Ireland, H.	
 Ireland, R. R.	
 Ireland,R.R.	
-Irene Trunk in herb. V. J. Grummann	Irene Trunk V. J. Grummann
+Irene Trunk in herb. V. J. Grummann	Irene Trunk
 Irmgard von BEERFELDE	Irmgard von Beerfelde
 Irmisch	Irmisch
 Irmisch,J.F.T.	J.F.T. Irmisch
@@ -25021,7 +25021,7 @@ J. A. Steyermark T. Koyama
 J. A. Steyermark V. C. Espinoza B. José Manara	
 J. A. Steyermark, O. Huber, V. Carreno E.	J.A. Steyermark	O. Huber	E. V. Carreno
 J. A. Streimann & H. Streimann	J.A. Streimann	H. Streimann
-J. A. Wheldon in herb. V. J. Grummann	J. A. Wheldon V. J. Grummann
+J. A. Wheldon in herb. V. J. Grummann	J.A. Wheldon
 J. A. Wurdack J. J. Wurdack	
 J. Aguierre C. S. R. Gradstein E. Santana	
 J. Aguire G. van Reenen	J. Aguire G. van Reenen
@@ -25047,7 +25047,7 @@ J. Aguirre C. S. R. Gradstein E. Cantana
 J. Aguirre C. S. R. Gradstein E. Santana	
 J. Aguirre C., J. Etayo & J.L. Fernández	C. J. Aguirre	J. Etayo	J.L. Fernández
 J. Aguirre C., S. R. Gradstein & E. Santana	C. J. Aguirre	S.R. Gradstein	E. Santana
-J. Aguirre G. v. Reenen	J. Aguirre G. Reenen
+J. Aguirre G. v. Reenen	J. Aguirre G. v. Reenen
 J. Aguirre G. van Reenen	J. Aguirre G. van Reenen
 J. Aguirre O. Rangel	J. Aguirre O. Rangel
 J. Aguirre S. R. Gradstein	
@@ -25058,13 +25058,13 @@ J. Aichinger	J. Aichinger
 J. Aiken	J. Aiken
 J. Allen W. Harvey J. Harvey	
 J. Anders	J. Anders
-J. Anders in Hb. V. J. Grummann	J. Anders in Hb. V. J. Grummann
+J. Anders in Hb. V. J. Grummann	J. Anders
 J. Arechavaleta	J. Arechavaleta
 J. B. A. P. de M. de Lamarck	J.B.A.P. Lamarck
 J. B. C. F. Aublet	J.B.C.F. Aublet
 J. B. E. Pohl	J.B.E. Pohl
 J. B. Hatcher	J.B. Hatcher
-J. B. Hedrall in Hb. V. J. Grummann	J. B. Hedrall in Hb. V. J. Grummann
+J. B. Hedrall in Hb. V. J. Grummann	J.B. Hedrall
 J. B. Jack	J.B. Jack
 J. B. L. T. Leschenault de la Tour	J. B. L. T. Leschenault de la Tour
 J. B. Lutz	J.B. Lutz
@@ -25206,7 +25206,7 @@ J. Gerlach	J. Gerlach
 J. Gerloff	J. Gerloff
 J. Gollmer	J. Gollmer
 J. Goudot	J. Goudot
-J. Grummann in herb. V. J. Grummann	J. Grummann V. J. Grummann
+J. Grummann in herb. V. J. Grummann	J. Grummann
 J. H. A. Boston	J.H.A. Boston
 J. H. Kirkbride	J.H. Kirkbride
 J. H. R. Schenck	J.H.R. Schenck
@@ -25253,9 +25253,9 @@ J. Herborg & K. Lewejohann	J. Herborg	K. Lewejohann
 J. Herborg 81/A113	J. Herborg	A
 J. Herrera Vargas & L. Vargas Mendoza	J. Herrera Vargas	L. Vargas Mendoza
 J. Hillmann	J. Hillmann
-J. Hillmann in herb. V. J. Grummann	J. Hillmann V. J. Grummann
-J. Hillmann in Herb. V. J. Grummann	J. Hillmann in Herb. V. J. Grummann
-J. Hillmann? in herb. V. J. Grummann	J. Hillmann V. J. Grummann
+J. Hillmann in herb. V. J. Grummann	J. Hillmann
+J. Hillmann in Herb. V. J. Grummann	J. Hillmann
+J. Hillmann? in herb. V. J. Grummann	J. Hillmann
 J. Hoffmann	J. Hoffmann
 J. Homeier	J. Homeier
 J. Homeier & F. Werner	J. Homeier	F. Werner
@@ -25265,16 +25265,16 @@ J. Hüffer	J. Hüffer
 J. Hyvönen	J. Hyvönen
 J. Imray	J. Imray
 J. J. Bernhardi	J.J. Bernhardi
-J. J. d Held F. A. v. Rhijn	J.J. Rhijn
-J. J. d. Held F. A. v. Rhijn	J.J. Rhijn
+J. J. d Held F. A. v. Rhijn	J.J. d Held F. A. v. Rhijn
+J. J. d. Held F. A. v. Rhijn	J.J. d. Held F. A. v. Rhijn
 J. J. den Held	J.J. den Held
-J. J. den Held  F. A. van Rhijn	J.J. Rhijn
+J. J. den Held  F. A. van Rhijn	J.J. den Held F. A. van Rhijn
 J. J. den Held F. A. Rhijn	J.J. den Held F. A. Rhijn
-J. J. den Held F. A. v. Rhijn	J.J. Rhijn
-J. J. den Held F. A. van Rhen	J.J. Rhen
-J. J. den Held F. A. van Rhijn	J.J. Rhijn
-J. J. den Held F. A. van Rijn	J.J. Rijn
-J. J. den Held F. A. vn Rhijn	J.J. Rhijn
+J. J. den Held F. A. v. Rhijn	J.J. den Held F. A. v. Rhijn
+J. J. den Held F. A. van Rhen	J.J. den Held F. A. van Rhen
+J. J. den Held F. A. van Rhijn	J.J. den Held F. A. van Rhijn
+J. J. den Held F. A. van Rijn	J.J. den Held F. A. van Rijn
+J. J. den Held F. A. vn Rhijn	J.J. den Held F. A. vn Rhijn
 J. J. Engel	J.J. Engel
 J. J. Havaas	J.J. Havaas
 J. J. Hooft	J.J. Hooft
@@ -25301,7 +25301,7 @@ J. Kohlmeyer	J. Kohlmeyer
 J. Koslowsky	J. Koslowsky
 J. Kraenzle	J. Kraenzle
 J. Kraenzle u. F. Vollmann	J. Kraenzle F. Vollmann
-J. Kraenzle und Franz Vollmann	J. Kraenzle und Franz Vollmann
+J. Kraenzle und Franz Vollmann	J. Kraenzle	Franz Vollmann
 J. Kraenzle, det. Fr. Vollmann	J. Kraenzle	Vollmann
 J. Kraenzle, Fr. Vollmann	J. Kraenzle	Vollmann
 J. Kraenzle, J. Schuster, F. Vollmann	J. Kraenzle	J. Schuster	F. Vollmann
@@ -25357,7 +25357,7 @@ J. M. Askari, Tavakoli, Noferesti	J.M. Askari	Noferesti Tavakoli
 J. M. Bekker	J.M. Bekker
 J. M. Egea	J.M. Egea
 J. M. Fernández	J.M. Fernández
-J. M. Gilbert in Hb. Bratt	J. M. Gilbert in Hb. Bratt
+J. M. Gilbert in Hb. Bratt	J.M. Gilbert
 J. M. Hildebrandt	J.M. Hildebrandt
 J. M. Idrobo & A. Fernández	J.M. Idrobo	A. Fernández
 J. M. Idrobo & R. Evans Schultes	J.M. Idrobo	R. Evans Schultes
@@ -25408,8 +25408,8 @@ J. Pócs	J. Pócs
 J. poelt	J. Poelt
 J. Poelt	J. Poelt
 J. Poelt & A. Buschardt	J. Poelt	A. Buschardt
-J. Poelt & A. Buschardt in Hb. A. Buschardt	J. Poelt	A. Buschardt in Hb. A. Buschardt
-J. Poelt & A. Buschardt in Hb. Buschardt	J. Poelt	A. Buschardt in Hb. Buschardt
+J. Poelt & A. Buschardt in Hb. A. Buschardt	J. Poelt	A. Buschardt
+J. Poelt & A. Buschardt in Hb. Buschardt	J. Poelt	A. Buschardt
 J. Poelt & A. Schröppel	J. Poelt	A. Schröppel
 J. Poelt & H. Hertel	J. Poelt	H. Hertel
 J. Poelt & H. Pittoni	J. Poelt	H. Pittoni
@@ -25423,8 +25423,8 @@ J. Poelt et H. Ullrich	J. Poelt	H. Ullrich
 J. Poelt et I. Pisút	J. Poelt	I. Pisút
 J. Poelt et J. Hafellner	J. Poelt	J. Hafellner
 J. Poelt et R. Türk	J. Poelt	R. Türk
-J. Poelt in Hb. P. Döbbeler	J. Poelt in Hb. P. Döbbeler
-J. Poelt in herb. P. Döbbeler	J. Poelt P. Döbbeler
+J. Poelt in Hb. P. Döbbeler	J. Poelt
+J. Poelt in herb. P. Döbbeler	J. Poelt
 J. Poelt, C. Scheidegger et A. Vězda	J. Poelt	C. Scheidegger	A. Vězda
 J. Poelt, M. Steiner & A. Vezda	J. Poelt	M. Steiner	A. Vezda
 J. Poelt, M. Tretiach et A. Vězda	J. Poelt	M. Tretiach	A. Vězda
@@ -25555,7 +25555,7 @@ J.D. Hooker	J.D. Hooker
 J.D. Hooker & T. Thomson	J.D. Hooker	T. Thomson
 J.D.Hooker	J.D. Hooker
 J.E. Montes	J.E. Montes
-J.E. Montes ex herb. Osorio no. 4740	
+J.E. Montes ex herb. Osorio no. 4740	J.E. Montes
 J.F. Ehrhart	J.F. Ehrhart
 J.G. Kumell	J.G. Kumell
 J.G. Schaffner	J.G. Schaffner
@@ -25564,7 +25564,7 @@ J.J. de Granville, C.C. Berg, M. Jansen-Jacobs & J. van Setten	J.J. de Granville
 J.J. de Granville, L. Allorge, W.J. Hahn & M. Hoff	J.J. de Granville	L. Allorge	W.J. Hahn	M. Hoff
 J.J. de Granville, L. Allorge, W.J. Hahn, M. Hoff & A. Weitzman	J.J. de Granville	L. Allorge	W.J. Hahn	M. Hoff	A. Weitzman
 J.J. de Granville, P. Acevedo, A. Boyer & L. Hollenberg	J.J. de Granville	P. Acevedo	A. Boyer	L. Hollenberg
-J.J. den Held F. A. van Rhijn	J.J. Rhijn
+J.J. den Held F. A. van Rhijn	J.J. den Held F. A. van Rhijn
 J.J. Pipoly & G. Gharbarran	J.J. Pipoly	G. Gharbarran
 J.J. Pipoly & H. Ameer	J.J. Pipoly	H. Ameer
 J.J. Pipoly, G. Bacchus & H. Ameer	J.J. Pipoly	G. Bacchus	H. Ameer
@@ -25741,7 +25741,7 @@ James C. Lendemer, Jessica Allen, William R. Buck and Richard C. Harris	James C.
 James C. Lendemer, Patrick Dalton and Lane Gibbons	James C. Lendemer	Patrick Dalton	Lane Gibbons
 James C. Lendemer, William Buck, Patrick Dalton, Richard Harris & Motito Angel	James C. Lendemer	William Buck	Patrick Dalton	Richard Harris	Motito Angel
 James C. Lendemer, William R. Buck, Richard C. Harris, Blanka Shaw and Jon Shaw	James C. Lendemer	William R. Buck	Richard C. Harris	Blanka Shaw	Jon Shaw
-James in Hb. Follmann	James in Hb. Follmann
+James in Hb. Follmann	James
 James K. Detling	James K. Detling
 James L. Luteyn Elvira Cotton	James L. Luteyn Elvira Cotton
 James L. Luteyn Ricardo Callejas John J. Pipoly	
@@ -26011,8 +26011,8 @@ Jishiba,E.	E. Jishiba
 Jisiba	Jisiba
 Jlic,G.	G. Jlic
 Jochen Gartz	Jochen Gartz
-Jochen Gartz und Georg Wiedemann	Jochen Gartz und Georg Wiedemann
-Jochen Gartz und Marta Semerdzieva	Jochen Gartz und Marta Semerdzieva
+Jochen Gartz und Georg Wiedemann	Jochen Gartz	Georg Wiedemann
+Jochen Gartz und Marta Semerdzieva	Jochen Gartz	Marta Semerdzieva
 Jochen Heinrichs	Jochen Heinrichs
 Jochen Heinrichs, Carsten Renker	Jochen Heinrichs	Carsten Renker
 Jochen Heinrichs, Jochen Müller	Jochen Heinrichs	Jochen Müller
@@ -26023,7 +26023,7 @@ Jochen Müller, Carsten Renker, Anke Beyer	Jochen Müller	Carsten Renker	Anke Be
 Jochen Müller, Jochen Heinrichs	Jochen Müller	Jochen Heinrichs
 Jochen Müller, Jochen Heinrichs, Carsten Renker	Jochen Müller	Jochen Heinrichs	Carsten Renker
 Jochen Müller, T. Ortunez Limario	T. Ortunez Limario Jochen Müller
-Jochen Trunk, Berlin, in Hb. V. J. Grummann	Jochen Trunk	In Hb V. J. Grummann Berlin
+Jochen Trunk, Berlin, in Hb. V. J. Grummann	Jochen Trunk	Berlin
 Jodano	Jodano
 Jodra,D.	D. Jodra
 Joe Duty et al.	Joe Duty
@@ -26038,7 +26038,7 @@ Johann Andreas Kneucker	Johann Andreas Kneucker
 Johann B. Zinsmeister	Johann B. Zinsmeister
 Johannes	Johannes
 Johansen, R. M. Mojica G., A.		A.
-Johanson in herb. V. J. Grummann	Johanson V. J. Grummann
+Johanson in herb. V. J. Grummann	Johanson
 Johanson, C.J.	C.J. Johanson
 Johansson	Johansson
 Johansson Per	Johansson Per
@@ -26166,7 +26166,7 @@ Josef Hafellner & Lucia Muggia	Josef Hafellner	Lucia Muggia
 Josef Hafellner and Lucia Muggia	Josef Hafellner	Lucia Muggia
 Josef Hafellner and Walter Obermayer	Josef Hafellner	Walter Obermayer
 Joseph	Joseph
-Joseph Holzner und Joseph Kraenzle	Joseph Holzner und Joseph Kraenzle
+Joseph Holzner und Joseph Kraenzle	Joseph Holzner	Joseph Kraenzle
 Joseph Kraenzle	Joseph Kraenzle
 Joseph Kraenzle u. Franz Vollmann	Joseph Kraenzle Franz Vollmann
 Joseph Schwertschlager	Joseph Schwertschlager
@@ -26404,7 +26404,7 @@ K. Redinger	K. Redinger
 K. Rubner	K. Rubner
 K. Rubner; A. Mayer	K. Rubner	A. Mayer
 K. Rux	K. Rux
-K. Rux in Hb. Leuckert	K. Rux in Hb. Leuckert
+K. Rux in Hb. Leuckert	K. Rux
 K. S. Kunth	K.S. Kunth
 K. Saito	K. Saito
 K. Sakurai	K. Sakurai
@@ -26782,7 +26782,7 @@ Karsten,H. & Triana,J.J.	H. Karsten	J.J. Triana
 Karsten,M.C.	M.C. Karsten
 Karsten,P.A.	P.A. Karsten
 Karta	Karta
-Kartaschoff in herb. V. J. Grummann	Kartaschoff V. J. Grummann
+Kartaschoff in herb. V. J. Grummann	Kartaschoff
 Kartert,E.	E. Kartert
 Karwinski von Karwin, W.F.	W.F. Karwinski von Karwin
 Karwinski von Karwin, W.F. (no. 131)	W.F. Karwinski von Karwin
@@ -27420,10 +27420,10 @@ Kitanov,B.	B. Kitanov
 Kittler, M.	M. Kittler
 Kjellberg,G.	G. Kjellberg
 Kjellberg,G.K.	G.K. Kjellberg
-Kjellmert in Hb. V. J. Grummann	Kjellmert in Hb. V. J. Grummann
-Kjellmert in herb. V. J. Grummann	Kjellmert V. J. Grummann
+Kjellmert in Hb. V. J. Grummann	Kjellmert
+Kjellmert in herb. V. J. Grummann	Kjellmert
 Kjellmert,G.	G. Kjellmert
-Kjelmert in herb. V. J. Grummann	Kjelmert V. J. Grummann
+Kjelmert in herb. V. J. Grummann	Kjelmert
 Klaboch	Klaboch
 Klackenberg,J.	J. Klackenberg
 Klaeber, W.	W. Klaeber
@@ -27784,7 +27784,7 @@ Kolb	Kolb
 Kolbe	Kolbe
 Kolenati	Kolenati
 Kolkwitz	Kolkwitz
-Kolkwitz in herb. V. J. Grummann	Kolkwitz V. J. Grummann
+Kolkwitz in herb. V. J. Grummann	Kolkwitz
 Koller	Koller
 Köller,H.	H. Köller
 Kolley	Kolley
@@ -28010,7 +28010,7 @@ Koppel	Koppel
 Köppel	Köppel
 Koppel,C.	C. Koppel
 Köppel,M.	M. Köppel
-Koppen in herb. V. J. Grummann	Koppen V. J. Grummann
+Koppen in herb. V. J. Grummann	Koppen
 Köppet,K.	K. Köppet
 Koppisch, D.	D. Koppisch
 Kôra	Kôra
@@ -28065,7 +28065,7 @@ Koschariszko	Koschariszko
 KOSCHNY	
 Koschny,T.	T. Koschny
 Kosermans	Kosermans
-Koskinen in herb. V. J. Grummann	Koskinen V. J. Grummann
+Koskinen in herb. V. J. Grummann	Koskinen
 Koslowskii,W.	W. Koslowskii
 Koslowsky,J.	J. Koslowsky
 Kosmahl	Kosmahl
@@ -29798,7 +29798,7 @@ Kriebel,R., Zumbado,M.A., Montero,J., Porras Vega,W. & Ballestero,M.	R. Kriebel	
 Kriegbaum, H.	H. Kriegbaum
 Kriegel,K.	K. Kriegel
 Krieger	Krieger
-Krieger in herb. V. J. Grummann	Krieger V. J. Grummann
+Krieger in herb. V. J. Grummann	Krieger
 Krieger, W.	W. Krieger
 Krieger,[Karl] Wilhelm	Wilhelm Krieger
 Krieger,K.W. & Hillmann	K.W. Krieger	Hillmann
@@ -30052,7 +30052,7 @@ Kühnemann Solari	Kühnemann Solari
 Kühnemann,O.	O. Kühnemann
 Kuhnert	Kuhnert
 Kühnert,F.	F. Kühnert
-Kujala in herb. V. J. Grummann	Kujala V. J. Grummann
+Kujala in herb. V. J. Grummann	Kujala
 Kükenthal	Kükenthal
 Kükenthal, G.	G. Kükenthal
 Kükenthal, G. (no. 135/1943)	G. Kükenthal
@@ -30096,7 +30096,7 @@ Kummer,V.	V. Kummer
 Kummer,V. & Benkert,D.	V. Kummer	D. Benkert
 Kummer,V. & Krause,J.	V. Kummer	J. Krause
 Kummer,V. & Otte,V.	V. Kummer	V. Otte
-Kümmerle in herb. V. J. Grummann	Kümmerle V. J. Grummann
+Kümmerle in herb. V. J. Grummann	Kümmerle
 Kümmerle, J.B.	J.B. Kümmerle
 Kümmerle,D.J.B.	D.J.B. Kümmerle
 Kümmerle,J.B.	J.B. Kümmerle
@@ -30314,7 +30314,7 @@ Kusnezow,N.	N. Kusnezow
 Kusnezow,N.I.	N.I. Kusnezow
 Kußerow,H.	H. Kußerow
 Kuták	Kuták
-Kuták in herb. V. J. Grummann	Kuták V. J. Grummann
+Kuták in herb. V. J. Grummann	Kuták
 Kuťák,V.	V. Kuťák
 Kuthan, Kotlaba & Pouzar	Kuthan	Kotlaba	Pouzar
 Kuthan,J., Kotlaba,F. & Pouzar,Z.	J. Kuthan	F. Kotlaba	Z. Pouzar
@@ -30362,7 +30362,7 @@ L. B. Movre	L.B. Movre
 L. B. Sparrius & Th. Nash	L.B. Sparrius	Th Nash
 L. Bosbeheer	L. Bosbeheer
 L. Brako	L. Brako
-L. Brandmann in herb. V. J. Grummann	L. Brandmann V. J. Grummann
+L. Brandmann in herb. V. J. Grummann	L. Brandmann
 L. Brevière	L. Brevière
 L. C. de souza e Silva	L.C. de Souza	Silva
 L. Cockayne	L. Cockayne
@@ -30707,7 +30707,7 @@ Lang,W.	W. Lang
 Langdon,T.	T. Langdon
 Lange	Lange
 Lange-Freiber,E.	E. Lange-Freiber
-Lange in herb. V. J. Grummann	Lange V. J. Grummann
+Lange in herb. V. J. Grummann	Lange
 Lange, J.	J. Lange
 Lange, J.M.C.	J.M.C. Lange
 Lange,A.	A. Lange
@@ -30862,7 +30862,7 @@ Laurent,É.	É. Laurent
 Laurent,V.	V. Laurent
 Laurenti	Laurenti
 Laurer	Laurer
-Lauri E. Kari in herb. V. J. Grummann	Lauri E. Kari V. J. Grummann
+Lauri E. Kari in herb. V. J. Grummann	Lauri E. Kari
 Lauri, L.E.	L.E. Lauri
 Lauria, F. (no. 2005-17)	F. Lauria
 Lauria,F.	F. Lauria
@@ -30900,7 +30900,7 @@ Lauterbach,D., Ristow,M. & Rätzel,S.	D. Lauterbach	M. Ristow	S. Rätzel
 Lauterbach,D., Schlemo,M. & Böttcher,F.	D. Lauterbach	M. Schlemo	F. Böttcher
 Lauterbach,K.A.G.	K.A.G. Lauterbach
 Lavalle?	Lavalle
-Laven in herb. V. J. Grummann	Laven V. J. Grummann
+Laven in herb. V. J. Grummann	Laven
 Lavranos,J.	J. Lavranos
 Lavranos,J.J.	J.J. Lavranos
 Law	Law
@@ -31408,13 +31408,13 @@ Letourneux,H.	H. Letourneux
 Letourneux,T.	T. Letourneux
 Letouzey,R.	R. Letouzey
 Lettau	Lettau
-Lettau in herb. V. J. Grummann	Lettau V. J. Grummann
+Lettau in herb. V. J. Grummann	Lettau
 Lettau,G.	G. Lettau
 Letterman	Letterman
 Leuchtenberg, M.E.J. von	M.E.J. von Leuchtenberg
 Leuchtenberg, M.E.J. von (no. 13)	M. E. J. von Leuchtenberg
-Leuckert & Hertel in Hb. A. Buschardt	Leuckert	Hertel in Hb. A. Buschardt
-Leuckert & Hertel in Herb. Buschardt	Leuckert	Hertel in Herb. Buschardt
+Leuckert & Hertel in Hb. A. Buschardt	Leuckert	Hertel
+Leuckert & Hertel in Herb. Buschardt	Leuckert	Hertel
 Leuckert et Mathey	Leuckert	Mathey
 Leuckert, Rux, Knerr	Leuckert	Rux	Knerr
 Leue	Leue
@@ -31632,7 +31632,7 @@ Linczevski,I.A. et al.	I.A. Linczevski
 Lind	Lind
 Lind, J.	J. Lind
 Lind,E.	E. Lind
-Lindahl in herb. V. J. Grummann	Lindahl V. J. Grummann
+Lindahl in herb. V. J. Grummann	Lindahl
 Lindarthel (?)	Lindarthel
 Lindau, G.	G. Lindau
 Lindauer,V.W.	V.W. Lindauer
@@ -32170,7 +32170,7 @@ Loitlesberger,K.	K. Loitlesberger
 Lojacono	Lojacono
 Lojacono,M.	M. Lojacono
 Lojka	Lojka
-Lojka in herb. V. J. Grummann	Lojka V. J. Grummann
+Lojka in herb. V. J. Grummann	Lojka
 Lojka, H.	H. Lojka
 Lojka,H.	H. Lojka
 Lola Montez	Lola Montez
@@ -32333,7 +32333,7 @@ Losa Quintana,J.M., Marin,G. & López,M.	J.M. Losa Quintana	G. Marin	M. López
 Losa, M. (no. 8233)	M. Losa
 Losa,M. & Montserrat,P.	M. Losa	P. Montserrat
 Lösch	Lösch
-Lösch in herb. Rieber	Lösch Rieber
+Lösch in herb. Rieber	Lösch
 Lösch, A.	A. Lösch
 Lösch,A.	A. Lösch
 Löschke	Löschke
@@ -33124,7 +33124,7 @@ M. Bertho Harnell	M. Bertho Harnell
 M. Blinze	M. Blinze
 M. Boom J. L. Luteyn	
 M. Bouly de Lesdain	M. Bouly de Lesdain
-M. Bouly de Lesdain in Hb. Zschacke	M. Bouly de Lesdain in Hb. Zschacke
+M. Bouly de Lesdain in Hb. Zschacke	M. Bouly de Lesdain
 M. Boza G.	G. M. Boza
 M. Brenning	M. Brenning
 M. Burghardt	M. Burghardt
@@ -33328,7 +33328,7 @@ M. López L. Ruiz - Terán	M.López L. Ruiz	Terán
 M. Luckner	M. Luckner
 M. Lüth	M. Lüth
 M. M. J. Balgooy	M.M.J. Balgooy
-M. M. J. v. Balgooy	M.M.J. Balgooy
+M. M. J. v. Balgooy	M.M.J. v. Balgooy
 M. M. Sato	M.M. Sato
 M. Mahu	M. Mahu
 M. Mahu & Harnell	M. Mahu	Harnell
@@ -33418,7 +33418,7 @@ M. Sohrabi, H. Sipman, U. Söchting & R. Zare	M. Sohrabi	H. Sipman	U. Söchting	
 M. Sohrabi, H. Sipman, U. Søchting & R. Zare	M. Sohrabi	H. Sipman	U. Søchting	R. Zare
 M. Sousa B. Schubert V. E. Rudd	
 M. Steiner	M. Steiner
-M. Steiner in herb. V. J. Grummann	M. Steiner V. J. Grummann
+M. Steiner in herb. V. J. Grummann	M. Steiner
 M. Sundue, M. Nee & A. Carrasco	M. Sundue	M. Nee	A. Carrasco
 M. Sundue, M. Nee, M. Mendoza, S. Churchill, A. Arbaláez	M. Sundue	M. Nee	M. Mendoza	S. Churchill	A. Arbaláez
 M. T. Madison	M.T. Madison
@@ -33428,14 +33428,14 @@ M. Tavakoli & N. Noferesti	M. Tavakoli	N. Noferesti
 M. Tindale	M. Tindale
 M. Togashi	M. Togashi
 M. Togashi & S. Kurokawa	M. Togashi	S. Kurokawa
-M. Togashi in herb. Y. Asahina	M. Togashi Y. Asahina
-M. Togashi in Herb. Y. Asahina	M. Togashi in Herb. Y. Asahina
+M. Togashi in herb. Y. Asahina	M. Togashi
+M. Togashi in Herb. Y. Asahina	M. Togashi
 M. Toia	M. Toia
 M. Tola	M. Tola
 M. Tretiach, P. L. Nimis, J. Poelt et A. Vězda	M. Tretiach	P.L. Nimis	J. Poelt	A. Vězda
-M. v. Slageren	M. Slageren
+M. v. Slageren	M. v. Slageren
 M. V. Slageren	M.V. Slageren
-M. v. Slageren A. L. Stoffers	M. Slageren A. L. Stoffers
+M. v. Slageren A. L. Stoffers	M. v. Slageren A. L. Stoffers
 M. van Slageren	M. van Slageren
 M. van Slageren H. Sipman	M. van Slageren H. Sipman
 M. Van Slageren H. Sipman	M. Van Slageren H. Sipman
@@ -33707,7 +33707,7 @@ Magnus,P.	P. Magnus
 Magnus,P.W.	P.W. Magnus
 Magnus,Paul Wilhelm	Paul Wilhelm Magnus
 Magnusson Hilding	Magnusson Hilding
-Magnusson in herb. V. J. Grummann	Magnusson V. J. Grummann
+Magnusson in herb. V. J. Grummann	Magnusson
 Magnusson, A.A.	A.A. Magnusson
 Magnusson, A.A. (no. 432)	A.A. Magnusson
 Magnusson,A.A.	A.A. Magnusson
@@ -34099,7 +34099,7 @@ Markgraf-Dannenberg,I.	I. Markgraf-Dannenberg
 Markgraf-Dannenberg,I. & Markgraf-Dannenberg,F.	I. Markgraf-Dannenberg	F. Markgraf-Dannenberg
 Markgraf-Dannenberg,I. & Markgraf,F.	I. Markgraf-Dannenberg	F. Markgraf
 Markgraf & Pieper	Markgraf	Pieper
-Markgraf in herb. V. J. Grummann	Markgraf V. J. Grummann
+Markgraf in herb. V. J. Grummann	Markgraf
 Markgraf,F.	F. Markgraf
 Markgraf,F. & Brade,A.C.	F. Markgraf	A.C. Brade
 Markgraf,F. & Pieper	F. Markgraf	Pieper
@@ -37368,7 +37368,7 @@ Mc Carter,P.S.	P.S. Mc Carter
 Mc Carter,P.S. & al.	P.S. Mc Carter	Al
 Mc Kee	Mc Kee
 Mc Rae, W.	W. Mc Rae
-Mc.? in herb. V. J. Grummann	Mc V. J. Grummann
+Mc.? in herb. V. J. Grummann	Mc
 McBarron,E.J.	E.J. McBarron
 McBeath	McBeath
 McCalla,W.C.	W.C. McCalla
@@ -38252,7 +38252,7 @@ Mittrowský	Mittrowský
 Mitzi CAMPOS	Mitzi Campos
 Miulkijanian,J.	J. Miulkijanian
 Miura,A.	A. Miura
-Mixe in herb. V. J. Grummann	Mixe V. J. Grummann
+Mixe in herb. V. J. Grummann	Mixe
 Miyagawa,M.	M. Miyagawa
 Miyake, J.	J. Miyake
 Miyake,K.	K. Miyake
@@ -38526,7 +38526,7 @@ Montesinos,D., de Vos,J. & Pauca,A.	D. Montesinos	J. de Vos	A. Pauca
 Montesinos,D., de Vos,J. & Pinto,C.	D. Montesinos	J. de Vos	C. Pinto
 Montesinos,D., Galiano,W. & Núñez,P.	D. Montesinos	W. Galiano	P. Núñez
 Montesinos,D., Pinto,A.C. & Mondragón,L.F.	D. Montesinos	A.C. Pinto	L.F. Mondragón
-Montesinos,D., v. Mehring,S. & Pauca,A.	D. Montesinos	S. Mehring	A. Pauca
+Montesinos,D., v. Mehring,S. & Pauca,A.	D. Montesinos	S. v. Mehring	A. Pauca
 Montfoort Ek	Montfoort Ek
 Montfoort, D. Ek, R. C.	D. Ek Montfoort	
 Montfoort,D. & Ek,R.C.	D. Montfoort	R.C. Ek
@@ -39229,7 +39229,7 @@ Nadeaud, J.	J. Nadeaud
 Nadeaud,J.	J. Nadeaud
 Nadji,A.-U.-R.	A.-U.-R. Nadji
 Nadruz Coelho,M.A.	M.A. Nadruz Coelho
-Nadvornik in herb. V. J. Grummann	Nadvornik V. J. Grummann
+Nadvornik in herb. V. J. Grummann	Nadvornik
 Naé	Naé
 Naegele, F.	F. Naegele
 Naegele,A.	A. Naegele
@@ -39494,9 +39494,9 @@ Nee,M. & Taylor,K.	M. Nee	K. Taylor
 Nee,M. & Tyson,E.	M. Nee	E. Tyson
 Neela ENKE	Neela Enke
 Nees	Nees
-Nees v. Esenbeck	Nees Esenbeck
-Nees v. Esenbeck,	Nees Esenbeck
-Nees v. Esenbeck,C.G.D.	C.G.D. Esenbeck
+Nees v. Esenbeck	Nees v. Esenbeck
+Nees v. Esenbeck,	Nees v. Esenbeck
+Nees v. Esenbeck,C.G.D.	C.G.D. Nees v. Esenbeck
 Nees von Esenbeck,C.G.D.	C.G.D. Nees von Esenbeck
 Neger	Neger
 Neger, F.W.	F.W. Neger
@@ -39632,7 +39632,7 @@ Neyraut, E.J. (no. 4335)	E.J. Neyraut
 Neyraut,E.J.	E.J. Neyraut
 Neyraut,E.J., Jeanjean & Bouchon,A.	E.J. Neyraut	Jeanjean	A. Bouchon
 Nezadal, W.	W. Nezadal
-Nezadal, W. und Milbradt, J.	W. und Milbradt Nezadal	J.
+Nezadal, W. und Milbradt, J.	W. Nezadal	J. Milbradt
 Ngadiman	Ngadiman
 Ngadiman,B.H.I.	B.H.I. Ngadiman
 NGoni,J.F.	J.F. NGoni
@@ -39704,8 +39704,8 @@ Nielsen,P.	P. Nielsen
 Niemann,R.	R. Niemann
 Nieschkewitz, R.	R. Nieschkewitz
 Niessl	Niessl
-Niessl v. Mayendorf	Niessl Mayendorf
-Niessl v. Mayendorf, G.	G. Mayendorf
+Niessl v. Mayendorf	Niessl v. Mayendorf
+Niessl v. Mayendorf, G.	G. Niessl v. Mayendorf
 Niessl von Mayendorf,G.	G. Niessl von Mayendorf
 Niessl von Mayendorf,Gustav von	von Niessl	von Mayendorf	Gustav
 Niessl, G. von	G. von Niessl
@@ -40029,7 +40029,7 @@ Nydegger,N.	N. Nydegger
 Nyffeler,R., Eggli,U., Lüthy, J.	R. Nyffeler	U. Eggli	J. Lüthy
 Nyholm,E.	E. Nyholm
 Nylander	Nylander
-Nylander in Herb. Zschacke	Nylander in Herb. Zschacke
+Nylander in Herb. Zschacke	Nylander
 Nyman	Nyman
 Nyman, E.O.A. (no. 430)	E.O.A. Nyman
 Nyman,C.F.	C.F. Nyman
@@ -40048,7 +40048,7 @@ O. & I. Degener & Piccos	O. Degener	I. Degener	Piccos
 O. & I. Degener & T. Picco	O. Degener	I. Degener	T. Picco
 O. A. Höeg	O.A. Höeg
 O. Almborn	O. Almborn
-O. Almborn in herb. V. J. Grummann	O. Almborn V. J. Grummann
+O. Almborn in herb. V. J. Grummann	O. Almborn
 O. Beccari	O. Beccari
 O. Behr	O. Behr
 O. Behr?	O. Behr
@@ -40069,11 +40069,11 @@ O. Hedberg	O. Hedberg
 O. Huber	O. Huber
 O. Klement	O. Klement
 O. Klement (?)	O. Klement
-O. Klement in herb. V. J. Grummann	O. Klement V. J. Grummann
+O. Klement in herb. V. J. Grummann	O. Klement
 O. Kuntze	O. Kuntze
 O. L. Lange	O.L. Lange
 O. L. Lange et al.	O.L. Lange
-O. L. Lange in herb. V. J. Grummann	O. L. Lange V. J. Grummann
+O. L. Lange in herb. V. J. Grummann	O.L. Lange
 O. L. Lange, comm. V. Wirth	O.L. Lange	V. Wirth
 O. Leiner	O. Leiner
 O. Lönnbohm	O. Lönnbohm
@@ -40090,8 +40090,8 @@ O. Rangel & T. van der Hammen	O. Rangel	T. van der Hammen
 O. Rangel & T. van der Hammen et al.	O. Rangel	T. van der Hammen
 O. Rangel A. Cleef	O. Rangel A. Cleef
 O. Rangel A. M. Cleef	
-O. Rangel G. v. Reenen	O. Rangel G. Reenen
-O. Rangel G. v. Reenen A. M. Cleef	O. Rangel G. Reenen A. M. Cleef
+O. Rangel G. v. Reenen	O. Rangel G. v. Reenen
+O. Rangel G. v. Reenen A. M. Cleef	O. Rangel G. v. Reenen A. M. Cleef
 O. Rangel G. van Reenen	O. Rangel G. van Reenen
 O. Rangel G. van Reenen A. M. Cleef	O. Rangel G. van Reenen A. M. Cleef
 O. Rangel R. Jaramillo M.	M. O. Rangel R. Jaramillo
@@ -40279,7 +40279,7 @@ Ohmura,Y.	Y. Ohmura
 Ohmura,Y., Tadome,K. & Masumoto,H.	Y. Ohmura	K. Tadome	H. Masumoto
 Ohnesorge	Ohnesorge
 Ohnishi	Ohnishi
-Öhrstedt in herb. V. J. Grummann	Öhrstedt V. J. Grummann
+Öhrstedt in herb. V. J. Grummann	Öhrstedt
 Ohwi,J.	J. Ohwi
 Ohwi,J. & Kotsuke,T.	J. Ohwi	T. Kotsuke
 Ohwi,J. & Okamoto,K.	J. Ohwi	K. Okamoto
@@ -40497,7 +40497,7 @@ OSTEN
 Osten,C.	C. Osten
 Ostenfeld, C. H.	C.H. Ostenfeld
 Ostenfeld,C.H.	C.H. Ostenfeld
-Österlind in herb. V. J. Grummann	Österlind V. J. Grummann
+Österlind in herb. V. J. Grummann	Österlind
 Ostermaier	Ostermaier
 Ostermaier,I	I. Ostermaier
 Ostermaier,J.	J. Ostermaier
@@ -40537,7 +40537,7 @@ Otto MAGENS	Otto Magens
 Otto Magens, Punta Arenas.	Otto Magens	Punta Arenas
 Otto Prechtelbauer	Otto Prechtelbauer
 Otto Prechtelsbauer	Otto Prechtelsbauer
-Otto und August Fürnrohr	Otto und August Fürnrohr
+Otto und August Fürnrohr	Otto	August Fürnrohr
 Otto, C.F.	C.F. Otto
 Otto, C.F. (no. 210)	C.F. Otto
 Otto, C.F. (no. 264)	C.F. Otto
@@ -40711,7 +40711,7 @@ P. Jay	P. Jay
 P. Junge	P. Junge
 P. K. H. Dusén	P.K.H. Dusén
 P. K. Sethy	P.K. Sethy
-P. König & H. Kürschner in Hb. Buschardt	P. König	H.Kürschner in Hb. Buschardt
+P. König & H. Kürschner in Hb. Buschardt	P. König	H. Kürschner
 P. Krcmar	P. Krcmar
 P. L. Nimis	P.L. Nimis
 P. L. Nimis et A. Vězda	P.L. Nimis	A. Vězda
@@ -40734,7 +40734,7 @@ P. M. Earland-Bennett	P.M. Earland-Bennett
 P. M. Jørgensen	P.M. Jørgensen
 P. M. Jørgensen C. Ulloa E. Narváez	
 P. M. Jörgensen, J. Poelt & A. Buschardt	P.M. Jörgensen	J. Poelt	A. Buschardt
-P. M. Jörgensen, J. Poelt & A. Buschardt in Herb. Buschardt	P.M. Jörgensen	J. Poelt	A. Buschardt in Herb. Buschardt
+P. M. Jörgensen, J. Poelt & A. Buschardt in Herb. Buschardt	P.M. Jörgensen	J. Poelt	A. Buschardt
 P. Mac Owan	P. Mac Owan
 P. Mac Owan, comm. Loika	P. Mac Owan	Loika
 P. Martens	P. Martens
@@ -40771,7 +40771,7 @@ P. Sintenis	P. Sintenis
 P. Strasser	P. Strasser
 P. Sukhakul	P. Sukhakul
 P. Sydow	P. Sydow
-P. v. Royen H. Sleumer	P. Royen H. Sleumer
+P. v. Royen H. Sleumer	P. v. Royen H. Sleumer
 P. van den Boom	P. van den Boom
 P. van der Byl	P. van der Byl
 P. van der Knaap & J. van Leeuwen	P. van der Knaap	J. van Leeuwen
@@ -40786,7 +40786,7 @@ P. Waechter	P. Waechter
 P. Wagenaar Hummelinck	P. Wagenaar Hummelinck
 P. Wagenaar Hummelink	P. Wagenaar Hummelink
 P. Wickens	P. Wickens
-P. Wiersma M. v. Slageren	P. Wiersma M. Slageren
+P. Wiersma M. v. Slageren	P. Wiersma M. v. Slageren
 P. Wiersma M. van Slageren	P. Wiersma M. van Slageren
 P. Wiersma M. Van Slageren	P. Wiersma M. Van Slageren
 P. Wiersma M. van Slagern	P. Wiersma M. van Slagern
@@ -40813,12 +40813,12 @@ P.J.M. Maas, J. Koek-N., H. Lall, B. J. H. ter Welle & L. Y. T. Westra	P.J.M. Ma
 P.J.M. Maas, J. Koek, H. Lall, B.J.H. ter Welle & L.Y.Th. Westra	P.J.M. Maas	J. Koek	H. Lall	B.J.H. ter Welle	L. Y. Th Westra
 P.L. Nimis, J. Poelt & M. Tretiach	P.L. Nimis	J. Poelt	M. Tretiach
 P.M. Jørgensen	P.M. Jørgensen
-P.M. Jörgensen, J. Poelt & A. Buschardt in Hb. Buschardt	P.M. Jörgensen	J. Poelt	A. Buschardt in Hb. Buschardt
+P.M. Jörgensen, J. Poelt & A. Buschardt in Hb. Buschardt	P.M. Jörgensen	J. Poelt	A. Buschardt
 P.O. Schallert	P.O. Schallert
 P.Pius Strasser	P. Pius Strasser
 P.W. Rundel	P.W. Rundel
 Paalzow	Paalzow
-Paaw Nederström? in herb. V. J. Grummann	Paaw Nederström V. J. Grummann
+Paaw Nederström? in herb. V. J. Grummann	Paaw Nederström
 Pablo Ferrer-Gallego,P.	P. Pablo Ferrer-Gallego
 Pabo	Pabo
 Pabot, H.A. (no. 6352)	H.A. Pabot
@@ -41815,7 +41815,7 @@ Petz,F.	F. Petz
 Petzi	Petzi
 Petzi & Poeverlein	Petzi	Poeverlein
 Petzi et A. Mayer	Petzi	A. Mayer
-Petzi und A. Mayer	Petzi und A. Mayer
+Petzi und A. Mayer	Petzi	A. Mayer
 Petzi, Ant. Mayer, v. Schelling	Ant Mayer Petzi	V. Schelling
 Petzi, Franz v. Sales	Franz v Sales Petzi
 Petzi, Poeverlein, Vollmann	Petzi	Poeverlein	Vollmann
@@ -42240,7 +42240,7 @@ Plew	Plew
 Pleyle,D.R.	D.R. Pleyle
 Pleyte,D.R.	D.R. Pleyte
 Plieninger,W.	W. Plieninger
-Plitt in herb. V. J. Grummann	Plitt V. J. Grummann
+Plitt in herb. V. J. Grummann	Plitt
 Plitt,C.C.	C.C. Plitt
 Plocek, A.	A. Plocek
 Ploeg,D.T.E. van der	D. T. E. van der Ploeg
@@ -43045,7 +43045,7 @@ Pospischal	Pospischal
 Possing	Possing
 Possing,	Possing
 Post	Post
-Post in herb. V. J. Grummann	Post V. J. Grummann
+Post in herb. V. J. Grummann	Post
 Post,B.V.D.	B.V.D. Post
 Post,G.	G. Post
 Post,G.E.	G.E. Post
@@ -44345,8 +44345,8 @@ Priou, J.P.	J.P. Priou
 Priou,J.P.	J.P. Priou
 Pritler	Pritler
 Prittwitz	Prittwitz
-Prittwitz und Gaffron v.	
-Prittwitz und Gaffron,G. von	von Prittwitz	G. und Gaffron
+Prittwitz und Gaffron v.	Prittwitz	V. Gaffron
+Prittwitz und Gaffron,G. von	von Prittwitz	G. Gaffron
 Prittwitz von	
 Pritzel	Pritzel
 Pritzel & Diels	Pritzel	Diels
@@ -44454,7 +44454,7 @@ Prof. Dr. Förster	Förster
 Prof. Forster	Forster
 Prof. Huber et Sommerauer	Huber	Sommerauer
 Prof. J. Macoun	J. Macoun
-Prof. Kolkwitz in herb. V. J. Grummann	Kolkwitz V. J. Grummann
+Prof. Kolkwitz in herb. V. J. Grummann	Kolkwitz
 Prof. Rieber	Rieber
 Prof. Schmidt	Schmidt
 Prof. Schubert	Schubert
@@ -44691,7 +44691,7 @@ R. BOENDER	R. Boender
 R. Büttner	R. Büttner
 R. Bye	R. Bye
 R. C. Alexander	R.C. Alexander
-R. C. Bakhuizen v. d. Brink	R. C. Bakhuizen Brink
+R. C. Bakhuizen v. d. Brink	R. C. Bakhuizen v. d. Brink
 R. C. de Mendonça	R.C. de Mendonça
 R. C. Gunn	R.C. Gunn
 R. C. Harris	R.C. Harris
@@ -44751,13 +44751,13 @@ R. Iserentant	R. Iserentant
 R. J. Hnatiuk	R.J. Hnatiuk
 R. Jahn	R. Jahn
 R. Jahn & B. Gemeinholzer	R. Jahn	B. Gemeinholzer
-R. Jaramillo-M., T. v. d. Hammen, O. Rangel & A.M. Cleef	R. Jaramillo-M	T. Hammen	O. Rangel	A.M. Cleef
+R. Jaramillo-M., T. v. d. Hammen, O. Rangel & A.M. Cleef	R. Jaramillo-M	T. v. d. Hammen	O. Rangel	A.M. Cleef
 R. K. F. Pilger	R.K.F. Pilger
 R. Kaspar	R. Kaspar
 R. Kemp	R. Kemp
 R. Kliem	R. Kliem
 R. Knuth	R. Knuth
-R. Kolkwitz in herb. V. J. Grummann	R. Kolkwitz V. J. Grummann
+R. Kolkwitz in herb. V. J. Grummann	R. Kolkwitz
 R. Kräusel	R. Kräusel
 R. Krauspe	R. Krauspe
 R. Kumei	R. Kumei
@@ -44806,7 +44806,7 @@ R. Molon	R. Molon
 R. Montaldo	R. Montaldo
 R. Moran	R. Moran
 R. Mues	R. Mues
-R. Mues in Herb. Volker John	R. Mues in Herb. Volker John
+R. Mues in Herb. Volker John	R. Mues
 R. O. Cunningham	R.O. Cunningham
 R. Ochyra	R. Ochyra
 R. Ochyra H. Bednarek-Ochyra	R. Ochyra H. Bednarek-Ochyra
@@ -44851,8 +44851,8 @@ R. Summerbell	R. Summerbell
 R. T. Brown	R.T. Brown
 R. Thaxter	R. Thaxter
 R. Tjion Lim Sang I. van der Wiel	R. Tjion Lim Sang I. van der Wiel
-R. Tjon Lim Sang I. v. d. Wiel	R. Tjon Lim Sang I. Wiel
-R. Tjon Lim Sang R. v. d. Wiel	R. Tjon Lim Sang R. Wiel
+R. Tjon Lim Sang I. v. d. Wiel	R. Tjon Lim Sang I. v. d. Wiel
+R. Tjon Lim Sang R. v. d. Wiel	R. Tjon Lim Sang R. v. d. Wiel
 R. Tjon Lin Sang I. van der Wiel	R. Tjon Lin Sang I. van der Wiel
 R. Torres L. Cortés A. Campos	
 R. Türk	R. Türk
@@ -44869,8 +44869,8 @@ R. Türk, W. Obermayer & F. Priemetzhofer	R. Türk	W. Obermayer	F. Priemetzhofer
 R. Udar	R. Udar
 R. Ulrich	R. Ulrich
 R. V. Hensen	R.V. Hensen
-R. V. Hensen in Hb. Aptroot	R. V. Hensen in Hb. Aptroot
-R. v. Wettstein	R. Wettstein
+R. V. Hensen in Hb. Aptroot	R.V. Hensen
+R. v. Wettstein	R. v. Wettstein
 R. Villacorta	R. Villacorta
 R. Villacorta & M.L. Reyna de Aguilar	R. Villacorta	M. L. Reyna de Aguilar
 R. Villacorta & S. Martínez	R. Villacorta	S. Martínez
@@ -44887,7 +44887,7 @@ R. Wasum N. Bastos	R. Wasum N. Bastos
 R. Watanabe	R. Watanabe
 R. Welz	R. Welz
 R. Welz & E. Sandoval	R. Welz	E. Sandoval
-R. Wendering in Hb. Buschardt	R. Wendering in Hb. Buschardt
+R. Wendering in Hb. Buschardt	R. Wendering
 R. Werner	R. Werner
 R. Wingfield	R. Wingfield
 R. WIngfield	R. WIngfield
@@ -45118,7 +45118,7 @@ Rapaics,R.	R. Rapaics
 Rapin,D.	D. Rapin
 Rapp,E.	E. Rapp
 Rapp,S.	S. Rapp
-Räsänen in herb. V. J. Grummann	Räsänen V. J. Grummann
+Räsänen in herb. V. J. Grummann	Räsänen
 Räsänen,V.J.P.B.	V.J.P.B. Räsänen
 Rasbach,H. & Rasbach,K.	H. Rasbach	K. Rasbach
 Rasbach,H., Rasbach,K. & Bennert,H.W.	H. Rasbach	K. Rasbach	H.W. Bennert
@@ -45866,7 +45866,7 @@ Reinsch, P.	P. Reinsch
 Reinsch,P.	P. Reinsch
 Reinsch,P.F.	P.F. Reinsch
 Reinstein	Reinstein
-Reinthal in herb. V. J. Grummann	Reinthal V. J. Grummann
+Reinthal in herb. V. J. Grummann	Reinthal
 Reinthal,W.J.	W.J. Reinthal
 Reinwardt	Reinwardt
 Reinwardt, C.G.C.	C.G.C. Reinwardt
@@ -46099,7 +46099,7 @@ Reynolds, G.W. (no. 377)	G.W. Reynolds
 Reynolds, M.C. (no. 8596)	M.C. Reynolds
 Reynolds,G.W.	G.W. Reynolds
 Rhode,J.	J. Rhode
-Rhodes in herb. V. J. Grummann	Rhodes V. J. Grummann
+Rhodes in herb. V. J. Grummann	Rhodes
 Rhodes, P.G.M.	P.G.M. Rhodes
 Riazi, M. (no. 10233)	M. Riazi
 Riazi, M. (no. 10328)	M. Riazi
@@ -46686,7 +46686,7 @@ Rochel, A. (no. 72)	A. Rochel
 Rochel,A.	A. Rochel
 Rochiques	Rochiques
 Rock	Rock
-Rock in herb. V. J. Grummann	Rock V. J. Grummann
+Rock in herb. V. J. Grummann	Rock
 Rock, J.F. (no. 14370)	J.F. Rock
 Rock, J.F. (no. 14511)	J.F. Rock
 Rock, J.F. (no. 16640)	J.F. Rock
@@ -47269,7 +47269,7 @@ Rönsch,P.	P. Rönsch
 Ronzevalle,S.	S. Ronzevalle
 Rooden,J. van	J. van Rooden
 Roop,T.	T. Roop
-Rosa Angerer in herb. V. J. Grummann	Rosa Angerer V. J. Grummann
+Rosa Angerer in herb. V. J. Grummann	Rosa Angerer
 Rosa, F.La & Riccu, F.P.	F. La Rosa	F.P. Riccu
 Rosales,J.M.	J.M. Rosales
 Rosario, C.	C. Rosario
@@ -47516,7 +47516,7 @@ Royce,R.D.	R.D. Royce
 Royen, A. van	A. van Royen
 Royen, P. van	P. van Royen
 Royen,P. van & Sleumer,H.O.	P. van Royen	H.O. Sleumer
-Royer in herb. V. J. Grummann	Royer V. J. Grummann
+Royer in herb. V. J. Grummann	Royer
 Royl	Royl
 Royl & Ketelhut,H.	Royl	H. Ketelhut
 Royl & Liedke	Royl	Liedke
@@ -48099,7 +48099,7 @@ S. Zamudio E. Rodríguez	S. Zamudio E. Rodríguez
 S. Zamudio R. Curiel	S. Zamudio R. Curiel
 S. Zamudio R. Fernández A. Guadarrama	
 S. Zawidzki	S. Zawidzki
-S. Zawidzki in herb. V. J. Grummann	S. Zawidzki V. J. Grummann
+S. Zawidzki in herb. V. J. Grummann	S. Zawidzki
 S. Zuluaga	S. Zuluaga
 S.Churchill	S. Churchill
 S.Churchill L. Arroyo P.	P. S. Churchill L. Arroyo
@@ -48559,7 +48559,7 @@ Sastre,C. & Bell,D.	C. Sastre	D. Bell
 Sataité,V.	V. Sataité
 Sätervall,T.A.	T.A. Sätervall
 Sato	Sato
-Satô in herb. V. J. Grummann	Satô V. J. Grummann
+Satô in herb. V. J. Grummann	Satô
 Sato,S.	S. Sato
 Sauer	Sauer
 Sauer Gradstein	Sauer Gradstein
@@ -48576,7 +48576,7 @@ Saulses-Lariviere	Saulses-Lariviere
 Saunders,W.	W. Saunders
 Saupe	Saupe
 Saupe, G.	G. Saupe
-Sauren in herb. V. J. Grummann	Sauren V. J. Grummann
+Sauren in herb. V. J. Grummann	Sauren
 Saurer	Saurer
 Sauter	Sauter
 Sauter & Jack	Sauter	Jack
@@ -48599,7 +48599,7 @@ Savi	Savi
 Savi, P.	P. Savi
 Savi,G.	G. Savi
 Savi,P.	P. Savi
-Savicz in herb. V. J. Grummann	Savicz V. J. Grummann
+Savicz in herb. V. J. Grummann	Savicz
 Savile,D.B.O. & Vaillancourt,J.	D.B.O. Savile	J. Vaillancourt
 Savleda,R.P.	R.P. Savleda
 Savulescu & Sandu	Savulescu	Sandu
@@ -48613,7 +48613,7 @@ Saxton,W.T.	W.T. Saxton
 Sayer, W.A.	W.A. Sayer
 Sayer,W.A.	W.A. Sayer
 Sbarbaro	Sbarbaro
-Sbarbaro in Hb. Behr	Sbarbaro in Hb. Behr
+Sbarbaro in Hb. Behr	Sbarbaro
 Scabbi<?>	Scabbi
 Scaetta,H.	H. Scaetta
 Scala, A.C. (no. 123)	A.C. Scala
@@ -48906,7 +48906,7 @@ Schiefenhövel,W.	W. Schiefenhövel
 Schieferdecker	Schieferdecker
 Schieferdecker,K.	K. Schieferdecker
 Schiemann & Stein	Schiemann	Stein
-Schiemann in herb. V. J. Grummann	Schiemann V. J. Grummann
+Schiemann in herb. V. J. Grummann	Schiemann
 Schiemann,E.	E. Schiemann
 Schiemann,T.	T. Schiemann
 Schiemenz,H.	H. Schiemenz
@@ -51643,7 +51643,7 @@ Schlechter,H.	H. Schlechter
 Schlechter,M.	M. Schlechter
 Schlechter,R.	R. Schlechter
 Schlegel	Schlegel
-Schlegel in Hb. Follmann	Schlegel in Hb. Follmann
+Schlegel in Hb. Follmann	Schlegel
 Schlegel, S.	S. Schlegel
 Schlegel,L.	L. Schlegel
 Schlegel,L. & Arnell,H.W.	L. Schlegel	H.W. Arnell
@@ -52030,7 +52030,7 @@ Schmid-Heckel, H.	H. Schmid-Heckel
 Schmid-Hollinger,R.	R. Schmid-Hollinger
 Schmid-Koch	Schmid-Koch
 Schmid & Veillon,J.M.	Schmid	J.M. Veillon
-Schmid in Herb. O. Behr	Schmid in Herb. O. Behr
+Schmid in Herb. O. Behr	Schmid
 Schmid Veillon	Schmid Veillon
 Schmid, F. (no. 5113)	F. Schmid
 Schmid, F. (no. 5808)	F. Schmid
@@ -52393,7 +52393,7 @@ Schreun	Schreun
 Schricker, S.	S. Schricker
 Schröckinger	Schröckinger
 Schröder	Schröder
-Schröder in herb. V. J. Grummann	Schröder V. J. Grummann
+Schröder in herb. V. J. Grummann	Schröder
 Schröder,C.	C. Schröder
 Schröder,H.	H. Schröder
 Schröder,M.	M. Schröder
@@ -52408,7 +52408,7 @@ Schroeter	Schroeter
 Schroeter,A.	A. Schroeter
 Schröppel	Schröppel
 Schröppel & Poelt	Schröppel	Poelt
-Schröppel in herb. V. J. Grummann	Schröppel V. J. Grummann
+Schröppel in herb. V. J. Grummann	Schröppel
 Schröter	Schröter
 Schröter,B.	B. Schröter
 Schtrik,W.A.	W.A. Schtrik
@@ -53018,7 +53018,7 @@ Sehnem	Sehnem
 Sehnem, S.J. (no. 3996)	S.J. Sehnem
 Sehnem,A.	A. Sehnem
 Sehnk,O. & Sehnk,E.	O. Sehnk	E. Sehnk
-Seibert in herb. V. J. Grummann	Seibert V. J. Grummann
+Seibert in herb. V. J. Grummann	Seibert
 Seidel	Seidel
 Seidel, R. (no. 5915)	R. Seidel
 Seidel, R. (no. 7268)	R. Seidel
@@ -53299,7 +53299,7 @@ Servellón,M.	M. Servellón
 Service Forestier du Cameroon	
 Serviñas,V.	V. Serviñas
 Servit	Servit
-Servit in herb. V. J. Grummann	Servit V. J. Grummann
+Servit in herb. V. J. Grummann	Servit
 Sesdall,H.	H. Sesdall
 Sesse & Mocino	Sesse	Mocino
 Sestini	Sestini
@@ -56191,7 +56191,7 @@ Stenberg,L. & Räsänen,J.	L. Stenberg	J. Räsänen
 Stenberg,L. & Thörn,N.	L. Stenberg	N. Thörn
 Stendahl,F.	F. Stendahl
 Stenholm	Stenholm
-Stenholm in herb. V. J. Grummann	Stenholm V. J. Grummann
+Stenholm in herb. V. J. Grummann	Stenholm
 Stenholm,C.	C. Stenholm
 Stenke,P.	P. Stenke
 Stenroos,S., Ahti,T., Krieger,L. & Marcelli,M.P.	S. Stenroos	T. Ahti	L. Krieger	M.P. Marcelli
@@ -56430,7 +56430,7 @@ Stoll	Stoll
 Stolle	Stolle
 Stolle & Dr. Schade	Stolle	Schade
 Stolle & Schade	Stolle	Schade
-Stolle in herb. V. J. Grummann	Stolle V. J. Grummann
+Stolle in herb. V. J. Grummann	Stolle
 Stolle,E.	E. Stolle
 Stolle,E. & Schade,A.	E. Stolle	A. Schade
 Stolten	Stolten
@@ -56718,7 +56718,7 @@ Strasser,P.P.	P.P. Strasser
 Strasser,W.	W. Strasser
 Straube	Straube
 Straus	Straus
-Straus in herb. V. J. Grummann	Straus V. J. Grummann
+Straus in herb. V. J. Grummann	Straus
 Straus, A.	A. Straus
 Straus,A.	A. Straus
 Strauß	Strauß
@@ -57003,7 +57003,7 @@ Sumen,F.	F. Sumen
 Sun,H. & al.	H. Sun	Al
 Sundberg C. F.	F. Sundberg C.
 Sundberg,C.F.	C.F. Sundberg
-Sundell in herb. V. J. Grummann	Sundell V. J. Grummann
+Sundell in herb. V. J. Grummann	Sundell
 Sünderman	Sünderman
 Sündermann	Sündermann
 Sündermann,F.	F. Sündermann
@@ -57035,7 +57035,7 @@ Svend BUHL	Svend Buhl
 Svendsen,J.	J. Svendsen
 Svenonius, H.	H. Svenonius
 Svenson,H.K.	H.K. Svenson
-Svensson in herb. V. J. Grummann	Svensson V. J. Grummann
+Svensson in herb. V. J. Grummann	Svensson
 Svensson,Å.	Å. Svensson
 Svensson,Å. & Wigermo,C.	Å. Svensson	C. Wigermo
 Sventenius, E.R.	E.R. Sventenius
@@ -57091,7 +57091,7 @@ Sytschak,N. & Skibitska,N.	N. Sytschak	N. Skibitska
 Syuho,K.	K. Syuho
 Szafranski,F.	F. Szafranski
 Szalau,H.	H. Szalau
-Szatala in herb. V. J. Grummann	Szatala V. J. Grummann
+Szatala in herb. V. J. Grummann	Szatala
 Szcliese	Szcliese
 Szél,G.	G. Szél
 Szenczy	Szenczy
@@ -57310,33 +57310,33 @@ T. Suzuki Z. Iwatsuki	T. Suzuki Z. Iwatsuki
 T. Takahashi	T. Takahashi
 T. Thomson	T. Thomson
 T. Tønsberg	T. Tønsberg
-T. v. Andel M. Jansen-Jacobs C. Abraham	T. Andel M. Jansen-Jacobs C. Abraham
-T. v. d. Hammen	T. Hammen
-T. v. d. Hammen G. Malo R.	T. Hammen G. Malo R.
-T. v. d. Hammen R. Jamarillo	T. Hammen R. Jamarillo
-T. v. d. Hammen R. Jamarillo M. T. Murillo	T. Hammen R. Jamarillo M. T. Murillo
-T. v. d. Hammen R. Jaramillo	T. Hammen R. Jaramillo
-T. v. d. Hammen R. Jaramillo-M	T. Hammen R. Jaramillo-M
-T. v. d. Hammen R. Jaramillo-M.	T. Hammen R. Jaramillo-M.
-T. v. d. Hammen R. Jaramillo-M. M. T. Murillo	T. Hammen R. Jaramillo-M. M. T. Murillo
-T. v. d. Hammen R. Jaramillo - M	T. Hammen R. Jaramillo	M
-T. v. d. Hammen R. Jaramillo - M M. T. Murillo	T. Hammen R. Jaramillo	M.M.T. Murillo
-T. v. d. Hammen R. Jaramillo - M.	T. Hammen R. Jaramillo	M.
-T. v. d. Hammen R. Jaramillo - M. M. T. Murillo	T. Hammen R. Jaramillo	M.M.T. Murillo
-T. v. d. Hammen R. Jaramillo M.	T. Hammen R. Jaramillo M.
-T. v. d. Hammen R. Jaramillo M. M. t. Murillo	T. Murillo
-T. v. d. Hammen R. Jaramillo M. M. T. Murillo	T. Hammen R. Jaramillo M. M. T. Murillo
-T. v. d. Hammen R. Jaramillo M. T. Murillo	T. Hammen R. Jaramillo M. T. Murillo
-T. v. d. Hammen R. Jarmillo M.	T. Hammen R. Jarmillo M.
-T. v.d. Hammen	T. Hammen
-T. v.d. Hammen & German Malo R.	T. Hammen	R. German Malo
-T. v.d. Hammen & R. Jaramillo-M	T. Hammen	R. Jaramillo-M
-T. v.d. Hammen & R. Jaramillo-M.	T. Hammen	R. Jaramillo-M
-T. v.d.Hammen	T. Hammen
-T. v.d.Hammen R. Jaramillo	T. Hammen R. Jaramillo
-T. v.d.Hammen R. Jaramillo-M.	T. Hammen R. Jaramillo-M.
-T. v.d.Hammen R. Jaramillo-M. G. Losano	T. Hammen R. Jaramillo-M. G. Losano
-T. v.d.Hammen R.Jaramillo	T. Hammen R. Jaramillo
+T. v. Andel M. Jansen-Jacobs C. Abraham	T. v. Andel M. Jansen-Jacobs C. Abraham
+T. v. d. Hammen	T. v. d. Hammen
+T. v. d. Hammen G. Malo R.	T. v. d. Hammen G. Malo R.
+T. v. d. Hammen R. Jamarillo	T. v. d. Hammen R. Jamarillo
+T. v. d. Hammen R. Jamarillo M. T. Murillo	T. v. d. Hammen R. Jamarillo M. T. Murillo
+T. v. d. Hammen R. Jaramillo	T. v. d. Hammen R. Jaramillo
+T. v. d. Hammen R. Jaramillo-M	T. v. d. Hammen R. Jaramillo-M
+T. v. d. Hammen R. Jaramillo-M.	T. v. d. Hammen R. Jaramillo-M.
+T. v. d. Hammen R. Jaramillo-M. M. T. Murillo	T. v. d. Hammen R. Jaramillo-M. M. T. Murillo
+T. v. d. Hammen R. Jaramillo - M	T. v. d. Hammen R. Jaramillo	M
+T. v. d. Hammen R. Jaramillo - M M. T. Murillo	T. v. d. Hammen R. Jaramillo	M.M.T. Murillo
+T. v. d. Hammen R. Jaramillo - M.	T. v. d. Hammen R. Jaramillo	M.
+T. v. d. Hammen R. Jaramillo - M. M. T. Murillo	T. v. d. Hammen R. Jaramillo	M.M.T. Murillo
+T. v. d. Hammen R. Jaramillo M.	T. v. d. Hammen R. Jaramillo M.
+T. v. d. Hammen R. Jaramillo M. M. t. Murillo	T. v. d. Hammen R. Jaramillo M. M. t. Murillo
+T. v. d. Hammen R. Jaramillo M. M. T. Murillo	T. v. d. Hammen R. Jaramillo M. M. T. Murillo
+T. v. d. Hammen R. Jaramillo M. T. Murillo	T. v. d. Hammen R. Jaramillo M. T. Murillo
+T. v. d. Hammen R. Jarmillo M.	T. v. d. Hammen R. Jarmillo M.
+T. v.d. Hammen	T. v.d. Hammen
+T. v.d. Hammen & German Malo R.	T. v.d. Hammen	R. German Malo
+T. v.d. Hammen & R. Jaramillo-M	T. v.d. Hammen	R. Jaramillo-M
+T. v.d. Hammen & R. Jaramillo-M.	T. v.d. Hammen	R. Jaramillo-M
+T. v.d.Hammen	T. v.d. Hammen
+T. v.d.Hammen R. Jaramillo	T. v.d. Hammen R. Jaramillo
+T. v.d.Hammen R. Jaramillo-M.	T. v.d. Hammen R. Jaramillo-M.
+T. v.d.Hammen R. Jaramillo-M. G. Losano	T. v.d. Hammen R. Jaramillo-M. G. Losano
+T. v.d.Hammen R.Jaramillo	T. v.d. Hammen R. Jaramillo
 T. Valadbeigi	T. Valadbeigi
 T. van der Hammen	T. van der Hammen
 T. van der Hammen R. Jaramillo	T. van der Hammen R. Jaramillo
@@ -57685,7 +57685,7 @@ Th. Læssøe & V. Alstrup	Th Læssøe	V. Alstrup
 Th. Lunke	Th Lunke
 Th. M. Fries	Th M. Fries
 Th. Müller	Th Müller
-Th. Müller in herb. V. J. Grummann	Th Müller V. J. Grummann
+Th. Müller in herb. V. J. Grummann	Th Müller
 Th. Raus	Th Raus
 Th. Reinstein	Th Reinstein
 Th. Reinstein - Schmalkalden	Th Reinstein	Schmalkalden
@@ -57990,7 +57990,7 @@ Timba-Lagrave	Timba-Lagrave
 Timbal-Lagrave	Timbal-Lagrave
 Timbal-Lagrave,P.M.E.	P.M.E. Timbal-Lagrave
 Timbal-Lagrave,P.M.É.	PMé Timbal-Lagrave
-Timkó in herb. V. J. Grummann	Timkó V. J. Grummann
+Timkó in herb. V. J. Grummann	Timkó
 Timm	Timm
 Timm, J.C.	J.C. Timm
 Timm,J.C.	J.C. Timm
@@ -58067,7 +58067,7 @@ Tomasello,S.	S. Tomasello
 Tomasini	Tomasini
 Tomassini	Tomassini
 Tomin	Tomin
-Tomin in herb. V. J. Grummann	Tomin V. J. Grummann
+Tomin in herb. V. J. Grummann	Tomin
 Tommasini	Tommasini
 Tommasini et Sendtner	Tommasini	Sendtner
 Tommasini, M. de (no. 913)	M. de Tommasini
@@ -58712,7 +58712,7 @@ U. Schiefelbein	U. Schiefelbein
 U. Schiefelbein & H.-U. Kison	U. Schiefelbein	H.-U. Kison
 U. Schmitz	U. Schmitz
 U. Schwab	U. Schwab
-U. Schwarz in herb. F. Schumm	U. Schwarz F. Schumm
+U. Schwarz in herb. F. Schumm	U. Schwarz
 U. Søchting	U. Søchting
 U. Søchting, H. Sipman, M. Sohrabi & M. R. Asef	U. Søchting	H. Sipman	M. Sohrabi	M.R. Asef
 U. Trinkaus & M. Grube	U. Trinkaus	M. Grube
@@ -58895,8 +58895,8 @@ V. Calatayud	V. Calatayud
 v. Cypers	V. Cypers
 v. d. B. Lac.	V. d. B. Lac.
 v. d. B. Lus.	V. d. B. Lus.
-v. d. Boom,P.	P. Boom
-v. d. Boom,P.. & v. d. Boom,B.	P. Boom	B. Boom
+v. d. Boom,P.	P. v. d. Boom
+v. d. Boom,P.. & v. d. Boom,B.	P. v. d. Boom	B. v. d. Boom
 v. d. Brink	V. d. Brink
 v. d. Hammen	V. d. Hammen
 v. d. Hammen Jaramillo	V. d. Hammen Jaramillo
@@ -58910,7 +58910,7 @@ v. D. Hammen Jaramillo Murillo	V. D. Hammen Jaramillo Murillo
 V. Demoulin et L. Smeets	V. Demoulin	L. Smeets
 v. Flotow	V. Flotow
 V. Giacomini	V. Giacomini
-V. Haglund in herb. V. J. Grummann	V. Haglund V. J. Grummann
+V. Haglund in herb. V. J. Grummann	V. Haglund
 V. I. Lipskij	V.I. Lipskij
 V. J. Grummann	V.J. Grummann
 V. J. Grummann & S. Zawidzki	V.J. Grummann	S. Zawidzki
@@ -58920,7 +58920,7 @@ V. John & M. Zamfir	V. John	M. Zamfir
 V. John et M. Zamfir	V. John	M. Zamfir
 v. Krempelhuber	V. Krempelhuber
 V. Kufák	V. Kufák
-V. Kufák in Hb. Zschacke	V. Kufák in Hb. Zschacke
+V. Kufák in Hb. Zschacke	V. Kufák
 V. Kummer	V. Kummer
 V. Kummer & M. Ristow	V. Kummer	M. Ristow
 V. Kutak	V. Kutak
@@ -59885,7 +59885,7 @@ Vozech	Vozech
 Vrabélyi	Vrabélyi
 Vrabélyi,M.	M. Vrabélyi
 Vrakking	Vrakking
-Vrang in herb. V. J. Grummann	Vrang V. J. Grummann
+Vrang in herb. V. J. Grummann	Vrang
 Vraný,V.	V. Vraný
 Vries,H. de	H. Vries
 Vriese,W.H. de	W.H. Vriese
@@ -59942,7 +59942,7 @@ W. A. Weber B. Johnston
 W. A. Weber D. McVean	
 W. A. Weber D. McVeaN	
 W. A. Weber R. Bye	
-W. A. Weber und Mc Coy	W. A. Weber und Mc Coy
+W. A. Weber und Mc Coy	W.A. Weber	Mc Coy
 W. Ahles	W. Ahles
 W. Allorge P. Allorge	W. Allorge P. Allorge
 W. Apelis	W. Apelis
@@ -61272,7 +61272,7 @@ Weis, A.	A. Weis
 Weis, W.	W. Weis
 Weis,A.	A. Weis
 Weise	Weise
-Weise in Hb. J. Aichinger	Weise in Hb. J. Aichinger
+Weise in Hb. J. Aichinger	Weise
 Weise,A.	A. Weise
 Weise,E.	E. Weise
 Weise,G.	G. Weise
@@ -61644,7 +61644,7 @@ Werff,H. van der, Valenzuela,L., Suclli,E. & Farfan	H. van der Werff	L. Valenzue
 Werff,H. van der, Vásquez,R. & Rojas,C.	H. van der Werff	R. Vásquez	C. Rojas
 Werner	Werner
 Werner HILBIG	Werner Hilbig
-Werner in herb. V. J. Grummann	Werner V. J. Grummann
+Werner in herb. V. J. Grummann	Werner
 Werner Repetzky	Werner Repetzky
 Werner, E.	E. Werner
 Werner, H.	H. Werner
@@ -62206,7 +62206,7 @@ Wilford,C.	C. Wilford
 Wilfred B. Schofield	Wilfred B. Schofield
 Wilhelm Gugler	Wilhelm Gugler
 Wilhelm Gugler u. Georg Hoock	Wilhelm Gugler Georg Hoock
-Wilhelm Gugler und Georg Hoock	Wilhelm Gugler und Georg Hoock
+Wilhelm Gugler und Georg Hoock	Wilhelm Gugler	Georg Hoock
 Wilhelm Siegmund	Wilhelm Siegmund
 Wilhelm Siegmund jun.	Wilhelm Siegmund Jun
 Wilhelm, G.	G. Wilhelm
@@ -62652,7 +62652,7 @@ Woolls,W.	W. Woolls
 Woolston,A.L.	A.L. Woolston
 Wooton,E.O.	E.O. Wooton
 Wöppel	Wöppel
-Woppen in herb. V. J. Grummann	Woppen V. J. Grummann
+Woppen in herb. V. J. Grummann	Woppen
 Worcester,C.	C. Worcester
 Worcester,D.C.	D.C. Worcester
 Wormastiny	Wormastiny
@@ -64299,7 +64299,7 @@ Zinger, N.W. (no. 2531)	N.W. Zinger
 Zinger,N.	N. Zinger
 Zinger,N.V.	N.V. Zinger
 Zinke	Zinke
-Zinkernagel in herb. V. J. Grummann	Zinkernagel V. J. Grummann
+Zinkernagel in herb. V. J. Grummann	Zinkernagel
 Zinsmeister, J. B.	J.B. Zinsmeister
 Zinsmeister, J.B.	J.B. Zinsmeister
 Zinsmeister, J.B. (no. 1129)	J.B. Zinsmeister
@@ -64410,7 +64410,7 @@ Zuluaga	Zuluaga
 Zuluaga, S.	S. Zuluaga
 Zumaeta,J.	J. Zumaeta
 Zumaya,S., Borsch,T., Flores,H. & Ochoterena,H.	S. Zumaya	T. Borsch	H. Flores	H. Ochoterena
-Zumfe in herb. V. J. Grummann	Zumfe V. J. Grummann
+Zumfe in herb. V. J. Grummann	Zumfe
 Zündorf,H.-J.	H.-J. Zündorf
 Zündorf,H.-J., Gerstenlauer,J., Müller,E. & Rzanny,M.	H.-J. Zündorf	J. Gerstenlauer	E. Müller	M. Rzanny
 Zúñiga,A.A.	A.A. Zúñiga
@@ -64426,7 +64426,7 @@ Zwaan, C.J. van der (no. 513)	C. J. van der Zwaan
 Zwaan, C.J. van der (no. 593)	C. J. van der Zwaan
 Zwaan, C.J. van der (no. 973)	C. J. van der Zwaan
 Zwackh	Zwackh
-Zwackh in herb. V. J. Grummann	Zwackh V. J. Grummann
+Zwackh in herb. V. J. Grummann	Zwackh
 Zwackh, B. von	B. von Zwackh
 Zwackh, B. von (no. 323)	B. von Zwackh
 Zwackh, W. von	W. von Zwackh

@@ -10,6 +10,8 @@ data = read_tsv(paste0(path,"/occurrence.txt"),
 str = count(data,recordedBy)
 writeLines(pull(str,recordedBy),"data/names.txt")
 
+system("ruby src/agent_parse.rb")
+
 berl = readLines("data/output/names_parsed.txt") %>% 
   tibble(raw = .) %>%
   mutate(ori = str_extract(raw,"^([^\t]+)"),
@@ -22,5 +24,10 @@ berl2 = filter(berl,
 berl3 = berl2 %>%
   filter(!duplicated(parsed))
 
-#attach dates
-#split names
+dates = left_join(berl3,select(data,recordedBy,year),
+                  by=c("ori"="recordedBy")) %>%
+  group_by(parsed) %>%
+  summarize(year1 = min(year),
+            year2 = max(year),
+            ori = first(ori)) %>%
+  mutate(surname = gsub("^(.*[\\s])","",parsed,perl=T))
