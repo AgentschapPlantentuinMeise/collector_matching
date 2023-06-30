@@ -1,0 +1,5 @@
+SELECT DISTINCT ?item ?itemLabel ?itemAltLabel ?collectionitems WHERE {
+  ?item wdt:P31 wd:Q5 .
+  ?item wdt:P11146  ?collectionitems. #collection items at
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" } 
+}

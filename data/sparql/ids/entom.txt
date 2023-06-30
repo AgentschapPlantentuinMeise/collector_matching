@@ -1,0 +1,5 @@
+SELECT DISTINCT ?item ?itemLabel ?itemAltLabel ?entom_id WHERE {
+  ?item wdt:P31 wd:Q5 .
+  ?item wdt:P5370 ?entom_id. #entomologists of the world .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" } 
+}

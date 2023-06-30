@@ -1,0 +1,5 @@
+SELECT DISTINCT ?item ?itemLabel ?itemAltLabel ?ipni_id WHERE {
+  ?item wdt:P31 wd:Q5 .
+  ?item wdt:P586 ?ipni_id. #ipni
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" } 
+}

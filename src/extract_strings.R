@@ -12,22 +12,37 @@ writeLines(pull(str,recordedBy),"data/names.txt")
 
 system("ruby src/agent_parse.rb")
 
-berl = readLines("data/output/names_parsed.txt") %>% 
+parsed_names = readLines("data/output/names_parsed.txt") %>% 
   tibble(raw = .) %>%
-  mutate(ori = str_extract(raw,"^([^\t]+)"),
-         parsed = gsub("^.*?\t","",raw))
+  mutate(ori = str_extract(raw,
+                           "^([^\t]+)"),
+         parsed = gsub("^.*?\t",
+                       "",
+                       raw))
 
-berl2 = filter(berl,
+parsed_names2 = filter(parsed_names,
                parsed!="") %>%
-  separate_rows(parsed,sep="\t")
+  separate_rows(parsed,
+                sep="\t")
 
-berl3 = berl2 %>%
+parsed_names3 = parsed_names2 %>%
   filter(!duplicated(parsed))
 
-dates = left_join(berl3,select(data,recordedBy,year),
+dates = left_join(parsed_names3,
+                  select(data,recordedBy,year),
                   by=c("ori"="recordedBy")) %>%
   group_by(parsed) %>%
   summarize(year1 = min(year),
             year2 = max(year),
             ori = first(ori)) %>%
-  mutate(surname = gsub("^(.*[\\s])","",parsed,perl=T))
+  mutate(surname = gsub("^(.*[\\s])",
+                        "",
+                        parsed,
+                        perl=T),
+         fname = gsub("([\\s].*)$",
+                      "",
+                      parsed,
+                      perl=T),
+         fname = ifelse(surname == fname,
+                        NA,
+                        fname))

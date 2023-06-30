@@ -1,0 +1,6 @@
+SELECT DISTINCT ?item ?itemLabel ?itemAltLabel ?article WHERE {
+	?item wdt:P31 wd:Q5 .
+  ?article 	schema:about ?item ;
+			schema:isPartOf <https://species.wikimedia.org/> .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}

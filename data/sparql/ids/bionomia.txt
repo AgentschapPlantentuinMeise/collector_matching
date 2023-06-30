@@ -1,0 +1,5 @@
+SELECT DISTINCT ?item ?itemLabel ?itemAltLabel ?bionomia_id WHERE {
+  ?item wdt:P31 wd:Q5 .
+  ?item wdt:P6944 ?bionomia_id. #bionomia_id
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" } 
+}
