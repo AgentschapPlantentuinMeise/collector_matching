@@ -84,38 +84,8 @@ joinSPARQL <- function(raw = NULL,
       filter(!duplicated(item))
   }
   wikiResults$id = gsub("http://www.wikidata.org/entity/",
-                              "",
-                              wikiResults$item)
-  return(wikiResults)
-}
-
-process_wd <- function(wikiResults,
-                          inc_surname=T,
-                          inc_initials=T) {
-  if (inc_surname) {
-    wikiResults$surname = gsub("^(.*[\\s])",
-                               "",
-                               wikiResults$itemLabel,
-                               perl=T)
-  }
-  if (inc_initials) {
-    wikiResults %<>%
-      mutate(initials = gsub("\'",
-                             "",
-                             itemLabel,
-                             fixed=T),
-             initials = gsub("\"",
-                             "",
-                             initials,
-                             fixed=T),
-             initials = gsub("(?<!\\s).",
-                             "",
-                             initials,
-                             perl=T),
-             initials = paste0(
-               substr(itemLabel,1,1),
-               initials))
-  }
+                        "",
+                        wikiResults$item)
   return(wikiResults)
 }
 
