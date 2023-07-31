@@ -15,7 +15,8 @@ parse_names <- function(names) {
                   sep="\t") %>%
     filter(!duplicated(parsed),
            !is.na(parsed),
-           parsed!="")
+           parsed!="",
+           nchar(parsed)>3)
   
   return(parsed_names)
 }
@@ -54,7 +55,7 @@ interpret_strings <- function(data,
                              "",
                              initials,
                              fixed=T),
-             initials = gsub("(?<!\\s).",
+             initials = gsub("(?<!\\s|-).",
                              "",
                              initials,
                              perl=T),

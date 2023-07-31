@@ -95,7 +95,6 @@ aliases_wd <- function(wikiResults) {
     select(-itemLabel) %>%
     rename(itemLabel = itemAltLabel) %>%
     select(itemLabel,id) %>%
-    rbind(select(wikiResults,itemLabel,id)) %>%
     filter(!is.na(itemLabel)) %>%
     mutate(test = paste0(id,
                          itemLabel)) %>%

@@ -64,3 +64,57 @@ matchString <- function(name,
   
   return(matches)
 }
+
+match_validate <- function(result,
+                           mode = "best",
+                           cut,
+                           minscore = 10) {
+  ranking = tibble(
+    reason = c("exact_match",
+               "surname_match",
+               "firstname_match",
+               "surname_fuzzy_match",
+               "initials_match",
+               "alias_match",
+               "alias_initials_match"),
+    value = c(1000,
+              100,
+              100,
+              10,
+              1,
+              1000,
+              1)
+  )
+  
+  result_grouped = result %>%
+    left_join(ranking,by="reason") %>%
+    group_by(id) %>%
+    summarize(reasons = paste(reason,collapse = "|"),
+              labels = paste(itemLabel,collapse = "|"),
+              score = sum(value)) %>%
+    filter(score >= minscore) %>%
+    arrange(desc(score))
+  
+  nomatch = tibble(id = NA,
+                   reasons = NA,
+                   labels = NA,
+                   score = 0)
+  
+  if (mode == "best") {
+    if (dim(result_grouped)[1] > 0) {
+      return(result_grouped[1,])
+    } else {
+      return(nomatch)
+    }
+  } else if (mode == "cut") {
+    if (!is.null(cut)) {
+      return(result_grouped[1:min(cut,
+                                  dim(result_grouped)[1])])
+    } else {
+      stop("Cut parameter not specified.")
+    }
+  } else if (mode == "all") {
+    return(result_grouped)
+  }
+}
+
