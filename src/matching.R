@@ -69,6 +69,7 @@ match_validate <- function(result,
                            mode = "best",
                            cut,
                            minscore = 10) {
+  
   ranking = tibble(
     reason = c("exact_match",
                "surname_match",
@@ -118,3 +119,72 @@ match_validate <- function(result,
   }
 }
 
+threading <- function(data,#list or tibble to multithread
+                      f,#function to apply to data, str or function object
+                      num_threads = 4,#nr of threads to use
+                      req_args = NULL,#vector with names of objects to load from globalenv
+                      pkg = c("tidyverse",#required packages
+                              "magrittr"),
+                      srcs = "src/matching.R",#required script files
+                      dryrun = F) {#for testing
+  require(parallel)
+  require(doParallel)
+  
+  #convert data to list if it's a tibble
+  if (is.tibble(data)) {
+    data %<>%
+      split(seq(dim(data)[1]))
+  }
+  
+  if (!dryrun) {
+    #create the cluster for threading
+    cl = makePSOCKcluster(num_threads)
+    registerDoParallel(cl)
+    
+    #load the required objects into the cluster
+    if (!is.null(req_args)) {
+      clusterExport(cl,
+                    unlist(req_args))
+    }
+    
+    #load the arguments that specify other requirements in the cluster
+    clusterExport(cl,
+                  c("pkg","srcs"),
+                  envir = environment())
+    
+    #execute those other requirements
+    clusterEvalQ(cl, {
+      for (i in 1:length(pkg)) {
+        library(pkg[i],
+                character.only = T)
+      }
+      for (i in 1:length(srcs)) {
+        source(srcs[i])
+      }
+    })
+    
+    #wrap the function to be used to avoid argument misspecification
+    #wrapping might no longer be needed after much troubleshooting
+    #but don't break things that work
+    custom_wrapper <- function(arg) {
+      if (!is.null(req_args)) {
+        do.call(f,
+                c(list(arg),lapply(req_args,get)))
+      } else {
+        do.call(f,
+                list(arg))
+      }
+    }
+    
+    #multithread the process, log time
+    start_time = Sys.time()
+    resu = foreach(mat = data) %dopar% custom_wrapper(mat)
+    end_time = Sys.time()
+    stopCluster(cl)
+    
+    parallel_time = end_time - start_time
+    print(parallel_time)
+    
+    return(resu)
+  }
+}
