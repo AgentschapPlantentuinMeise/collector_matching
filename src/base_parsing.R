@@ -1,3 +1,4 @@
+#parse name strings using the dwc_agent ruby gem
 parse_names <- function(names) {
   writeLines(names,"data/names.txt")
   
@@ -21,11 +22,13 @@ parse_names <- function(names) {
   return(parsed_names)
 }
 
+#strings are converted for usability by the matching script
 interpret_strings <- function(data,
-                              colname,
+                              colname,#name of the column to be interpreted
                               inc_surname=T,
                               inc_fname=T,
                               inc_initials=T) {
+  #surname is the last word of the space delimited string (after parsing)
   if (inc_surname) {
     data %<>%
       mutate(surname = gsub("^(.*[\\s])",
@@ -33,6 +36,8 @@ interpret_strings <- function(data,
                             eval(sym(colname)),
                             perl=T))
   }
+  
+  #first name is the first word of the space delimited string (after parsing)
   if (inc_fname&inc_surname) {
     data %<>%
       mutate(fname = gsub("\\s.*",
@@ -45,6 +50,10 @@ interpret_strings <- function(data,
                             NA,
                             fname))
   }
+  
+  #initials are based on the first character of the chunks of the 
+  #space or dash(-) delimited string
+  #quotes are removed so they don't end up part of the initials
   if (inc_initials) {
     data %<>%
       mutate(initials = gsub("\'",

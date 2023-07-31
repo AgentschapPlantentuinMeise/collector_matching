@@ -1,3 +1,4 @@
+#make sparql query to wikidata and return csv results
 querki <- function(query,h="text/csv",
                    agent="your_user_name_here",
                    logging = F) {
@@ -13,6 +14,7 @@ querki <- function(query,h="text/csv",
   return(response_content)
 }
 
+#read sparql queries from the data directory
 readSPARQL <- function() {
   files = list.files("data/sparql",
                      recursive = T,
@@ -30,6 +32,8 @@ readSPARQL <- function() {
   return(queries)
 }
 
+#perform a series of sparql queries
+#returned is a list with results, named if a name is provided with the queries
 getSPARQL <- function(queries = NULL,
                       agent = "collector_matching",
                       logging = F) {
@@ -52,6 +56,7 @@ getSPARQL <- function(queries = NULL,
   return(raw)
 }
 
+#joins multiple sparql query results into a single tibble
 joinSPARQL <- function(raw = NULL,
                        unique = T,
                        logging = F) {
@@ -89,6 +94,8 @@ joinSPARQL <- function(raw = NULL,
   return(wikiResults)
 }
 
+#converts wikidata results into a tibble with a row for each alias of each item
+#excluding the english item label
 aliases_wd <- function(wikiResults) {
   altnames = wikiResults %>%
     separate_rows(itemAltLabel,sep=", ") %>%
@@ -103,6 +110,9 @@ aliases_wd <- function(wikiResults) {
   return(altnames)
 }
 
+#sets the floruit date for wikidata items
+#currently unused as the queries have been simplified
+#and no longer include dates in the results
 floruit_wd <- function(wikiResults) {
   wikiResults %<>%
     mutate(floruitDate1 = ifelse(!is.na(yob),
@@ -124,6 +134,9 @@ floruit_wd <- function(wikiResults) {
   return(wikiResults)
 }
 
+#checks whether a qid has been merged
+#returns the qid the item has been merged into if true
+#and NA if no merge has happened
 check_merged <- function(qid) {
   require(httr)
   

@@ -3,7 +3,11 @@ library(magrittr)
 
 source("src/base_parsing.R")
 
-path = "../gbif-sets/0195853-230224095556074"
+path= commandArgs(trailingOnly = T)
+
+if (length(path) == 0) {
+  path = "../gbif-sets/0195853-230224095556074"
+}
 
 data = read_tsv(paste0(path,"/occurrence.txt"),
                 quote="",

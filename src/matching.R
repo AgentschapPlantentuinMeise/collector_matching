@@ -66,10 +66,15 @@ matchString <- function(name,
 }
 
 match_validate <- function(result,
-                           mode = "best",
-                           cut,
-                           minscore = 10) {
+                           mode = "best",#can also be "cut" or "all"
+                           cut,#if cut, then the nr of results to include in the return
+                           minscore = 10) {#results below this score will be dropped
   
+  #rank each matching method
+  #exact matches are best (on alias or english label)
+  #then exact matches on first or surname
+  #then fuzzy matches on surname
+  #then initials
   ranking = tibble(
     reason = c("exact_match",
                "surname_match",
@@ -87,6 +92,8 @@ match_validate <- function(result,
               1)
   )
   
+  #collapse each result in a list of each possible wikidata qid
+  #and sum the scores
   result_grouped = result %>%
     left_join(ranking,by="reason") %>%
     group_by(id) %>%
@@ -96,6 +103,7 @@ match_validate <- function(result,
     filter(score >= minscore) %>%
     arrange(desc(score))
   
+  #nomatch if no match was found or only initials matched
   nomatch = tibble(id = NA,
                    reasons = NA,
                    labels = NA,
@@ -123,9 +131,9 @@ threading <- function(data,#list or tibble to multithread
                       f,#function to apply to data, str or function object
                       num_threads = 4,#nr of threads to use
                       req_args = NULL,#vector with names of objects to load from globalenv
-                      pkg = c("tidyverse",#required packages
+                      pkg = c("tidyverse",#required packages, might be unneeded argument
                               "magrittr"),
-                      srcs = "src/matching.R",#required script files
+                      srcs = "src/matching.R",#required script files, might be unneeded argument
                       dryrun = F) {#for testing
   require(parallel)
   require(doParallel)
