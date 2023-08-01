@@ -6,7 +6,7 @@ source("src/base_parsing.R")
 path= commandArgs(trailingOnly = T)
 
 if (length(path) == 0) {
-  path = "../gbif-sets/0195853-230224095556074"
+  path = "data/gbif sets/0167499-230224095556074"
 }
 
 data = read_tsv(paste0(path,"/occurrence.txt"),

@@ -22,9 +22,12 @@ readSPARQL <- function() {
   type = str_extract(files,"data/.*/") %>%
     gsub("data/sparql/","",.) %>%
     gsub("/","",.)
+  ids = gsub(".*/","",files) %>%
+    gsub(".txt","",.,fixed=T)
   queries = tibble(filename = files,
                    query = NA,
-                   type = type)
+                   type = type,
+                   id = ids)
   for (i in 1:length(files)) {
     queries$query[i] = readChar(files[i],
                                 file.info(files[i])$size)
@@ -36,24 +39,60 @@ readSPARQL <- function() {
 #returned is a list with results, named if a name is provided with the queries
 getSPARQL <- function(queries = NULL,
                       agent = "collector_matching",
-                      logging = F) {
+                      logging = F,
+                      queryids = NULL,
+                      redo = T) {
   if (is.null(queries)) {
     queries = readSPARQL()
   }
   raw = list()
-  for (i in 1:dim(queries)[1]) {
-    raw[[i]] = querki(queries$query[i],
+  
+  if (!is.null(queryids)) {
+    range = queryids
+  } else {
+    range = queries$id
+  }
+  
+  for (i in 1:length(range)) {
+    raw[[range[i]]] = querki(queries$query[i],
                       agent = agent,
                       logging = logging)
     if (!is.null(queries$type)) {
       if (queries$type[i] == "props") {
         name = gsub(".*/","",queries$filename[i]) %>%
           gsub(".txt","",.)
-        raw[[i]][[name]] = name
+        raw[[range[i]]][[name]] = name
+      }
+    }
+    if (length(grep(".TimeoutException",
+                    raw[[range[i]]]$item,
+                    fixed=T))>0) {
+      if (is.null(raw$fail)) {
+        raw$fail = i
+      } else {
+        raw$fail = c(raw$fail,i)
       }
     }
   }
+  if (redo) {
+    raw_failed = redoSPARQL(raw)
+    for (i in names(raw_failed)) {
+      raw[i] = raw_failed[i]
+    }
+  }
   return(raw)
+}
+
+redoSPARQL <- function(raw) {
+  if (!is.null(raw$fail)) {
+    print(paste0("redoing timed out queries for: ",
+                 paste(raw$fail,
+                       collapse=", ")))
+    raw_failed = getSPARQL(queryids = raw$fail)
+    return(raw_failed)
+  } else {
+    return(raw)
+  }
 }
 
 #joins multiple sparql query results into a single tibble

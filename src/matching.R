@@ -66,7 +66,7 @@ matchString <- function(name,
 }
 
 match_validate <- function(result,
-                           mode = "best",#can also be "cut" or "all"
+                           rmode = "best",#can also be "cut" or "all"
                            cut,#if cut, then the nr of results to include in the return
                            minscore = 10) {#results below this score will be dropped
   
@@ -109,20 +109,20 @@ match_validate <- function(result,
                    labels = NA,
                    score = 0)
   
-  if (mode == "best") {
+  if (rmode == "best") {
     if (dim(result_grouped)[1] > 0) {
       return(result_grouped[1,])
     } else {
       return(nomatch)
     }
-  } else if (mode == "cut") {
+  } else if (rmode == "cut") {
     if (!is.null(cut)) {
       return(result_grouped[1:min(cut,
                                   dim(result_grouped)[1])])
     } else {
       stop("Cut parameter not specified.")
     }
-  } else if (mode == "all") {
+  } else if (rmode == "all") {
     return(result_grouped)
   }
 }
@@ -139,7 +139,7 @@ threading <- function(data,#list or tibble to multithread
   require(doParallel)
   
   #convert data to list if it's a tibble
-  if (is.tibble(data)) {
+  if (is_tibble(data)) {
     data %<>%
       split(seq(dim(data)[1]))
   }
@@ -195,4 +195,57 @@ threading <- function(data,#list or tibble to multithread
     
     return(resu)
   }
+}
+
+puerki <- function(ids,
+                   which = "ids",
+                   stepcount = T,
+                   agent = "collector_matching") {
+  require(httr)
+  
+  steps = seq(1,
+              dim(ids)[1],
+              by=50)
+  
+  resu.r = list()
+  j=1
+  for (i in steps) {
+    if (i == steps[length(steps)]) {
+      jump = dim(ids)[1] - i
+    } else {
+      jump = 49
+    }
+    tst = paste(ids[[which]][i:(i+jump)],
+                collapse="|")
+    resu = httr::GET(url = paste0("https://www.wikidata.org/w/api.php",
+                                  "?action=wbgetentities&ids=",
+                                  tst,
+                                  "&format=json"),
+                     httr::user_agent(agent))
+    resu.r[[j]] = httr::content(resu,
+                                type="application/json")
+    if (stepcount) {print(j)}
+    j=j+1
+  }
+  return(resu.r)
+}
+
+retrieve_claims <- function(result,
+                            cache = NULL) {
+  if (!is.null(cache)) {
+    result %<>% 
+      filter(!id%in%names(cache),
+             !duplicated(id))
+  }
+  
+  if (dim(result)[1]>0) {
+    claims = puerki(result,
+                    which = "id",
+                    stepcount = F)
+    
+    cache = c(claims[[1]]$entities,
+              cache)
+  }
+  
+  return(cache)
 }
