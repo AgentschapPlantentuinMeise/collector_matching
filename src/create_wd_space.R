@@ -5,7 +5,8 @@ source("src/base_parsing.R")
 source("src/wd_functions.R")
 
 if (file.exists("wikiresults.txt")) {
-  wikiResults = read_tsv("wikiresults.txt")
+  wikiResults = read_tsv("wikiresults.txt",
+                         col_types = cols(.default = "c"))
 } else {
   queries = readSPARQL()
   

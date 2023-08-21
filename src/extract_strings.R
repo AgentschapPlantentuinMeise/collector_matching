@@ -9,8 +9,11 @@ if (length(path) == 0) {
   path = "data/gbif sets/0167499-230224095556074"
 }
 
+columns = readLines("src/gbif-columns.txt")
+
 data = read_tsv(paste0(path,"/occurrence.txt"),
                 quote="",
+                col_select = all_of(columns),
                 col_types = cols(.default = "c"))
 
 parsed_names = data %>%
