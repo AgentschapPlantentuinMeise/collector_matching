@@ -1,3 +1,6 @@
+library(tidyverse)
+library(magrittr)
+
 source("src/matching.R")
 
 #run extract_strings.R and create_wd_space.R first
@@ -20,7 +23,7 @@ if (is.na(cores)) {
 ##16threads: 15.2min for 10k names T=75°C, CPU usage = 100%
 
 #match every string to wikidata items, returning all possible matches
-matching_results3 = threading(data = tryout,
+matching_results3 = threading(data = dates,
                              f = matchString,
                              num_threads = cores,
                              req_args = c("wikiResults","aliases"))
@@ -28,14 +31,20 @@ matching_results3 = threading(data = tryout,
 #validate each set of matches
 #default method is first result only
 rmode = "all"
-best2 = threading(data = matching_results,
+best2 = threading(data = new,
                  f = match_validate,
                  num_threads = cores,
                  req_args = "rmode")
-s#for 10k: 32s
+#for 10k: 32s
+#for 57.9k: 7.7min
+dates %<>%
+  rownames_to_column("rownr")
 
-#unlist and attach the original source (and parsed) strings again
-best2 %<>%
-  bind_rows() %>%
-  mutate(parsed = dates$parsed[c1:c2],
-         ori = dates$ori[c1:c2])
+best_t = best2 %>%
+  bind_rows(.id = "rownr") %>%
+  left_join(dates,
+            by=c("rownr"="rownr"))
+
+ids_to_cache = best_t %>%
+  filter(score>10) %>%
+  count(id)

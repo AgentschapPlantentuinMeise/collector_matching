@@ -53,3 +53,4 @@ data/names.txt
 data/output
 *.json
 *.zip
+*.fst
