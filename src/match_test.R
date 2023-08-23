@@ -8,6 +8,7 @@ c1 = 20001
 c2 = 30000
 tryout = dates[c1:c2,]
 
+library(parallel)
 cores = detectCores()
 
 if (is.na(cores)) {
@@ -27,11 +28,11 @@ matching_results3 = threading(data = tryout,
 #validate each set of matches
 #default method is first result only
 rmode = "all"
-best2 = threading(data = matching_results2,
+best2 = threading(data = matching_results,
                  f = match_validate,
                  num_threads = cores,
                  req_args = "rmode")
-#for 10k: 32s
+s#for 10k: 32s
 
 #unlist and attach the original source (and parsed) strings again
 best2 %<>%

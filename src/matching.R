@@ -92,9 +92,19 @@ match_validate <- function(result,
               1)
   )
   
+  #nomatch if no match was found or only initials matched
+  nomatch = tibble(id = NA,
+                   reasons = NA,
+                   labels = NA,
+                   score = 0)
+  
+  if (dim(result)[1] == 0) {
+    return(nomatch)
+  }
+  
   #collapse each result in a list of each possible wikidata qid
   #and sum the scores
-  result_grouped = result %>%
+  result %<>%
     left_join(ranking,by="reason") %>%
     group_by(id) %>%
     summarize(reasons = paste(reason,collapse = "|"),
@@ -103,27 +113,17 @@ match_validate <- function(result,
     filter(score >= minscore) %>%
     arrange(desc(score))
   
-  #nomatch if no match was found or only initials matched
-  nomatch = tibble(id = NA,
-                   reasons = NA,
-                   labels = NA,
-                   score = 0)
-  
   if (rmode == "best") {
-    if (dim(result_grouped)[1] > 0) {
-      return(result_grouped[1,])
-    } else {
-      return(nomatch)
-    }
+    return(result[1,])
   } else if (rmode == "cut") {
     if (!is.null(cut)) {
-      return(result_grouped[1:min(cut,
-                                  dim(result_grouped)[1])])
+      return(result[1:min(cut,
+                          dim(result)[1])])
     } else {
       stop("Cut parameter not specified.")
     }
   } else if (rmode == "all") {
-    return(result_grouped)
+    return(result)
   }
 }
 
