@@ -51,3 +51,5 @@ rsconnect/
 data/gbif sets
 data/names.txt
 data/output
+*.json
+*.zip
