@@ -71,7 +71,10 @@ interpret_strings <- function(data,
              initials = paste0(
                substr(eval(sym(colname)),1,1),
                initials),
-             initials = toupper(initials))
+             initials = toupper(initials),
+             initials = ifelse(nchar(initials)<2,
+                               NA,
+                               initials))
   }
   return(data)
 }
