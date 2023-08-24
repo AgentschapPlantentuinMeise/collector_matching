@@ -15,8 +15,8 @@ matchString <- function(name,
     rbind(matches,.)
   
   #exact match of parsed surname and presumed wikidata item surname from label
-  if (!is.na(name$surname&
-             name$surname!="")) {
+  if (!is.na(name$surname)&
+             name$surname!="") {
     matches = wiki %>%
       filter(surname == name$surname) %>%
       select(itemLabel,id) %>%
@@ -25,8 +25,8 @@ matchString <- function(name,
   }
   
   #exact match of parsed first name and presumed wikidata item first name from label
-  if (!is.na(name$fname&
-             name$fname!="")) {
+  if (!is.na(name$fname)&
+             name$fname!="") {
     matches = wiki %>%
       filter(fname == name$fname) %>%
       select(itemLabel,id) %>%
@@ -36,8 +36,8 @@ matchString <- function(name,
   #fuzzy match of parsed surname into any presumed wikidata item surname from label
   #max distance between both str lengths set by lname_cut
   #default is 2, so surname in wikidata can only be 1 char longer at most
-  if (!is.na(name$surname&
-             name$surname!="")) {
+  if (!is.na(name$surname)&
+             name$surname!="") {
     matches = wiki %>%
       filter(agrepl(name$surname,
                     surname)) %>%
@@ -47,8 +47,8 @@ matchString <- function(name,
       rbind(matches,.)
   }
   #exact match of the interpreted initials
-  if (!is.na(name$initials&
-             name$initials!="")) {
+  if (!is.na(name$initials)&
+             name$initials!="") {
     matches = wiki %>%
       filter(initials == name$initials) %>%
       select(itemLabel,id) %>%
