@@ -1,5 +1,6 @@
 #parse name strings using the dwc_agent ruby gem
 parse_names <- function(names) {
+  
   writeLines(names,"data/names.txt")
   
   system("ruby src/agent_parse.rb")
@@ -10,9 +11,16 @@ parse_names <- function(names) {
                              "^([^\t]+)"),
            parsed = gsub("^.*?\t",
                          "",
-                         raw)) %>%
+                         raw),
+           teamCount = nchar(gsub("[^\t]",
+                               "",
+                               parsed))+1,
+           displayOrder = map(teamCount,
+                              ~ paste(c(1:.x),
+                                      collapse="\t"))) %>%
     filter(parsed!="") %>%
     separate_rows(parsed,
+                  displayOrder,
                   sep="\t") %>%
     filter(!duplicated(parsed),
            !is.na(parsed),
