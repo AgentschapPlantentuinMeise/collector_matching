@@ -3,10 +3,16 @@ library(magrittr)
 
 source("src/base_parsing.R")
 
-path= commandArgs(trailingOnly = T)
+path = commandArgs(trailingOnly = T)
 
 if (length(path) == 0) {
-  path = "data/gbif sets/0167499-230224095556074"
+  gbiffolder = "src/gbif-data-folder.txt"
+  if (file.exists(gbiffolder)) {
+    path = readLines(gbiffolder)
+  } else {
+    path = list.dirs("data/gbif sets",
+                     recursive = F)[1]
+  }
 }
 
 columns = readLines("src/gbif-columns.txt")

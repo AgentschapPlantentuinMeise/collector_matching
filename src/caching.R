@@ -4,6 +4,7 @@ new = fromJSON("matching_results_dashfix.json")
 save = write(toJSON(old,auto_unbox = T),"filename.json")
 
 #faster
+library(tidyverse)
 library(fst)
 
 write_fst(best_t,"best_naturalist.fst")
