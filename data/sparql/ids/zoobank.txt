@@ -1,4 +1,4 @@
-SELECT DISTINCT ?item ?itemLabel ?itemAltLabel ?zoo_id WHERE {
+SELECT ?item ?itemLabel ?itemAltLabel ?zoo_id WHERE {
   ?item wdt:P31 wd:Q5 .
   ?item wdt:P2006 ?zoo_id. #zoobank .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" } 

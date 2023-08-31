@@ -1,4 +1,4 @@
-SELECT DISTINCT ?item ?itemLabel ?itemAltLabel ?bhl_id WHERE {
+SELECT ?item ?itemLabel ?itemAltLabel ?bhl_id WHERE {
   ?item wdt:P31 wd:Q5 .
   ?item wdt:P4081 ?bhl_id. #BHL creator .
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" } 

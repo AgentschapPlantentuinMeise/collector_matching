@@ -31,7 +31,7 @@ matching_results3 = threading(data = dates,
 #validate each set of matches
 #default method is first result only
 rmode = "all"
-best2 = threading(data = new,
+best2 = threading(data = matching_results3,
                  f = match_validate,
                  num_threads = cores,
                  req_args = "rmode")

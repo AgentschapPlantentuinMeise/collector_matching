@@ -7,9 +7,10 @@ save = write(toJSON(old,auto_unbox = T),"filename.json")
 library(tidyverse)
 library(fst)
 
-write_fst(best_t,"best_naturalist.fst")
+write_fst(best_t,"best_meise.fst")
 
 fst = read_fst("best_naturalist.fst")
+fst2 = read_fst("best_meisefst")
 
 #probably best to unlist everything each time for caching
 #or save as rdata, but this scales poorly as well
