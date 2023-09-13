@@ -23,15 +23,15 @@ if (is.na(cores)) {
 ##16threads: 15.2min for 10k names T=75°C, CPU usage = 100%
 
 #match every string to wikidata items, returning all possible matches
-matching_results3 = threading(data = dates,
+matching_results4 = threading(data = dates,
                              f = matchString,
                              num_threads = cores,
-                             req_args = c("wikiResults","aliases"))
+                             req_args = c("wikiResults"))
 
 #validate each set of matches
 #default method is first result only
 rmode = "all"
-best2 = threading(data = matching_results3,
+best2 = threading(data = matching_results4,
                  f = match_validate,
                  num_threads = cores,
                  req_args = "rmode")

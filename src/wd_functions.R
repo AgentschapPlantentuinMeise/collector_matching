@@ -146,6 +146,10 @@ aliases_wd <- function(wikiResults) {
     #                      itemLabel)) %>%
     # filter(!duplicated(test)) %>%
     # select(-test)
+  altnames %<>%
+    rbind(select(wikiResults,
+                 itemLabel,
+                 id))
   return(altnames)
 }
 

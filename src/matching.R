@@ -1,6 +1,5 @@
 matchString <- function(name,
                         wiki,
-                        alias = NULL,
                         lname_cut = 2,
                         fuzzy = F) {
   #initialize result list
@@ -56,19 +55,13 @@ matchString <- function(name,
       select(itemLabel,id) %>%
       mutate(reason = "initials_match") %>%
       rbind(matches,.)
-  }
-  if (!is.null(alias)) {
-    matches = alias %>%
-      filter(itemLabel == name$parsed) %>%
+    
+    matches = wiki %>%
+      filter(initials == name$outer_initials) %>%
       select(itemLabel,id) %>%
-      mutate(reason = "alias_match") %>%
+      mutate(reason = "initials_outer_match") %>%
       rbind(matches,.)
     
-    matches = alias %>%
-      filter(initials == name$initials) %>%
-      select(itemLabel,id) %>%
-      mutate(reason = "alias_initials_match") %>%
-      rbind(matches,.)
   }
   
   matches = matches[-1,]
@@ -92,14 +85,12 @@ match_validate <- function(result,
                "firstname_match",
                "surname_fuzzy_match",
                "initials_match",
-               "alias_match",
-               "alias_initials_match"),
+               "initials_outer_match"),
     value = c(1000,
               100,
               100,
               10,
-              1,
-              1000,
+              2,
               1)
   )
   
@@ -117,10 +108,16 @@ match_validate <- function(result,
   #and sum the scores
   result %<>%
     left_join(ranking,by="reason") %>%
-    group_by(id) %>%
-    summarize(reasons = paste(reason,collapse = "|"),
-              labels = paste(itemLabel,collapse = "|"),
+    mutate(aliaskey = paste(id,itemLabel,sep=":")) %>%
+    group_by(aliaskey) %>%
+    summarize(reasons = paste(unique(reason),collapse = "|"),
+              itemLabel = first(itemLabel),
+              id = first(id),
               score = sum(value)) %>%
+    group_by(id) %>%
+    summarize(reasons = paste(reasons,collapse = "||"),
+              itemLabel = paste(itemLabel,collapse = "|"),
+              score = max(score)) %>%
     filter(score >= minscore) %>%
     arrange(desc(score))
   

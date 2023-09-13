@@ -84,7 +84,11 @@ interpret_strings <- function(data,
              initials = gsub("\\s|-","",initials),
              initials = ifelse(nchar(initials)<2,
                                NA,
-                               initials))
+                               initials),
+             outer_initials = ifelse(is.na(initials),
+                                     NA,
+                                     paste0(substr(initials,1,1),
+                                            str_sub(initials,-1,-1))))
   }
   return(data)
 }

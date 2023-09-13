@@ -17,8 +17,5 @@ if (file.exists("wikiresults.txt")) {
 }
 
 wikiResults %<>%
-  interpret_strings(colname = "itemLabel")
-
-aliases = wikiResults %>%
   aliases_wd() %>%
   interpret_strings(colname = "itemLabel")
