@@ -141,11 +141,11 @@ aliases_wd <- function(wikiResults) {
     select(-itemLabel) %>%
     rename(itemLabel = itemAltLabel) %>%
     select(itemLabel,id) %>%
-    filter(!is.na(itemLabel)) %>%
-    mutate(test = paste0(id,
-                         itemLabel)) %>%
-    filter(!duplicated(test)) %>%
-    select(-test)
+    filter(!is.na(itemLabel)) #%>%
+    # mutate(test = paste0(id,
+    #                      itemLabel)) %>%
+    # filter(!duplicated(test)) %>%
+    # select(-test)
   return(altnames)
 }
 

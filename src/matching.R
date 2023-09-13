@@ -1,7 +1,8 @@
 matchString <- function(name,
                         wiki,
-                        alias=NULL,
-                        lname_cut = 2) {
+                        alias = NULL,
+                        lname_cut = 2,
+                        fuzzy = F) {
   #initialize result list
   matches = wiki[1,] %>%
     select(itemLabel,id) %>%
@@ -36,7 +37,8 @@ matchString <- function(name,
   #fuzzy match of parsed surname into any presumed wikidata item surname from label
   #max distance between both str lengths set by lname_cut
   #default is 2, so surname in wikidata can only be 1 char longer at most
-  if (!is.na(name$surname)&
+  if (fuzzy&
+      !is.na(name$surname)&
              name$surname!="") {
     matches = wiki %>%
       filter(agrepl(name$surname,
