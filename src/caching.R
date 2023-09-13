@@ -10,7 +10,7 @@ library(fst)
 write_fst(best_t,"best_meise.fst")
 
 fst = read_fst("best_naturalist.fst")
-fst2 = read_fst("best_meisefst")
+fst2 = read_fst("best_meise.fst")
 
 #probably best to unlist everything each time for caching
 #or save as rdata, but this scales poorly as well

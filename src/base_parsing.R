@@ -54,7 +54,8 @@ interpret_strings <- function(data,
              fname = ifelse(grepl(".",
                                   fname,
                                   fixed=T)|
-                              surname == fname,
+                              surname == fname|
+                              nchar(fname) < 2,
                             NA,
                             fname))
   }
@@ -80,6 +81,7 @@ interpret_strings <- function(data,
                substr(eval(sym(colname)),1,1),
                initials),
              initials = toupper(initials),
+             initials = gsub("\\s|-","",initials),
              initials = ifelse(nchar(initials)<2,
                                NA,
                                initials))
