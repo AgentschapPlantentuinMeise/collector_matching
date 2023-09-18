@@ -1,2 +1,4 @@
 recordedBy
 year
+occurrenceID
+gbifID

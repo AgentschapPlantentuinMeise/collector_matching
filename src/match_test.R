@@ -49,6 +49,20 @@ miss = seq(1,dim(dates)[1]) %>%
   tibble(id=.) %>% 
   filter(!id%in%best_t$rownr)
 
-ids_to_cache = best_t %>%
-  filter(score>10) %>%
+approved = best_t %>%
+  filter(grepl("exact_match",reasons)|
+           (grepl("firstname_match",reasons)&
+              grepl("surname_match",reasons))|
+           (grepl("surname_match",reasons)&
+              (grepl("initials_match",reasons)|
+                 grepl("initials_outer_match",reasons))))
+
+ids_to_cache = approved %>%
   count(id)
+
+cache = retrieve_claims(ids_to_cache)
+
+bc = save_claims(cache)
+
+add_occ = approved %>%
+  right_join(data,by=c("ori" = "recordedBy"))

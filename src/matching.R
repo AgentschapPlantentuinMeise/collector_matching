@@ -239,21 +239,97 @@ puerki <- function(ids,
 }
 
 retrieve_claims <- function(result,
-                            cache = NULL) {
+                            cache = NULL,
+                            index = "data/propcache/index.txt") {
   if (!is.null(cache)) {
     result %<>% 
       filter(!id%in%names(cache),
              !duplicated(id))
+  } else if (file.exists(index)) {
+    index_f = read_tsv(index)
+    result %<>%
+      filter(!id%in%index_f$key)
   }
   
   if (dim(result)[1]>0) {
     claims = puerki(result,
                     which = "id",
-                    stepcount = F)
+                    stepcount = T)
     
-    cache = c(claims[[1]]$entities,
-              cache)
+    temp = lapply(claims, function(x) x$entities)
+    
+    cache = do.call(c,temp)
   }
   
   return(cache)
+}
+
+save_claims <- function(cache) {
+  require(jsonlite)
+  locs = rep(1:(length(cache)/100),each=100)
+  if (length(cache) %% 100 != 0) {
+    locs %<>%
+      c(rep(max(locs)+1,times = length(cache) %% 100))
+  }
+  index = tibble(key = names(cache),
+                 loc = locs)
+  
+  step = 1
+  for (i in 1:max(locs)) {
+    j = toJSON(cache[step:min(step+99,length(cache))],
+               auto_unbox = T,
+               pretty = T)
+    write(j,
+          paste0("data/propcache/raw/",
+                 i,
+                 ".json"))
+    
+    print(step)
+    step = step + 100
+  }
+  
+  write_tsv(index,"data/propcache/index.txt")
+  return(index)
+}
+
+get_claims_from_cache <- function(ids,
+                                  index = "data/propcache/index.txt") {
+  require(jsonlite)
+  index_f = read_tsv(index)
+  toread = filter(index_f,
+                  key%in%ids) %>%
+    count(loc)
+  res = list()
+  j = 1
+  for (i in pull(toread,loc)) {
+    res[[j]] = fromJSON(paste0("data/propcache/raw/",
+                               i,
+                               ".json"))
+    j = j + 1
+  }
+  return(do.call(c,res))
+}
+
+export_to_dwc_attribution <- function(data) {
+  data %<>%
+    rename(alternateName = itemLabel,
+           verbatimName = ori,
+           name = parsed) %>%
+    mutate(identifier = paste0("http://www.wikidata.org/entity/",id),
+           agentIdentifierType ="wikidata",
+           agentType = "Person",
+           action = "collected",
+           attributionRemarks = paste0("Score: ",score,"; Reasons: ",reasons)) %>%
+    select(gbifID,
+           occurrenceID,
+           name,
+           verbatimName,
+           alternateName,
+           displayOrder,
+           identifier,
+           agentIdentifierType,
+           agentType,
+           action,
+           attributionRemarks)
+  return(data)
 }

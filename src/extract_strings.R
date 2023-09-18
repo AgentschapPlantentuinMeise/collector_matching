@@ -35,7 +35,8 @@ dates = left_join(parsed_names,
            fname,
            surname,
            initials,
-           outer_initials) %>%
+           outer_initials,
+           displayOrder) %>%
   summarize(year1 = min(year),
             year2 = max(year),
             ori = first(ori))

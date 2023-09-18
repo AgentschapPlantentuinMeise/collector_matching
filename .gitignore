@@ -51,6 +51,7 @@ rsconnect/
 data/gbif sets
 data/names.txt
 data/output
+data/propcache
 *.json
 *.zip
 *.fst
