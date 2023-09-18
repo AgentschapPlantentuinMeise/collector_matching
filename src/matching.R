@@ -57,7 +57,7 @@ matchString <- function(name,
       rbind(matches,.)
     
     matches = wiki %>%
-      filter(initials == name$outer_initials) %>%
+      filter(outer_initials == name$outer_initials) %>%
       select(itemLabel,id) %>%
       mutate(reason = "initials_outer_match") %>%
       rbind(matches,.)
@@ -95,13 +95,13 @@ match_validate <- function(result,
   )
   
   #nomatch if no match was found or only initials matched
-  nomatch = tibble(id = NA,
-                   reasons = NA,
-                   labels = NA,
+  nomatch = tibble(id = as.character(NA),
+                   reasons = as.character(NA),
+                   labels = as.character(NA),
                    score = 0)
   
   if (dim(result)[1] == 0) {
-    return(nomatch)
+    return(nomatch[-1,])
   }
   
   #collapse each result in a list of each possible wikidata qid

@@ -1,13 +1,8 @@
-#is quite slow
-library(jsonlite)
-new = fromJSON("matching_results_dashfix.json")
-save = write(toJSON(old,auto_unbox = T),"filename.json")
-
 #faster
 library(tidyverse)
 library(fst)
 
-write_fst(best_t,"best_meise.fst")
+write_fst(best_t,"best_meise2.fst")
 
 fst = read_fst("best_naturalist.fst")
 fst2 = read_fst("best_meise.fst")

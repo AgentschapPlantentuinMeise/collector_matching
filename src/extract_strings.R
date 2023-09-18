@@ -31,7 +31,11 @@ parsed_names = data %>%
 dates = left_join(parsed_names,
                   select(data,recordedBy,year),
                   by=c("ori"="recordedBy")) %>%
-  group_by(parsed,fname,surname,initials) %>%
+  group_by(parsed,
+           fname,
+           surname,
+           initials,
+           outer_initials) %>%
   summarize(year1 = min(year),
             year2 = max(year),
             ori = first(ori))

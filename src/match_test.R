@@ -45,6 +45,10 @@ best_t = best2 %>%
   left_join(dates,
             by=c("rownr"="rownr"))
 
+miss = seq(1,dim(dates)[1]) %>% 
+  tibble(id=.) %>% 
+  filter(!id%in%best_t$rownr)
+
 ids_to_cache = best_t %>%
   filter(score>10) %>%
   count(id)
