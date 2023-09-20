@@ -293,21 +293,40 @@ save_claims <- function(cache) {
 }
 
 get_claims_from_cache <- function(ids,
+                                  props,
                                   index = "data/propcache/index.txt") {
   require(jsonlite)
+  
+  start_time = Sys.time()
   index_f = read_tsv(index)
   toread = filter(index_f,
                   key%in%ids) %>%
     count(loc)
-  res = list()
-  j = 1
+  
+  resu = list()
   for (i in pull(toread,loc)) {
-    res[[j]] = fromJSON(paste0("data/propcache/raw/",
+    res = fromJSON(paste0("data/propcache/raw/",
                                i,
                                ".json"))
-    j = j + 1
+    extracted = lapply(res, function(x) extract_props(x,props))
+    resu = c(resu,extracted)
   }
-  return(do.call(c,res))
+  
+  end_time = Sys.time()
+  parallel_time = end_time - start_time
+  print(parallel_time)
+  
+  return(resu)
+}
+
+extract_props <- function(data,props) {
+  new = list()
+  for (i in props) {
+    if (i %in% names(data$claims)) {
+      new[i] = data$claims[i][[1]]$mainsnak$datavalue$value$time[1]
+    }
+  }
+  return(new)
 }
 
 export_to_dwc_attribution <- function(data) {

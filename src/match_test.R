@@ -62,7 +62,35 @@ ids_to_cache = approved %>%
 
 cache = retrieve_claims(ids_to_cache)
 
+wd_content = get_claims_from_cache(pull(ids_to_cache,id),
+                                   c("P569","P570"))
+
+approved$wdd1 = NA
+approved$wdd2 = NA
+
+for (i in 1:dim(approved)[1]) {
+  if (!is.null(wd_content[approved$id[i]][[1]]$P569)) {
+    approved$wdd1[i] = wd_content[approved$id[i]][[1]]$P569
+  }
+  if (!is.null(wd_content[approved$id[i]][[1]]$P570)) {
+    approved$wdd2[i] = wd_content[approved$id[i]][[1]]$P570
+  }
+}
+
+approved %<>% 
+  mutate(wdyear1 = as.numeric(substr(wdd1,2,5)),
+         wdyear2 = as.numeric(substr(wdd2,2,5)))
+
+approved_amb = filter(approved,duplicated(id)) %>% 
+  count(id)
+
+ambiguous = approved %>%
+  filter(id%in%approved_amb$id)
+
 bc = save_claims(cache)
 
-add_occ = approved %>%
+add_occ = ambiguous %>%
   right_join(data,by=c("ori" = "recordedBy"))
+
+dwca = export_to_dwc_attribution(add_occ)
+write_tsv(dwca,"meise_dwc_attribution.txt")
