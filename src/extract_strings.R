@@ -1,42 +1,56 @@
-library(tidyverse)
-library(magrittr)
+# path = commandArgs(trailingOnly = T)
+# 
+# if (length(path) == 0) {
+#   gbiffolder = "src/gbif-data-folder.txt"
+#   if (file.exists(gbiffolder)) {
+#     path = readLines(gbiffolder)
+#   } else {
+#     path = list.dirs("data/gbif sets",
+#                      recursive = F)[1]
+#   }
+# }
+# 
+# columns = readLines("src/gbif-columns.txt")
+# 
+# parsed_names = extract_strings(path,
+#                                columns)
 
-source("src/base_parsing.R")
+extract_strings <- function(path,
+                            columns_list) {
+  require(tidyverse)
 
-path = commandArgs(trailingOnly = T)
-
-if (length(path) == 0) {
-  gbiffolder = "src/gbif-data-folder.txt"
-  if (file.exists(gbiffolder)) {
-    path = readLines(gbiffolder)
-  } else {
-    path = list.dirs("data/gbif sets",
-                     recursive = F)[1]
-  }
+  columns = readLines(columns_list)
+  
+  data = read_tsv(paste0(path,"/occurrence.txt"),
+                  quote="",
+                  col_select = all_of(columns),
+                  col_types = cols(.default = "c"))
+  return(data) 
 }
 
-columns = readLines("src/gbif-columns.txt")
-
-data = read_tsv(paste0(path,"/occurrence.txt"),
-                quote="",
-                col_select = all_of(columns),
-                col_types = cols(.default = "c"))
-
-parsed_names = data %>%
-  count(recordedBy) %>%
-  pull(recordedBy) %>%
-  parse_names() %>%
-  interpret_strings(colname = "parsed")
-
-dates = left_join(parsed_names,
-                  select(data,recordedBy,year),
-                  by=c("ori"="recordedBy")) %>%
-  group_by(parsed,
-           fname,
-           surname,
-           initials,
-           outer_initials,
-           displayOrder) %>%
-  summarize(year1 = min(year),
-            year2 = max(year),
-            ori = first(ori))
+parse_strings <- function(data) {
+  require(magrittr)
+  source("src/base_parsing.R")
+  
+  parsed_names = data %>%
+    count(recordedBy) %>%
+    pull(recordedBy) %>%
+    parse_names() %>%
+    interpret_strings(colname = "parsed") %>%
+    left_join(select(data,
+                     recordedBy,
+                     year),
+              by=c("ori"="recordedBy")) %>%
+    group_by(parsed,
+             fname,
+             surname,
+             initials,
+             outer_initials,
+             displayOrder) %>%
+    summarize(year1 = min(year),
+              year2 = max(year),
+              ori = first(ori)) %>%
+    rownames_to_column("rownr")
+  
+  return(parsed_names)
+}

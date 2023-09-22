@@ -1,15 +1,8 @@
 library(tidyverse)
 library(magrittr)
+library(ini)
 
 source("src/matching.R")
-
-#run extract_strings.R and create_wd_space.R first
-
-#do the matching
-#small batches for testing
-c1 = 20001
-c2 = 30000
-tryout = dates[c1:c2,]
 
 library(parallel)
 cores = detectCores()
@@ -18,38 +11,39 @@ if (is.na(cores)) {
   cores = 2
 }
 
-#using i7-10700k:
-##8threads: 21.6min for 10k names T=70°C, CPU usage = 50%
-##16threads: 15.2min for 10k names T=75°C, CPU usage = 100%
+#run extract_strings.R and create_wd_space.R first
 
 #match every string to wikidata items, returning all possible matches
-matching_results4 = threading(data = dates,
-                             f = matchString,
+matching_results = threading(data = parsed_names,
+                             f = match_string,
                              num_threads = cores,
-                             req_args = c("wikiResults"))
+                             req_args = "wikiResults")
 
 #validate each set of matches
-#default method is first result only
 rmode = "all"
-best2 = threading(data = matching_results4,
+best = threading(data = matching_results,
                  f = match_validate,
                  num_threads = cores,
                  req_args = "rmode")
-#for 10k: 32s
-#for 57.9k: 7.7min
-dates %<>%
-  rownames_to_column("rownr")
 
-best_t = best2 %>%
+best_df = best %>%
   bind_rows(.id = "rownr") %>%
-  left_join(dates,
+  left_join(parsed_names,
             by=c("rownr"="rownr"))
 
-miss = seq(1,dim(dates)[1]) %>% 
+miss = seq(1,dim(parsed_names)[1]) %>% 
   tibble(id=.) %>% 
-  filter(!id%in%best_t$rownr)
+  filter(!id%in%best_df$rownr)
 
-approved = best_t %>%
+approved = fst %>%
+  filter(grepl("exact_match",reasons)|
+           (grepl("firstname_match",reasons)&
+              grepl("surname_match",reasons))|
+           (grepl("surname_match",reasons)&
+              (grepl("initials_match",reasons)|
+                 grepl("initials_outer_match",reasons))))
+
+approved2 = fst2 %>%
   filter(grepl("exact_match",reasons)|
            (grepl("firstname_match",reasons)&
               grepl("surname_match",reasons))|
@@ -60,9 +54,15 @@ approved = best_t %>%
 ids_to_cache = approved %>%
   count(id)
 
+ids_to_cache2 = approved2 %>%
+  count(id)
+
+ids = rbind(ids_to_cache,ids_to_cache2) %>%
+  count(id)
+
 cache = retrieve_claims(ids_to_cache)
 
-wd_content = get_claims_from_cache(pull(ids_to_cache,id),
+wd_content = get_claims_from_cache(pull(ids,id),
                                    c("P569","P570"))
 
 approved$wdd1 = NA

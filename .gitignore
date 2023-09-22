@@ -53,6 +53,3 @@ data/names.txt
 data/output
 output
 data/propcache
-*.json
-*.zip
-*.fst

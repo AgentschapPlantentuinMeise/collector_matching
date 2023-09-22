@@ -1,4 +1,4 @@
-matchString <- function(name,
+match_string <- function(name,
                         wiki,
                         lname_cut = 2,
                         fuzzy = F) {
