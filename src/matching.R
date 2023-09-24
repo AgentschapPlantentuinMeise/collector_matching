@@ -285,6 +285,13 @@ save_claims <- function(cache,
                         index = "data/propcache/index.txt") {
   require(jsonlite)
   
+  if (!dir.exists("data/propcache")) {
+    dir.create("data/propcache")
+  }
+  if (!dir.exists("data/propcache/raw")) {
+    dir.create("data/propcache/raw")
+  }
+  
   if (file.exists(index)) {
     index_f = read_tsv(index)
     cache = cache[!names(cache)%in%index_f$id]
@@ -334,26 +341,49 @@ save_claims <- function(cache,
 
 get_claims_from_cache <- function(ids,
                                   props,
+                                  cache = NULL,
                                   index = "data/propcache/index.txt") {
   require(jsonlite)
   
   start_time = Sys.time()
-  index_f = read_tsv(index)
+  index_f = read_tsv(index,
+                     show_col_types = F)
+  if (!is.null(cache)) {
+    index_f %<>%
+      filter(!key%in%names(cache))
+  }
   toread = filter(index_f,
                   key%in%ids) %>%
-    count(loc)
+    count(loc) %>%
+    pull(loc)
   
   resu = list()
-  for (i in pull(toread,
-                 loc)) {
-    res = fromJSON(paste0("data/propcache/raw/",
-                               i,
-                               ".json"))
-    extracted = lapply(res, 
-                       function(x) extract_props(x,
-                                                 props))
-    resu = c(resu,
-             extracted)
+  if (length(toread) > 0) {
+    for (i in toread) {
+      res = fromJSON(paste0("data/propcache/raw/",
+                            i,
+                            ".json"))
+      extracted = lapply(res, 
+                         function(x) extract_props(x,
+                                                   props))
+      resu = c(resu,
+               extracted)
+    }
+  }
+  
+  if (!is.null(cache)) {
+    
+    resu2 = lapply(cache, 
+                   function(x) extract_props(data = x,
+                                             props = props,
+                                             auto_unbox = F))
+    
+    if (length(resu) == 0) {
+      resu = resu2
+    } else {
+      resu %<>%
+        c(resu2)
+    }
   }
   
   end_time = Sys.time()
@@ -363,31 +393,39 @@ get_claims_from_cache <- function(ids,
   return(resu)
 }
 
-extract_props <- function(data,props) {
+extract_props <- function(data,
+                          props,
+                          auto_unbox = T) {
   new = list()
   for (i in props) {
     if (i %in% names(data$claims)) {
-      new[i] = data$claims[i][[1]]$mainsnak$datavalue$value$time[1]
+      if (auto_unbox) {
+        new[i] = data$claims[[i]]$mainsnak$datavalue$value$time[1]
+      } else {
+        new[i] = data$claims[[i]][[1]]$mainsnak$datavalue$value$time[1]
+      }
     }
   }
   return(new)
 }
 
 attach_claims <- function(df,
-                          props) {
+                          props,
+                          cache = NULL) {
   ids = df %>%
     count(id) %>%
     pull(id)
   
   wd_content = get_claims_from_cache(ids,
-                                     c("P569","P570"))
+                                     c("P569","P570"),
+                                     cache)
   
   for (i in props) {df[i] = NA}
   
-  for (i in dim(df)[1]) {
+  for (i in 1:dim(df)[1]) {
     for (j in props) {
-      if (!is.null(wd_content[df$id[i]][[1]][j])) {
-        df[j][i] = wd_content[df$id[i]][[1]][j]
+      if (!is.null(wd_content[[df$id[i]]][[j]])) {
+        df[i,j] = wd_content[[df$id[i]]][[j]]
       }
     }
   }

@@ -16,7 +16,7 @@ wikiResults = create_wd_space()
 source("src/matching.R")
 if (grepl("+",config$default$cores)) {
   library(doParallel)
-  cores = max(detectCores(),
+  cores = max(detectCores(logical = F),
               gsub("+",
                    "",
                    config$default$cores))
@@ -29,17 +29,6 @@ matching_results = threading(data = parsed_names,
                              num_threads = cores,
                              req_args = "wikiResults")
 
-#todo: unmatched and multimatch subsets:
-miss = seq(1,dim(parsed_names)[1]) %>% 
-  tibble(id=.) %>% 
-  filter(!id%in%best_df$rownr)
-
-approved_amb = filter(approved,duplicated(id)) %>% 
-  count(id)
-
-ambiguous = approved %>%
-  filter(id%in%approved_amb$id)
-
 rmode = config$default$rmode
 validated_results = threading(data = matching_results,
                               f = match_validate,
@@ -50,11 +39,22 @@ processed_results = matches_process(validated_results)
 
 cache = processed_results %>%
   count(id) %>%
-  retrieve_claims() %>%
-  save_claims()
+  retrieve_claims()
+cache %>% save_claims()
 
 props = c("P569","P570")
 
 processed_results2 = processed_results %>%
-  attach_claims(props) %>%
+  attach_claims(props,cache) %>%
   extract_year(props)
+
+#todo: unmatched and multimatch subsets:
+miss = seq(1,dim(parsed_names)[1]) %>% 
+  tibble(id=.) %>% 
+  filter(!id%in%best_df$rownr)
+
+approved_amb = filter(approved,duplicated(id)) %>% 
+  count(id)
+
+ambiguous = approved %>%
+  filter(id%in%approved_amb$id)
