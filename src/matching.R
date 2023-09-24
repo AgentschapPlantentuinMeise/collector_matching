@@ -205,6 +205,23 @@ threading <- function(data,#list or tibble to multithread
   }
 }
 
+matches_process <- function(data) {
+  df = data %>%
+    bind_rows(.id = "rownr") %>%
+    left_join(parsed_names,
+              by=c("rownr"="rownr"))
+  
+  df %<>%
+    filter(grepl("exact_match",reasons)|
+             (grepl("firstname_match",reasons)&
+                grepl("surname_match",reasons))|
+             (grepl("surname_match",reasons)&
+                (grepl("initials_match",reasons)|
+                   grepl("initials_outer_match",reasons))))
+  
+  return(df)
+}
+
 puerki <- function(ids,
                    which = "ids",
                    stepcount = T,
@@ -264,32 +281,55 @@ retrieve_claims <- function(result,
   return(cache)
 }
 
-save_claims <- function(cache) {
+save_claims <- function(cache,
+                        index = "data/propcache/index.txt") {
   require(jsonlite)
-  locs = rep(1:(length(cache)/100),each=100)
+  
+  if (file.exists(index)) {
+    index_f = read_tsv(index)
+    cache = cache[!names(cache)%in%index_f$id]
+    extant = dim(index_f)[1]
+  } else {
+    extant = 0
+  }
+  
+  if (length(cache)==0) {
+    return(NULL)
+  }
+  
+  locs = rep(1:(length(cache)/100),
+             each=100)
   if (length(cache) %% 100 != 0) {
     locs %<>%
-      c(rep(max(locs)+1,times = length(cache) %% 100))
+      c(rep(max(locs)+1,
+            times = length(cache) %% 100))
   }
-  index = tibble(key = names(cache),
-                 loc = locs)
+  new_index = tibble(key = names(cache),
+                 loc = locs) %>%
+    mutate(loc = loc + extant)
   
   step = 1
   for (i in 1:max(locs)) {
-    j = toJSON(cache[step:min(step+99,length(cache))],
+    j = toJSON(cache[step:min(step+99,
+                              length(cache))],
                auto_unbox = T,
                pretty = T)
     write(j,
           paste0("data/propcache/raw/",
-                 i,
+                 i+extant,
                  ".json"))
     
     print(step)
     step = step + 100
   }
   
-  write_tsv(index,"data/propcache/index.txt")
-  return(index)
+  if (extant > 0) {
+    new_index %<>%
+      rbind(index_f)
+  }
+  
+  write_tsv(new_index,"data/propcache/index.txt")
+  return(new_index)
 }
 
 get_claims_from_cache <- function(ids,
@@ -304,12 +344,16 @@ get_claims_from_cache <- function(ids,
     count(loc)
   
   resu = list()
-  for (i in pull(toread,loc)) {
+  for (i in pull(toread,
+                 loc)) {
     res = fromJSON(paste0("data/propcache/raw/",
                                i,
                                ".json"))
-    extracted = lapply(res, function(x) extract_props(x,props))
-    resu = c(resu,extracted)
+    extracted = lapply(res, 
+                       function(x) extract_props(x,
+                                                 props))
+    resu = c(resu,
+             extracted)
   }
   
   end_time = Sys.time()
@@ -329,26 +373,34 @@ extract_props <- function(data,props) {
   return(new)
 }
 
-export_to_dwc_attribution <- function(data) {
-  data %<>%
-    rename(alternateName = itemLabel,
-           verbatimName = ori,
-           name = parsed) %>%
-    mutate(identifier = paste0("http://www.wikidata.org/entity/",id),
-           agentIdentifierType ="wikidata",
-           agentType = "Person",
-           action = "collected",
-           attributionRemarks = paste0("Score: ",score,"; Reasons: ",reasons)) %>%
-    select(gbifID,
-           occurrenceID,
-           name,
-           verbatimName,
-           alternateName,
-           displayOrder,
-           identifier,
-           agentIdentifierType,
-           agentType,
-           action,
-           attributionRemarks)
-  return(data)
+attach_claims <- function(df,
+                          props) {
+  ids = df %>%
+    count(id) %>%
+    pull(id)
+  
+  wd_content = get_claims_from_cache(ids,
+                                     c("P569","P570"))
+  
+  for (i in props) {df[i] = NA}
+  
+  for (i in dim(df)[1]) {
+    for (j in props) {
+      if (!is.null(wd_content[df$id[i]][[1]][j])) {
+        df[j][i] = wd_content[df$id[i]][[1]][j]
+      }
+    }
+  }
+  
+  return(df)
+}
+
+extract_year <- function(df,
+                         props) {
+  for (i in props) {
+    df %<>%
+      mutate(!!i := as.numeric(substr(!!sym(i),2,5)))
+  }
+  
+  return(df)
 }

@@ -1,0 +1,8 @@
+tidyverse
+ini
+magrittr
+jsonlite
+httr
+parallel
+doParallel
+fst

@@ -1,3 +1,11 @@
+def gem_installed?(name)
+  `gem list #{name} -i`.chomp == "true"
+end
+
+unless gem_installed?("dwc_agent")
+  system("gem install dwc_agent")
+end
+
 require 'dwc_agent'
 
 # Define the input and output file paths
