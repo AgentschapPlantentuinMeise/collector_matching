@@ -135,6 +135,18 @@ match_validate <- function(result,
   }
 }
 
+assess_cores <- function(cores) {
+  if (grepl("+",cores)) {
+    require(doParallel)
+    cores = max(detectCores(logical = F),
+                gsub("\\+",
+                     "",
+                     cores),
+                na.rm = T)
+  }
+  return(as.numeric(cores))
+}
+
 threading <- function(data,#list or tibble to multithread
                       f,#function to apply to data, str or function object
                       num_threads = 4,#nr of threads to use
@@ -143,6 +155,7 @@ threading <- function(data,#list or tibble to multithread
                               "magrittr"),
                       srcs = "src/matching.R",#required script files, might be unneeded argument
                       dryrun = F) {#for testing
+  start_overhead_time = Sys.time()
   require(parallel)
   require(doParallel)
   
@@ -199,7 +212,11 @@ threading <- function(data,#list or tibble to multithread
     stopCluster(cl)
     
     parallel_time = end_time - start_time
+    overhead_time = start_time - start_overhead_time
+    print("Parralel processing time:")
     print(parallel_time)
+    print("Overhead of setting up cluster time:")
+    print(overhead_time)
     
     return(resu)
   }
@@ -294,14 +311,14 @@ save_claims <- function(cache,
   
   if (file.exists(index)) {
     index_f = read_tsv(index)
-    cache = cache[!names(cache)%in%index_f$id]
-    extant = dim(index_f)[1]
+    cache = cache[!names(cache)%in%index_f$key]
+    extant = max(index_f$loc)
   } else {
     extant = 0
   }
   
   if (length(cache)==0) {
-    return(NULL)
+    return("All claims already cached on disk.")
   }
   
   locs = rep(1:(length(cache)/100),
@@ -441,4 +458,15 @@ extract_year <- function(df,
   }
   
   return(df)
+}
+
+date_filter <- function(data) {
+  data %<>%
+    mutate(year1 = as.numeric(year1),
+           year2 = as.numeric(year2)) %>%
+    filter((is.na(year1)|is.na(`P569`)|year1 > `P569`),
+           (is.na(year2)|is.na(`P569`)|year2 > `P569`),
+            (is.na(year1)|is.na(`P570`)|year1 <= `P570`),
+             (is.na(year2)|is.na(`P570`)|year2 <= `P570`))
+  return(data)
 }

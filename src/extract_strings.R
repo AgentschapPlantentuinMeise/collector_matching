@@ -40,7 +40,8 @@ parse_strings <- function(data) {
     left_join(select(data,
                      recordedBy,
                      year),
-              by=c("ori"="recordedBy")) %>%
+              by=c("ori"="recordedBy"),
+              relationship = "many-to-many") %>%
     group_by(parsed,
              fname,
              surname,

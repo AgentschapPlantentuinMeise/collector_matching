@@ -11,18 +11,10 @@ data = extract_strings(config$default$dwc_folder,
 parsed_names = parse_strings(data)
 
 source("src/create_wd_space.R")
-wikiResults = create_wd_space()
+wikiResults = create_wd_space(config$default$wikifile)
 
 source("src/matching.R")
-if (grepl("+",config$default$cores)) {
-  library(doParallel)
-  cores = max(detectCores(logical = F),
-              gsub("+",
-                   "",
-                   config$default$cores))
-} else {
-  cores = config$default$cores
-}
+cores = assess_cores(config$default$cores)
 
 matching_results = threading(data = parsed_names,
                              f = match_string,
@@ -44,17 +36,14 @@ cache %>% save_claims()
 
 props = c("P569","P570")
 
-processed_results2 = processed_results %>%
+processed_results %<>%
   attach_claims(props,cache) %>%
-  extract_year(props)
+  extract_year(props) %>%
+  date_filter()
 
-#todo: unmatched and multimatch subsets:
-miss = seq(1,dim(parsed_names)[1]) %>% 
-  tibble(id=.) %>% 
-  filter(!id%in%best_df$rownr)
-
-approved_amb = filter(approved,duplicated(id)) %>% 
-  count(id)
-
-ambiguous = approved %>%
-  filter(id%in%approved_amb$id)
+source("src/export.R")
+processed_results %>%
+  export(data = data,
+         foldername = config$default$dwc_folder,
+         export_type = config$default$output,
+         qid = config$default$institution_qid)
