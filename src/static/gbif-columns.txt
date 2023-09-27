@@ -1,4 +1,3 @@
-recordedBy
 year
 occurrenceID
 gbifID

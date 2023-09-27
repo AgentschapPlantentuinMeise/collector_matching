@@ -12,7 +12,7 @@ create_wd_space <- function(wikifile) {
     queries = readSPARQL()
     
     raw = getSPARQL(queries = queries,
-                    logging=T)
+                    logging=F)
     wikiResults = joinSPARQL(raw)
     write_tsv(wikiResults,
               wikifile,

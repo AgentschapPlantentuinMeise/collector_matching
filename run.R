@@ -6,7 +6,8 @@ config = read.ini("config.ini")
 
 source("src/extract_strings.R")
 data = extract_strings(config$default$dwc_folder,
-                       config$default$columns)
+                       config$default$columns,
+                       config$default$dwc_property)
 
 parsed_names = parse_strings(data)
 

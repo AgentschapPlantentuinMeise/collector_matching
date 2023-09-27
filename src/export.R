@@ -117,7 +117,11 @@ make_quickstatements <- function(match_results,
     summarize(specimen_id = first(occurrenceID))
   
   ambiguous = match_results %>%
-    filter(duplicated(parsed))
+    mutate(team_id = paste(parsed,
+                           displayOrder,
+                           sep="_")) %>%
+    filter(duplicated(team_id)) %>%
+    select(-team_id)
   
   new = match_results %>%
     filter(parsed%in%ambiguous$parsed) %>%

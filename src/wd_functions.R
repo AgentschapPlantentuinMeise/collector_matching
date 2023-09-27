@@ -9,7 +9,8 @@ querki <- function(query,h="text/csv",
                         httr::user_agent(agent))
   response_content = httr::content(response,
                                    type=h,
-                                   col_types = cols(.default = "c"))
+                                   col_types = cols(.default = "c"),
+                                   encoding = "UTF-8")
   if (logging) {print(problems(response_content))}
   return(response_content)
 }
@@ -39,60 +40,42 @@ readSPARQL <- function() {
 #returned is a list with results, named if a name is provided with the queries
 getSPARQL <- function(queries = NULL,
                       agent = "collector_matching",
-                      logging = F,
-                      queryids = NULL,
-                      redo = T) {
+                      logging = F) {
   if (is.null(queries)) {
     queries = readSPARQL()
   }
   raw = list()
+  fail = c()
   
-  if (!is.null(queryids)) {
-    range = queryids
-  } else {
-    range = queries$id
-  }
-  
-  for (i in 1:length(range)) {
-    raw[[range[i]]] = querki(queries$query[i],
+  for (i in 1:length(queries$id)) {
+    raw[[i]] = querki(queries$query[i],
                       agent = agent,
                       logging = logging)
     if (!is.null(queries$type)) {
       if (queries$type[i] == "props") {
         name = gsub(".*/","",queries$filename[i]) %>%
           gsub(".txt","",.)
-        raw[[range[i]]][[name]] = name
+        raw[[i]][[name]] = name
       }
     }
     if (length(grep(".TimeoutException",
-                    raw[[range[i]]]$item,
+                    raw[[i]]$item,
                     fixed=T))>0) {
-      if (is.null(raw$fail)) {
-        raw$fail = i
+      raw[[i]] = NULL
+      if (is.null(fail)) {
+        fail = i
       } else {
-        raw$fail = c(raw$fail,i)
+        fail = c(fail,i)
       }
     }
   }
-  if (redo) {
-    raw_failed = redoSPARQL(raw)
-    for (i in names(raw_failed)) {
-      raw[i] = raw_failed[i]
-    }
+  if (!is.null(fail)) {
+    print(paste0("Queries for ",
+                 paste(queries$id[fail],
+                       collapse = " AND "),
+                 " timed out and were excluded."))
   }
   return(raw)
-}
-
-redoSPARQL <- function(raw) {
-  if (!is.null(raw$fail)) {
-    print(paste0("redoing timed out queries for: ",
-                 paste(raw$fail,
-                       collapse=", ")))
-    raw_failed = getSPARQL(queryids = raw$fail)
-    return(raw_failed)
-  } else {
-    return(raw)
-  }
 }
 
 #joins multiple sparql query results into a single tibble
@@ -102,6 +85,12 @@ joinSPARQL <- function(raw = NULL,
   if (is.null(raw)) {
     raw = getSPARQL(logging = logging)
   }
+  
+  if (!is.null(raw$fail)) {
+    raw = raw[-raw$fail] %>%
+      raw$fail = NULL
+  }
+  
   
   if (length(raw)>1) {
     wikiResults = merge(raw[[1]],
@@ -151,30 +140,6 @@ aliases_wd <- function(wikiResults) {
                  itemLabel,
                  id))
   return(altnames)
-}
-
-#sets the floruit date for wikidata items
-#currently unused as the queries have been simplified
-#and no longer include dates in the results
-floruit_wd <- function(wikiResults) {
-  wikiResults %<>%
-    mutate(floruitDate1 = ifelse(!is.na(yob),
-                                 NA,
-                                 ifelse(!is.na(wyb),
-                                        wyb,
-                                        ifelse(!is.na(fly),
-                                               fly,
-                                               NA))),
-           floruitDate2 = ifelse(!is.na(yob),
-                                 NA,
-                                 ifelse(!is.na(wye),
-                                        wye,
-                                        ifelse(!is.na(fly),
-                                               fly,
-                                               ifelse(!is.na(wyb),
-                                                      wyb,
-                                                      NA)))))
-  return(wikiResults)
 }
 
 #checks whether a qid has been merged

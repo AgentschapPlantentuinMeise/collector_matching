@@ -16,10 +16,12 @@
 #                                columns)
 
 extract_strings <- function(path,
-                            columns_list) {
+                            columns_list,
+                            dwc_property) {
   require(tidyverse)
 
-  columns = readLines(columns_list)
+  columns = readLines(columns_list) %>%
+    c(dwc_property)
   
   data = read_tsv(paste0(path,"/occurrence.txt"),
                   quote="",

@@ -322,8 +322,9 @@ save_claims <- function(cache,
   }
   
   locs = rep(1:(length(cache)/100),
-             each=100)
-  if (length(cache) %% 100 != 0) {
+             each=min(100,length(cache)))
+  if (length(cache) %% 100 != 0&
+      length(cache) > 100) {
     locs %<>%
       c(rep(max(locs)+1,
             times = length(cache) %% 100))
@@ -463,7 +464,17 @@ extract_year <- function(df,
 date_filter <- function(data) {
   data %<>%
     mutate(year1 = as.numeric(year1),
-           year2 = as.numeric(year2)) %>%
+           year2 = as.numeric(year2),
+           year1 = ifelse(!is.na(year1)&
+                            !is.na(year2)&
+                            (year2-year1)>120,
+                          NA,
+                          year1),
+           year2 = ifelse(!is.na(year1)&
+                            !is.na(year2)&
+                            (year2-year1)>120,
+                          NA,
+                          year2)) %>%
     filter((is.na(year1)|is.na(`P569`)|year1 > `P569`),
            (is.na(year2)|is.na(`P569`)|year2 > `P569`),
             (is.na(year1)|is.na(`P570`)|year1 <= `P570`),
