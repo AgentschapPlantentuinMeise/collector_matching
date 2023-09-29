@@ -1,7 +1,12 @@
+# Match a single name (and its derivatives, i.e. first name, last name, initials)
+# to a set of Wikidata item labels and aliases
+# Doing it per name allows parallelization
 match_string <- function(name,
                         wiki,
-                        lname_cut = 2,
-                        fuzzy = F) {
+                        lname_cut = 2, # only relevant for fuzzy matching
+                        fuzzy = F) { # fuzzy is currently deprecated
+  # name = a tibble with a single row
+  
   #initialize result list
   matches = wiki[1,] %>%
     select(itemLabel,id) %>%
@@ -36,7 +41,7 @@ match_string <- function(name,
   #fuzzy match of parsed surname into any presumed wikidata item surname from label
   #max distance between both str lengths set by lname_cut
   #default is 2, so surname in wikidata can only be 1 char longer at most
-  if (fuzzy&
+  if (fuzzy& #fuzzy is currently disabled by default
       !is.na(name$surname)&
              name$surname!="") {
     matches = wiki %>%
@@ -47,6 +52,7 @@ match_string <- function(name,
       mutate(reason = "surname_fuzzy_match") %>%
       rbind(matches,.)
   }
+  
   #exact match of the interpreted initials
   if (!is.na(name$initials)&
              name$initials!="") {
@@ -64,11 +70,13 @@ match_string <- function(name,
     
   }
   
+  #drop the initialization
   matches = matches[-1,]
   
   return(matches)
 }
 
+# Validation is done per result, so it can be parallelized
 match_validate <- function(result,
                            rmode = "best",#can also be "cut" or "all"
                            cut,#if cut, then the nr of results to include in the return
@@ -135,6 +143,11 @@ match_validate <- function(result,
   }
 }
 
+# Try to estimate the number of cores
+# The number can be fixed in the configuration
+# If a "+" is added, this function can also check if actually more are available
+# This function does NOT take into account what the system currently can use,
+# only what the hardware seems to have on offer.
 assess_cores <- function(cores) {
   if (grepl("+",cores)) {
     require(doParallel)
@@ -147,14 +160,22 @@ assess_cores <- function(cores) {
   return(as.numeric(cores))
 }
 
-threading <- function(data,#list or tibble to multithread
-                      f,#function to apply to data, str or function object
-                      num_threads = 4,#nr of threads to use
-                      req_args = NULL,#vector with names of objects to load from globalenv
-                      pkg = c("tidyverse",#required packages, might be unneeded argument
+threading <- function(data,
+                      f,
+                      num_threads = 4,
+                      req_args = NULL,
+                      pkg = c("tidyverse",
                               "magrittr"),
-                      srcs = "src/matching.R",#required script files, might be unneeded argument
-                      dryrun = F) {#for testing
+                      srcs = "src/matching.R",
+                      dryrun = F) {
+  # data = a list or tibble to multithread
+  # f = a function (or function name) that is vectorized 
+  ## and will be applied in parallel to data
+  # num_threads = number of cores the cluster can use
+  # req_args = vector with names of objects to load from globalenv into the cluster
+  # pkg = #required packages for the function, might be unneeded argument
+  # srcs = required function files for the function, might be unneeded argument
+  
   start_overhead_time = Sys.time()
   require(parallel)
   require(doParallel)
@@ -228,6 +249,7 @@ matches_process <- function(data) {
     left_join(parsed_names,
               by=c("rownr"="rownr"))
   
+  # rules for accepting a suggested match
   df %<>%
     filter(grepl("exact_match",reasons)|
              (grepl("firstname_match",reasons)&
@@ -239,10 +261,16 @@ matches_process <- function(data) {
   return(df)
 }
 
+# Download all claims for a set of Wikidata items
+# uses the wikimedia API in batches of 50
 puerki <- function(ids,
                    which = "ids",
                    stepcount = T,
                    agent = "collector_matching") {
+  # ids = a tibble that lists all ids for which to download data
+  # which = name of the column with the ids
+  # stepcount = whether to log progress
+  # agent = specify agent for the API requests
   require(httr)
   
   steps = seq(1,
@@ -272,9 +300,15 @@ puerki <- function(ids,
   return(resu.r)
 }
 
+# Download claims for items from wikidata, taking already downloaded
+# items into account (unlike the puerki function)
 retrieve_claims <- function(result,
                             cache = NULL,
                             index = "data/propcache/index.txt") {
+  # result = tibble with ids to find claims for; colname needs to be id
+  # cache = a list with wikidata items already in memory
+  # index = a lookup table with wikidata items already saved to disk
+  
   if (!is.null(cache)) {
     result %<>% 
       filter(!id%in%names(cache),
@@ -298,6 +332,8 @@ retrieve_claims <- function(result,
   return(cache)
 }
 
+# Save claims in a list to disk. Claims are grouped as JSON per 100
+# and a lookup table indicates in which file each item's claims can be found
 save_claims <- function(cache,
                         index = "data/propcache/index.txt") {
   require(jsonlite)
@@ -357,8 +393,9 @@ save_claims <- function(cache,
   return(new_index)
 }
 
+# Extracts values for properties from the cache (on disk and/or in memory)
 get_claims_from_cache <- function(ids,
-                                  props,
+                                  props, #vector with the Property ids
                                   cache = NULL,
                                   index = "data/propcache/index.txt") {
   require(jsonlite)
@@ -411,6 +448,8 @@ get_claims_from_cache <- function(ids,
   return(resu)
 }
 
+# Function to extract the right data for each item in a list
+# time is currently hardcoded as a value type
 extract_props <- function(data,
                           props,
                           auto_unbox = T) {
@@ -427,6 +466,7 @@ extract_props <- function(data,
   return(new)
 }
 
+# Add extracted Wikidata property values to the matching results tibble
 attach_claims <- function(df,
                           props,
                           cache = NULL) {
@@ -451,6 +491,7 @@ attach_claims <- function(df,
   return(df)
 }
 
+# Only keep the year from the whole timestamp
 extract_year <- function(df,
                          props) {
   for (i in props) {
@@ -461,6 +502,8 @@ extract_year <- function(df,
   return(df)
 }
 
+# Delete unrealistic date ranges and drop matches with clashing dates
+# Wikidata Date of birth/death are currently hardcoded
 date_filter <- function(data) {
   data %<>%
     mutate(year1 = as.numeric(year1),

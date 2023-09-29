@@ -1,32 +1,36 @@
-# path = commandArgs(trailingOnly = T)
-# 
-# if (length(path) == 0) {
-#   gbiffolder = "src/gbif-data-folder.txt"
-#   if (file.exists(gbiffolder)) {
-#     path = readLines(gbiffolder)
-#   } else {
-#     path = list.dirs("data/gbif sets",
-#                      recursive = F)[1]
-#   }
-# }
-# 
-# columns = readLines("src/gbif-columns.txt")
-# 
-# parsed_names = extract_strings(path,
-#                                columns)
-
 extract_strings <- function(path,
                             columns_list,
-                            dwc_property) {
+                            dwc_property,
+                            data_type) {
+  # path = (relative) path to where the data file(s) can be found
+  # columns_list = path to a file listing colnames to import
+  # dwc_property = colname which contains the name strings to match
+  # data_type = format of the data file(s)
+  ## "DwC-A" = a Darwin Core Archive (unzipped). occurrence.txt will be used
+  ## "dissco" = a JSON document as exported from the DiSSCo sandbox
+  ### !!!the dissco import is not serialized yet!!
+  ### !!!the dissco JSON model may still change!!!
   require(tidyverse)
-
   columns = readLines(columns_list) %>%
     c(dwc_property)
   
-  data = read_tsv(paste0(path,"/occurrence.txt"),
-                  quote="",
-                  col_select = all_of(columns),
-                  col_types = cols(.default = "c"))
+  if (data_type == "DwC-A") {
+    data = read_tsv(paste0(path,"/occurrence.txt"),
+                    quote="",
+                    col_select = all_of(columns),
+                    col_types = cols(.default = "c"))
+  }
+  if (data_type == "dissco") {
+    require(jsonlite)
+    raw = fromJSON(path)
+    data = tibble(!!dwc_property := raw$originalData[[paste0("dwc:",
+                                                             sym(dwc_property))]],
+                  year = ifelse(!is.null(raw$originalData$`dwc:year`),
+                                raw$originalData$`dwc:year`,
+                                NA),
+                  occurrenceID = raw$physicalSpecimenId,
+                  gbifID = raw$id)
+  }
   return(data) 
 }
 

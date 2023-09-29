@@ -1,10 +1,13 @@
-#parse name strings using the dwc_agent ruby gem
+# parse name strings using the dwc_agent ruby gem
 parse_names <- function(names) {
   
   writeLines(names,"data/names.txt")
   
+  # run a ruby script that applies the name parsing dwc_agent gem
+  # R will wait until the ruby script finished its execution
   system("ruby src/agent_parse.rb")
   
+  # import the file the ruby script produced and convert it back to a tibble
   parsed_names = readLines("data/output/names_parsed.txt") %>% 
     tibble(raw = .) %>%
     mutate(ori = str_extract(raw,
@@ -30,13 +33,13 @@ parse_names <- function(names) {
   return(parsed_names)
 }
 
-#strings are converted for usability by the matching script
+# Strings are converted for usability by the matching script
 interpret_strings <- function(data,
                               colname,#name of the column to be interpreted
                               inc_surname=T,
                               inc_fname=T,
                               inc_initials=T) {
-  #surname is the last word of the space delimited string (after parsing)
+  # Surname is the last word of the space delimited string (after parsing)
   if (inc_surname) {
     data %<>%
       mutate(surname = gsub("^(.*[\\s])",
@@ -45,7 +48,7 @@ interpret_strings <- function(data,
                             perl=T))
   }
   
-  #first name is the first word of the space delimited string (after parsing)
+  # First name is the first word of the space delimited string (after parsing)
   if (inc_fname&inc_surname) {
     data %<>%
       mutate(fname = gsub("\\s.*",
@@ -60,9 +63,10 @@ interpret_strings <- function(data,
                             fname))
   }
   
-  #initials are based on the first character of the chunks of the 
-  #space or dash(-) delimited string
-  #quotes are removed so they don't end up part of the initials
+  # Initials are based on the first character of the chunks of the 
+  # space or dash(-) delimited string
+  # Quotes are removed so they don't end up part of the initials
+  # Outer initials ignore middle names
   if (inc_initials) {
     data %<>%
       mutate(initials = gsub("\'",
