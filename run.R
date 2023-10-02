@@ -10,14 +10,15 @@ config = read.ini("config.ini")
 source("src/extract_strings.R")
 ## Keep the data in memory to connect the matched strings back to specimens
 ## after matching
-data = extract_strings(config$default$dwc_folder, # data file location
-                       config$default$columns, # properties to import
-                       config$default$dwc_property, # property with the names
-                       config$default$data_type) # type of data file
+data = extract_strings(path = config$source$data, # data file location
+                       columns_list = config$source$columns, # properties to import
+                       property = config$source$property, # property with the names
+                       data_type = config$source$data_type) # type of data file
 
 ## Parse the name strings into first, last name, initials and
 ## try to interpret different syntaxes and teams using the dwc_agent ruby gem
-parsed_names = parse_strings(data)
+parsed_names = parse_strings(data,
+                             config$source$property)
 
 # Fetch a subset of Wikidata items for persons that are considered potential
 # collectors or determiners of specimens
@@ -25,13 +26,13 @@ source("src/create_wd_space.R")
 ## The subset can be acquired by a set of SPARQL queries (in data/sparql)
 ## or from file. Items are fetched along with (English) labels and aliases
 ## and these are also parsed, but not using the dwc_agent gem.
-wikiResults = create_wd_space(config$default$wikifile)
+wikiResults = create_wd_space(config$source$wikifile)
 
 # Match the sourced strings to the Wikidata subset
 source("src/matching.R")
 ## Determine the set of cores that can be used on this machine for
 ## parallel computing
-cores = assess_cores(config$default$cores)
+cores = assess_cores(config$matching$cores)
 
 ## Perform the matching
 matching_results = threading(data = parsed_names,
@@ -44,7 +45,7 @@ matching_results = threading(data = parsed_names,
 ### "all" = default, but this does exclude matches only on initials
 ### "best" = the highest ranked result
 ### "cut" = specify a number of results to keep as a maximum
-rmode = config$default$rmode 
+rmode = config$matching$rmode 
 validated_results = threading(data = matching_results,
                               f = match_validate,
                               num_threads = cores,
@@ -73,6 +74,6 @@ processed_results %<>%
 source("src/export.R")
 processed_results %>%
   export(data = data,
-         foldername = config$default$dwc_folder,
-         export_type = config$default$output,
-         qid = config$default$institution_qid)
+         foldername = config$source$data,
+         property = config$source$property,
+         export_type = config$export)

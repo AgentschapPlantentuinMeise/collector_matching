@@ -1,6 +1,6 @@
 extract_strings <- function(path,
                             columns_list,
-                            dwc_property,
+                            property,
                             data_type) {
   # path = (relative) path to where the data file(s) can be found
   # columns_list = path to a file listing colnames to import
@@ -12,10 +12,10 @@ extract_strings <- function(path,
   ### !!!the dissco JSON model may still change!!!
   require(tidyverse)
   columns = readLines(columns_list) %>%
-    c(dwc_property)
+    c(property)
   
   if (data_type == "DwC-A") {
-    data = read_tsv(paste0(path,"/occurrence.txt"),
+    data = read_tsv(path,
                     quote="",
                     col_select = all_of(columns),
                     col_types = cols(.default = "c"))
@@ -23,8 +23,8 @@ extract_strings <- function(path,
   if (data_type == "dissco") {
     require(jsonlite)
     raw = fromJSON(path)
-    data = tibble(!!dwc_property := raw$originalData[[paste0("dwc:",
-                                                             sym(dwc_property))]],
+    data = tibble(!!property := raw$originalData[[paste0("dwc:",
+                                                             sym(property))]],
                   year = ifelse(!is.null(raw$originalData$`dwc:year`),
                                 raw$originalData$`dwc:year`,
                                 NA),
@@ -34,19 +34,20 @@ extract_strings <- function(path,
   return(data) 
 }
 
-parse_strings <- function(data) {
+parse_strings <- function(data,
+                          property) {
   require(magrittr)
   source("src/base_parsing.R")
   
   parsed_names = data %>%
-    count(recordedBy) %>%
-    pull(recordedBy) %>%
+    count(!!property) %>%
+    pull(!!property) %>%
     parse_names() %>%
     interpret_strings(colname = "parsed") %>%
     left_join(select(data,
-                     recordedBy,
+                     !!property,
                      year),
-              by=c("ori"="recordedBy"),
+              by=c("ori" = property),
               relationship = "many-to-many") %>%
     group_by(parsed,
              fname,

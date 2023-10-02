@@ -1,24 +1,27 @@
 export <- function(match_results,
                    data,
+                   property,
                    foldername,
-                   export_type,
-                   qid) {
-  if (export_type == "dwc_attribution") {
+                   export_type) {
+  
+  
+  if (export_type$dwc_attribution == "true") {
     export_to_dwc_attribution(match_results,
                               data,
+                              property,
                               foldername)
   }
   
-  if (export_type == "fst") {
+  if (export_type$fst == "true") {
     save_fst(match_results,
              foldername)
   }
   
-  if (export_type == "quickstatements") {
+  if (export_type$quickstatements == "true") {
     make_quickstatements(match_results,
                          data,
                          foldername,
-                         qid)
+                         export_type$institution_qid)
   }
 }
 
@@ -72,6 +75,7 @@ generate_filename <- function(foldername,
     gsub(" ","_",.)
   
   foldername %<>%
+    gsub("/occurrence.txt","",.,fixed = T) %>%
     gsub(".*/","",.) %>%
     paste0("data/output/",
            type,
