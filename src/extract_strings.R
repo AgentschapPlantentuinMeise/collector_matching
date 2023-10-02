@@ -40,12 +40,12 @@ parse_strings <- function(data,
   source("src/base_parsing.R")
   
   parsed_names = data %>%
-    count(!!property) %>%
-    pull(!!property) %>%
+    count(!!sym(property)) %>%
+    pull(!!sym(property)) %>%
     parse_names() %>%
     interpret_strings(colname = "parsed") %>%
     left_join(select(data,
-                     !!property,
+                     !!sym(property),
                      year),
               by=c("ori" = property),
               relationship = "many-to-many") %>%

@@ -27,10 +27,11 @@ export <- function(match_results,
 
 export_to_dwc_attribution <- function(match_results,
                                       data,
+                                      property,
                                       foldername) {
   match_results %<>%
     right_join(data,
-               by=c("ori" = "recordedBy"),
+               by=c("ori" = property),
                relationship = "many-to-many") %>%
     rename(alternateName = itemLabel,
            verbatimName = ori,

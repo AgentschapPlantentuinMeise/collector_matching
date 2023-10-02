@@ -74,6 +74,6 @@ processed_results %<>%
 source("src/export.R")
 processed_results %>%
   export(data = data,
-         foldername = config$source$data,
          property = config$source$property,
+         foldername = config$source$data,
          export_type = config$export)
