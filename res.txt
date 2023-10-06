@@ -1,0 +1,25 @@
+0195853-230224095556074
+(quicks wrong institution!!)
+#first match
+[1] "Parralel processing time:"
+Time difference of 3.829797 mins
+[1] "Overhead of setting up cluster time:"
+Time difference of 1.043953 mins
+#validate
+[1] "Parralel processing time:"
+Time difference of 2.481596 mins
+[1] "Overhead of setting up cluster time:"
+Time difference of 3.244832 secs
+#dates
+Time difference of 4.878996 mins
+
+0167499-230224095556074
+[1] "Parralel processing time:"
+Time difference of 7.790569 mins
+[1] "Overhead of setting up cluster time:"
+Time difference of 2.397608 mins
+[1] "Parralel processing time:"
+Time difference of 5.764646 mins
+[1] "Overhead of setting up cluster time:"
+Time difference of 3.391213 secs
+Time difference of 10.09531 mins 
