@@ -57,6 +57,7 @@ processed_results = matches_process(validated_results)
 
 ## Download claims from all Wikidata items linked to at least one name string
 ## and save them to your disk so you don't need to redo this step every time
+require(tidyverse)
 cache = processed_results %>%
   count(id) %>%
   retrieve_claims()
@@ -65,8 +66,11 @@ cache %>% save_claims()
 ## Take the years of birth/death from the Wikidata claims and attach them
 ## then filter on date clashes between the specimens and Wikidata items
 props = c("P569","P570")
+cache = processed_results %>%
+  get_claims_from_cache(props,
+                        cache)
 processed_results %<>%
-  attach_claims(props,cache) %>%
+  attach_claims(props,cache,cores) %>%
   extract_year(props) %>%
   date_filter()
 

@@ -2,9 +2,10 @@
 # to a set of Wikidata item labels and aliases
 # Doing it per name allows parallelization
 match_string <- function(name,
-                        wiki,
-                        lname_cut = 2, # only relevant for fuzzy matching
-                        fuzzy = F) { # fuzzy is currently deprecated
+                         wiki,
+                         lname_cut = 2, # only relevant for fuzzy matching
+                         fuzzy = F) { # fuzzy is currently deprecated
+  require(tidyverse)
   # name = a tibble with a single row
   
   #initialize result list
@@ -81,7 +82,8 @@ match_validate <- function(result,
                            rmode = "best",#can also be "cut" or "all"
                            cut,#if cut, then the nr of results to include in the return
                            minscore = 10) {#results below this score will be dropped
-  
+  require(tidyverse)
+  require(magrittr)
   #rank each matching method
   #exact matches are best (on alias or english label)
   #then exact matches on first or surname
@@ -181,7 +183,8 @@ threading <- function(data,
   require(doParallel)
   
   #convert data to list if it's a tibble
-  if (is_tibble(data)) {
+  if (is_tibble(data)|
+      is.data.frame(data)) {
     data %<>%
       split(seq(dim(data)[1]))
   }
@@ -244,6 +247,7 @@ threading <- function(data,
 }
 
 matches_process <- function(data) {
+  require(tidyverse)
   df = data %>%
     bind_rows(.id = "rownr") %>%
     left_join(parsed_names,
@@ -308,7 +312,8 @@ retrieve_claims <- function(result,
   # result = tibble with ids to find claims for; colname needs to be id
   # cache = a list with wikidata items already in memory
   # index = a lookup table with wikidata items already saved to disk
-  
+  require(tidyverse)
+  require(magrittr)
   if (!is.null(cache)) {
     result %<>% 
       filter(!id%in%names(cache),
@@ -336,6 +341,7 @@ retrieve_claims <- function(result,
 # and a lookup table indicates in which file each item's claims can be found
 save_claims <- function(cache,
                         index = "data/propcache/index.txt") {
+  require(tidyverse)
   require(jsonlite)
   
   if (!dir.exists("data/propcache")) {
@@ -394,12 +400,13 @@ save_claims <- function(cache,
 }
 
 # Extracts values for properties from the cache (on disk and/or in memory)
-get_claims_from_cache <- function(ids,
+get_claims_from_cache <- function(data,
                                   props, #vector with the Property ids
                                   cache = NULL,
                                   index = "data/propcache/index.txt") {
+  require(tidyverse)
+  require(magrittr)
   require(jsonlite)
-  
   start_time = Sys.time()
   index_f = read_tsv(index,
                      show_col_types = F)
@@ -407,6 +414,9 @@ get_claims_from_cache <- function(ids,
     index_f %<>%
       filter(!key%in%names(cache))
   }
+  ids = data %>%
+    count(id) %>%
+    pull(id)
   toread = filter(index_f,
                   key%in%ids) %>%
     count(loc) %>%
@@ -469,26 +479,29 @@ extract_props <- function(data,
 # Add extracted Wikidata property values to the matching results tibble
 attach_claims <- function(df,
                           props,
-                          cache = NULL) {
-  ids = df %>%
-    count(id) %>%
-    pull(id)
-  
-  wd_content = get_claims_from_cache(ids,
-                                     c("P569","P570"),
-                                     cache)
-  
+                          cache,
+                          cores) {
+  require(tidyverse)
   for (i in props) {df[i] = NA}
   
-  for (i in 1:dim(df)[1]) {
+  attach_claim <- function(row,
+                           cache,
+                           props) {
     for (j in props) {
-      if (!is.null(wd_content[[df$id[i]]][[j]])) {
-        df[i,j] = wd_content[[df$id[i]]][[j]]
+      if (!is.null(cache[[row$id]][[j]])) {
+        row[[j]] = cache[[row$id]][[j]]
       }
     }
+    return(row)
   }
   
-  return(df)
+  newdf = threading(data = df,
+                    f = attach_claim,
+                    num_threads = cores,
+                    req_args = c("cache","props")) %>%
+    bind_rows()
+  
+  return(newdf)
 }
 
 # Only keep the year from the whole timestamp
