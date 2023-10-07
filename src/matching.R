@@ -246,7 +246,8 @@ threading <- function(data,
   }
 }
 
-matches_process <- function(data) {
+matches_process <- function(data,
+                            parsed_names) {
   require(tidyverse)
   df = data %>%
     bind_rows(.id = "rownr") %>%

@@ -8,7 +8,6 @@ extract_strings <- function(path,
   # data_type = format of the data file(s)
   ## "DwC-A" = a Darwin Core Archive (unzipped). occurrence.txt will be used
   ## "dissco" = a JSON document as exported from the DiSSCo sandbox
-  ### !!!the dissco import is not serialized yet!!
   ### !!!the dissco JSON model may still change!!!
   require(tidyverse)
   columns = readLines(columns_list) %>%

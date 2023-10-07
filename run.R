@@ -53,7 +53,8 @@ validated_results = threading(data = matching_results,
 
 ## Filter the matches by a set of rules
 ## Also convert to a tibble for easier exporting of results
-processed_results = matches_process(validated_results)
+processed_results = matches_process(validated_results,
+                                    parsed_names)
 
 ## Download claims from all Wikidata items linked to at least one name string
 ## and save them to your disk so you don't need to redo this step every time
