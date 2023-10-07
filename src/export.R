@@ -109,9 +109,9 @@ export_dissco_annotation <- function(match_results,
                                             body = list(type = "ods:collector",
                                                         value = paste0("http://www.wikidata.org/entity/",
                                                                        match_results$id[i]),
-                                                        description = "wikidata",
-                                                        score = match_results$score[i]/max,
-                                                        reference = match_results$reasons[i])))
+                                                        description = paste0("wikidata: ",
+                                                                             match_results$reasons[i]),
+                                                        score = match_results$score[i]/max)))
   }
   
   resp = toJSON(res,

@@ -1,5 +1,5 @@
 library(ini)
-config = read.ini("config.ini")
+config = read.ini("config-dissco.ini")
 
 library(fst)
 processed_results = read_fst(config$rebuild$filename)
