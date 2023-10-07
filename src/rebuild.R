@@ -5,10 +5,14 @@ library(fst)
 processed_results = read_fst(config$rebuild$filename)
 
 source("src/extract_strings.R")
+
 data = extract_strings(path = config$source$data, 
                        columns_list = config$source$columns, 
                        property = config$source$property, 
                        data_type = config$source$data_type) 
+
+parsed_names = parse_strings(data,
+                             config$source$property)
 
 source("src/export.R")
 library(magrittr)

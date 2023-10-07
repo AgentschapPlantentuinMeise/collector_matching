@@ -23,3 +23,18 @@ Time difference of 5.764646 mins
 [1] "Overhead of setting up cluster time:"
 Time difference of 3.391213 secs
 Time difference of 10.09531 mins 
+
+0167495-230224095556074
+[1] "Parralel processing time:"
+Time difference of 9.481096 mins
+[1] "Overhead of setting up cluster time:"
+Time difference of 2.857085 mins
+[1] "Parralel processing time:"
+Time difference of 6.214874 mins
+[1] "Overhead of setting up cluster time:"
+Time difference of 3.089524 secs
+Time difference of 13.19482 mins
+[1] "Parralel processing time:"
+Time difference of 20.76396 secs
+[1] "Overhead of setting up cluster time:"
+Time difference of 9.645742 secs

@@ -22,14 +22,22 @@ extract_strings <- function(path,
   }
   if (data_type == "dissco") {
     require(jsonlite)
-    raw = fromJSON(path)
-    data = tibble(!!property := raw$originalData[[paste0("dwc:",
-                                                             sym(property))]],
-                  year = ifelse(!is.null(raw$originalData$`dwc:year`),
-                                raw$originalData$`dwc:year`,
-                                NA),
-                  occurrenceID = raw$physicalSpecimenId,
-                  gbifID = raw$id)
+    raw = fromJSON(path,simplifyVector = F)
+    data = tibble(!!property := sapply(raw,
+                                       function(x) 
+                                         x$data$attributes$originalData[[paste0("dwc:",
+                                                             sym(property))]]),
+                  year = sapply(raw,
+                                function(x) 
+                                  ifelse(!is.null(x$data$attributes$originalData$`dwc:year`),
+                                         x$data$attributes$originalData$`dwc:year`,
+                                         NA)),
+                  occurrenceID = sapply(raw,
+                                        function(x) 
+                                          x$data$attributes$physicalSpecimenId),
+                  gbifID = sapply(raw,
+                                  function(x) 
+                                    x$data$attributes$id))
   }
   return(data) 
 }

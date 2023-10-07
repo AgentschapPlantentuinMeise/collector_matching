@@ -29,9 +29,17 @@ export <- function(match_results,
   if (export_type$quickstatements == "true") {
     match_results %>%
       make_quickstatements(data,
+                           property,
                            foldername,
                            export_type$institution_qid)
   }
+  
+  if (export_type$dissco == "true") {
+    match_results %>%
+      export_dissco_annotation(data,
+                               property,
+                               foldername)
+  } 
 }
 
 export_to_dwc_attribution <- function(match_results,
@@ -40,7 +48,7 @@ export_to_dwc_attribution <- function(match_results,
                                       foldername,
                                       export_type) {
   match_results %<>%
-    right_join(data,
+    left_join(data,
                by = c("ori" = property),
                relationship = "many-to-many") %>%
     rename(alternateName = itemLabel,
@@ -71,6 +79,50 @@ export_to_dwc_attribution <- function(match_results,
     generate_filename(export_type,
                       "txt")
   write_tsv(match_results,filename)
+}
+
+export_dissco_annotation <- function(match_results,
+                                     data,
+                                     property,
+                                     foldername) {
+  require(uuid)
+  require(jsonlite
+          )
+  match_results %<>%
+    left_join(data,
+               by = c("ori" = property),
+               relationship = "many-to-many")
+  res = vector("list", dim(match_results)[1])
+  max = max(match_results$score)
+  
+  for (i in 1:dim(match_results)[1]) {
+    guid = UUIDgenerate()
+    res[[i]]$data = list(id = guid,
+                         type = "Annotation",
+                         attribution = list(id = guid,
+                                            version = 1,
+                                            type = "Annotation",
+                                            motivation = "linking",
+                                            target = list(id = match_results$gbifID[i],
+                                                          type = "digital_specimen",
+                                                          indvProp = "ods:collector"),
+                                            body = list(type = "ods:collector",
+                                                        value = paste0("http://www.wikidata.org/entity/",
+                                                                       match_results$id[i]),
+                                                        description = "wikidata",
+                                                        score = match_results$score[i]/max,
+                                                        reference = match_results$reasons[i])))
+  }
+  
+  resp = toJSON(res,
+                pretty = T,
+                auto_unbox = T)
+  
+  filename = foldername %>%
+    generate_filename("dissco",
+                      "json")
+  
+  write(resp,filename)
 }
 
 generate_filename <- function(foldername,
@@ -132,11 +184,12 @@ ambiguous_results <- function(match_results,
 
 make_quickstatements <- function(match_results,
                                  data,
+                                 property,
                                  foldername,
                                  qid) {
   specimens = match_results %>%
-    right_join(data,
-               by = c("ori" = "recordedBy"),
+    left_join(data,
+               by = c("ori" = property),
                relationship = "many-to-many",
                keep = T) %>%
     group_by(recordedBy) %>%
@@ -145,11 +198,11 @@ make_quickstatements <- function(match_results,
   new = match_results %>%
     ambiguous_results(omit = T) %>%
     left_join(specimens,
-              by = c("ori" = "recordedBy"),
+              by = c("ori" = property),
               relationship = "many-to-many") %>%
     filter(!duplicated(id)) %>%
     mutate(id = gsub(".*/","",id),
-           coll_items = "P11146",
+           coll_items = "P11146",#hardcoded for collectors!
            qid = qid,
            ref_url = "S854",
            specimen_id = paste0("\"",

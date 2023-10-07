@@ -6,3 +6,4 @@ httr
 parallel
 doParallel
 fst
+uuid
