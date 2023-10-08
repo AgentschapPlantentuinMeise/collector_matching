@@ -86,8 +86,8 @@ export_dissco_annotation <- function(match_results,
                                      property,
                                      foldername) {
   require(uuid)
-  require(jsonlite
-          )
+  require(jsonlite)
+  
   match_results %<>%
     left_join(data,
                by = c("ori" = property),
